@@ -1,0 +1,388 @@
+/**
+  Metro Color
+*/
+
+a {
+  color: #f09609;
+}
+
+a:hover, a:focus {
+  color: #a66806;
+}
+
+body {
+  font-size: 14px !important;
+}
+
+body.bf-a, 
+.bf-a .form-text, 
+.snf-a .site-name, 
+.ssf-a .site-slogan, 
+.ptf-a #page-title, 
+.ntf-a .node-title, 
+.ctf-a .comment-title, 
+.btf-a .block-title {
+  font-family: 'Open Sans',sans-serif;
+}
+
+h1,
+.block-title {
+  font-size: 48px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.views-field-title a, 
+.views-field-title span {
+  font-size: 17.5px;
+  font-weight: 600;
+}
+
+#header-wrapper .container {
+  border-bottom: none;
+}
+
+#onepage-menu li a {
+  color: #fff;
+  font-size: 16px;
+  padding-bottom: 27px;
+  padding-top: 27px;
+}
+
+#onepage-menu li a:hover,
+#onepage-menu li a:focus,
+#onepage-menu li a.active {
+  color: #f09609;
+}
+
+#onepage-menu li a.active {  
+  border-bottom: none;
+}
+
+#onepage-menu .change-skin-menu li a {
+  color: #333;
+}
+
+/* Homepage */
+#page-home-wrapper {
+  background: url("images/keyboard.jpg") no-repeat right top #0d0d0b;
+}
+
+
+.view-simple-slideshow .views-field-title span,
+.view-simple-slideshow .views-field-title a,
+.home-block h1 {  
+  color: #fff;
+  font-weight: 300;
+}
+
+.home-block p,
+.view-simple-slideshow  p {
+  color: #fff;
+  font-weight: 400;
+}
+
+.view-header {
+  margin-bottom: 40px;
+}
+
+.view-header p.desc,
+p.desc {
+  color: #000;
+  font-size: 17.5px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.arrow-down a {
+  background: url("images/arrow-down.png") no-repeat center center;
+}
+
+/* Page Introduction */
+.region-page-introduction .views-field-title a, 
+.region-page-introduction .views-field-title span {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+/* Page Portfolio */
+#page-portfolio-wrapper {
+  background-color: #1ba1e2;
+}
+
+#page-portfolio-wrapper .block-title,
+#page-portfolio-wrapper .view-header p.desc, 
+#page-portfolio-wrapper p.desc,
+#page-portfolio-wrapper .views-field-title a, 
+#page-portfolio-wrapper .views-field-title span {
+  color: #fff;
+}
+
+#page-portfolio-wrapper .views-field-field-category {
+  color: #fff;
+}
+
+.jcarousel-container {
+  background: url(images/line.png) repeat-x left bottom;
+  color: #fff;
+}
+
+.jcarousel-navigation {
+   background-color: #1ba1e2;
+}
+
+.jcarousel-navigation li { 
+  border-color: #fff;
+}
+
+.jcarousel-navigation li.active a span, 
+.jcarousel-navigation li:hover a span {
+  background-color: #fff;
+}
+
+
+/* Page Team */
+.views-field-field-job-title {
+  color: #999;
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 1;
+  margin: 5px 0 10px;
+}
+
+.view-our-team .view-our-team:hover .views-field-title span {
+  color: #f09609;
+}
+
+.views-field-field-social-share a {
+  background: url("images/netro-social-icons.png") no-repeat 0 0;
+  height: 23px;
+  width: 23px;
+}
+
+.views-field-field-social-share {
+  margin-top: 30px;
+}
+
+.views-field-field-social-share .facebook {
+  background-position: 0 0;
+}
+
+.views-field-field-social-share .twitter {
+  background-position: -23px 0;
+}
+
+.views-field-field-social-share .flickr {
+  background-position: -46px 0;
+}
+
+.view-our-team .view-our-team:hover .facebook {
+  background-position: 0 -23px;
+}
+
+.view-our-team .view-our-team:hover .flickr {
+  background-position: -46px -23px;
+}
+
+.view-our-team .view-our-team:hover .twitter {
+  background-position: -23px -23px;
+}
+
+/* Page Client */
+.testimonial .grid-inner {
+  border-color: #fff;
+  border-radius: 5px;
+  padding: 28px !important;
+}
+
+.views-field-field-author-reference a {
+  color: #e6472a;
+}
+
+.testimonial .views-field-field-image img {
+  border-radius: 500px;
+}
+
+/* Page Contact */
+#page-contact-wrapper {
+  background-color: #f09609;
+}
+
+#page-contact-wrapper .block-title {
+  color: #fff;
+}
+
+#page-contact-wrapper p.desc {
+  color: #fff;
+}
+
+.contact-info {
+  color: #fff;
+}
+
+.address-block address {
+  line-height: 25px;
+  padding-left: 34px;
+  width: 43%;
+}
+
+.address-block [class^="icon-"] {
+  left: 0; 
+  top: 0;
+  border: 2px solid #fff;
+  border-radius: 500px;  
+  padding: 4px; 
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  background-image: url("images/glyphicons-halflings-white.png");  
+}
+
+.icon-map-marker {
+  background-position: -20px -68px;
+}
+
+.icon-user {
+  background-position: -164px 3px;
+}
+
+.icon-envelope {
+  background-position: -68px 4px;
+}
+
+.address-block .address, 
+.address-block .phone, 
+.address-block .mail {
+  padding-left: 35px;
+}
+
+.address-block .mail {
+  color: #fff;
+  display: block;
+  margin-top: 20px;
+}
+
+.address-block .mail:hover {
+  color: #000;
+}
+
+.form-text, textarea {
+  background-color: #dc7700;
+  border-color: #dc7700;
+  color: #fff !important;
+  margin-bottom: 20px;
+  min-height: 30px;
+}
+
+.form-text:focus, 
+textarea:focus {
+  background-color: #dc7700;
+  border-color: #dc7700;
+}
+
+.resizable-textarea .grippie {
+  display: none;
+}
+
+
+/* Button */
+.node-button {
+  background-color: #f09609;
+  border-color: #f09609;
+  color: #fff;
+}
+
+.node-button:hover { 
+  background-color: #d78708;
+  border-color: #d78708;
+}
+
+.btn-large {
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: normal;
+  padding: 15px 55px;
+}
+
+span.button input.form-submit {
+  background-color: #fff;
+  border-color: #fff;
+  color: #f09609;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+span.button input.form-submit:hover,
+span.button input.form-submit:focus {
+  background-color: #dc7700;
+  border-color: #dc7700;
+  color: #fff;
+}
+
+.map {
+  background-color: #000;
+  border-color: #000;
+}
+
+/* Form */
+#user-login .form-submit {
+  background-color: #f09609;
+  border-color: #f09609;
+  color: #fff;
+}
+
+#user-login .form-submit:hover {
+  background-color: #a66806;
+  border-color: #a66806;
+}
+
+#user-login .form-text:focus {
+  border-color: #f09609;
+  color: #999 !important;
+}
+
+/**
+ * Footer
+ */
+#footer-wrapper .container {
+  border-color: #333;
+  padding-bottom: 80px;
+}
+
+#footer-wrapper .tb-copyright p {  
+  font-size: 11px;
+}
+
+.social li span {
+  background-image: url("images/netro-social-icons.png");
+  height: 23px;
+  width: 23px;
+}
+
+.social .icon-facebook {
+  background-position: 0 -46px;
+}
+
+.social .icon-facebook:hover,
+.social .icon-facebook:focus {
+  background-position: 0 -23px;
+}
+
+.social .icon-twitter {
+  background-position:  -23px -46px;
+}
+
+.social .icon-twitter:hover,
+.social .icon-twitter:focus {
+  background-position: -23px -23px;
+}
+
+
+.social .icon-flickr {
+  background-position: -46px -46px;
+}
+
+.social .icon-flickr:hover,
+.social .icon-flickr:focus {
+  background-position: -46px -23px;
+}

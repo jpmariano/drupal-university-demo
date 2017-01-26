@@ -1,0 +1,87 @@
+<?php
+
+/*
+ *Implement hook_schema().
+ */
+//Shema Module: To create this scripts from GUI
+function custom_form_schema() {
+  $schema = array();
+	//$schema['tablename/modulename'] = array(
+  $schema['custom_form'] = array(
+    'description' => 'Custom Form Contacts.',
+    'fields' => array(
+      //'fieldname' => array(
+      'nid' => array(
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => "The node's {node}.nid.",
+      ),
+      'first_name' => array(
+        'type' => 'text',
+        'not null' => TRUE,
+        'size' => 'big',
+        'description' => 'Contact First Name.',
+      ),
+      'last_name' => array(
+        'type' => 'text',
+        'not null' => TRUE,
+        'size' => 'big',
+        'description' => 'Contact Last Name.',
+      ),
+      'street' => array(
+        'type' => 'text',
+        'not null' => TRUE,
+        'size' => 'big',
+        'description' => 'Contact Street Address.',
+      ),
+      'city' => array(
+       'type' => 'text',
+        'not null' => TRUE,
+        'size' => 'big',
+        'description' => 'Contact City Address.',
+      ),
+      'zipcode' => array(
+        'type' => 'text',
+        'size' => 'small',
+        'not null' => TRUE,
+        'description' => 'zipcode',
+        'translatable' => TRUE,
+      ),
+      'email' => array(
+        'type' => 'text',
+        'not null' => TRUE,
+        'size' => 'small',
+        'description' => 'list of Contacts e-mail addresses.',
+      ),
+    ),
+    'primary key' => array('nid'),
+  );
+
+  return $schema;
+}
+
+
+/*
+ *Implements hook_update_N().
+ */
+ //You can add the schema above after running this hook_update_N() through siteurl.com/update.php
+function custom_form_update_1000() {
+  drupal_install_schema('custom_form');
+}
+
+function custom_form_update_1001() {
+  $email = array(
+    'type' => 'text',
+    'size' => 'small',
+    'not null' => TRUE,
+    'description' => 'list of Contacts e-mail addresses.',
+  );
+
+  db_change_field('custom_form', 'email', 'email', $email);
+}
+
+
+
+

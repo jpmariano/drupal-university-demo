@@ -1,0 +1,109 @@
+/**
+ * IE Compatibility Tweaks
+ */
+ #sidebar-first-wrapper .region-sidebar-first .block{
+  margin-top:0;
+ }
+ .node-gallery .field-slideshow-wrapper{
+  width:520px;
+  height:340px;
+ }
+ .page-homepage4 #main-wrapper{
+  padding-top:30px;
+ } 
+ .main-slideshow .views-field-title{
+  background:#222;
+ }
+.list-categories .views-field-view-node a,
+.grid .views-field-view-node a{
+  right:25px;
+  z-index:100;
+}
+.field-slideshow-slide, .field-slideshow-slide a, .field-slideshow-slide img{
+  max-width: none;
+  width:100%;
+}
+.view-id-similarterms .list-categories .views-field-view-node-1 a{
+  right:25px;
+  z-index:100;
+}
+.view-id-similarterms .list-categories .grid-inner .views-field-field-images img{
+  width:205px;
+  height:207px;
+}
+#main-content .view-products .grid-inner:hover{
+  border:1px solid #ccc;
+}
+.isotope .views-field-view-node a{
+  right:5px;
+}
+.page-homepage3 .jcarousel-item:hover .views-field-view-node a,
+.page-homepage4 .jcarousel-item:hover .views-field-view-node a{
+  filter:alpha(opacity=100);
+}
+.page-homepage3 .grid .views-field-view-node a,
+.page-homepage4 .grid .views-field-view-node a,{
+  right:4px;
+  filter:alpha(opacity=0);
+}
+
+.article ul.links li.comment-comments a {
+  filter: "progid:DXImageTransform.Microsoft.gradient(enabled=false)";
+}
+.views-col:hover .views-field-view-node a,
+.isotope-element:hover .views-field-view-node a,
+.list-categories:hover .views-field-view-node a{
+  display:block;
+}
+.page-homepage2 .views_slideshow_cycle_slide,
+.page-homepage4 .views_slideshow_cycle_slide{
+  background: transparent!important;
+}
+/* blocks.css */
+.block-user .item-list li {
+  display: inline;
+  zoom: 1;
+}
+
+#user-login-form .item-list li {
+  display: block;
+}
+
+/* forms.css */
+input.form-submit {
+  overflow: visible; /* IE Fix */
+}
+
+input.form-submit,
+a.button {
+  padding: 3px 10px;
+}
+
+#comment-form .filter-wrapper {
+  padding-top: 1em;
+}
+
+/* fields.css */
+.field-type-taxonomy-term-reference ul li {
+  display: inline;
+  zoom: 1;
+}
+
+/* --- Custom Blocks --- */
+.twitter-text:after,
+.twitter-text:before {
+  border-right-style: solid;
+  border-left-style: solid;
+}
+
+.view-grid-testimonials .fields-group-wrapper:before,
+.view-grid-testimonials .fields-group-wrapper:after {
+  border-left-style: solid;
+  border-right-style: solid;
+}
+
+.comment:before,
+.comment:after {
+  border-bottom-style: solid;
+  border-top-style: 0 solid;
+}

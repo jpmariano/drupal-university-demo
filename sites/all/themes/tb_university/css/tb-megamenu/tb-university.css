@@ -1,0 +1,51 @@
+.tb-megamenu{
+  background:transparent;
+}
+
+.tb-megamenu .nav > .active > a, .tb-megamenu .nav > .active > a:hover, .tb-megamenu .nav > .active > a:focus,
+.tb-megamenu .nav > li > a:focus, .tb-megamenu .nav > li > a:hover,
+.tb-megamenu .nav li.dropdown.open > .dropdown-toggle{
+  background:#1b212a;
+  color:#fff;
+}
+
+
+.tb-megamenu .nav > li > a{
+  border-right:1px solid #1b212a;
+  color:#afafaf;
+}
+
+.tb-megamenu .nav > .active > a, 
+.tb-megamenu .nav > .active > a:hover{
+  border-top:3px solid #d42b1e;
+  padding-top:12px;
+  border-right:0 none;
+}
+
+.tb-megamenu .dropdown-menu{
+  background:#1b212a;
+  color:#afafaf;
+  border-bottom:0 none;
+}
+
+.tb-megamenu .nav li.dropdown.active > .dropdown-toggle, .tb-megamenu .nav li.dropdown.open.active > .dropdown-toggle, .tb-megamenu .nav > li.dropdown.open.active > a:hover{
+  background:#1b212a;
+  border-color:#d42b1e;
+}
+
+.tb-megamenu .mega-nav > li a, .tb-megamenu .dropdown-menu .mega-nav > li a{
+  border-color:#232b37;
+}
+
+.tb-megamenu .dropdown-menu li > a{
+  color:#737e8e;
+}
+
+.tb-megamenu .mega-nav .mega-group > .mega-group-title, .tb-megamenu .dropdown-menu .mega-nav .mega-group > .mega-group-title{
+  color:#acb4c0;
+}
+
+.tb-megamenu .mega-nav .mega-group > .mega-group-title:hover, .tb-megamenu .dropdown-menu .mega-nav .mega-group > .mega-group-title:hover,
+.tb-megamenu .dropdown-menu li > a:hover{
+  color:#fff;
+}

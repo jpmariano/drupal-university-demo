@@ -1,0 +1,85 @@
+/**
+  * Responsive Elements
+  */
+  
+body {
+  -webkit-text-size-adjust: 100%; /* Fix Mobile Safari Font Scale */
+  overflow-x: hidden;
+}
+
+.wrapper .container{
+  width: 96% !important;
+}
+
+.group-cols-2 {
+  width: 100% !important;
+}
+
+.node-page {
+  padding-left: 0 !important;
+}
+
+.grid-inner {
+	padding: 30px;
+}
+
+/* Main Container ---*/
+#main-content {
+  width: 62%;
+  background: #fff;
+}
+
+#sidebar-first-wrapper {
+  width: 38%;
+  background: #fff;
+}
+
+/**
+ * Panels & Views
+ */
+.panel-cols-1 .panel-column {
+  width: 100% !important;
+}
+
+.panel-cols-2 .panel-column {
+  width: 50% !important;
+}
+
+.panel-cols-3 .panel-column {
+  width: 33.3% !important;
+}
+ 
+.panel-cols-4 .panel-column {
+  width: 25% !important;
+}
+
+.cols-4 .views-col {
+  width: 25% !important;
+}
+
+#slideshow-wrapper .views-field-title {
+  top: 30%;
+}
+
+.sidebar-slide .views-content-nid {
+  height: 15px;
+  width: 15px;
+}
+
+/* Search */
+#header #search-block-form .form-submit {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0 !important;
+}
+
+#header #search-block-form:hover .form-text {
+
+}
+
+.form-item-email input {
+  width: 54%;
+}
+
+.block-intro img {
+  padding: 0;
+}

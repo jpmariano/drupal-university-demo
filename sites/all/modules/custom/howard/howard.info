@@ -1,0 +1,4 @@
+name = Howard
+description = Howard University LDAP Module Extension
+package = Other
+core = 7.x

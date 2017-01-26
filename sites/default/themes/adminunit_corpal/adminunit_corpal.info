@@ -1,0 +1,205 @@
+
+name = 'Administrative Unit TB Corpal'
+description = TB Corpal is a Drupal theme that is based on <a href="http://themebrain.com/about-nucleus">Nucleus</a> and shows a slick styling of some basic Drupal content types such as blog, poll, forum and a contact form. Requires <a href="http://drupal.org/project/nucleus">Nucleus</a> base theme.
+core = '7.x'
+engine = 'phptemplate'
+base theme = 'tb_corpal'
+screenshot = 'screenshot.png'
+
+; Responsive
+; reset load
+stylesheets[only screen and (max-width:719px)][] = 'css/screens/mobile.css'
+stylesheets[only screen and (max-width:479px)][] = 'css/screens/mobile-vertical.css'
+stylesheets[only screen and (min-width: 720px) and (max-width: 959px)][] = 'css/screens/tablet-vertical.css'
+stylesheets[only screen and (min-width: 960px) and (max-width: 1049px)][] = 'css/screens/tablet.css'
+stylesheets[only screen and (min-width:1050px) and (max-width: 1199px)][] = 'css/screens/layout-normal.css'
+
+stylesheets[all][] = 'css/html-elements.css'
+
+; Howard Font Stylesheets 
+stylesheets[all][] = 'fonts/howard/howard-font.css'
+stylesheets[all][] = 'css/fonts.css'
+
+; Conditional Stylesheets for IE
+stylesheets-conditional[IE][all][] = 'css/ie.css'
+stylesheets-conditional[IE 9][all][] = 'css/ie7.css'
+stylesheets-conditional[IE 7][all][] = 'css/ie7.css'
+
+; Stylesheets
+stylesheets[all][] = 'css/css3.css'
+stylesheets[all][] = 'css/css3.css'
+stylesheets[all][] = 'css/page.css'
+stylesheets[all][] = 'css/navigation.css'
+stylesheets[all][] = 'css/footable.core.min.css'
+stylesheets[all][] = 'css/footable.metro.css'
+stylesheets[all][] = 'css/styles.css'
+
+
+; Scripts
+scripts[] = 'js/jquery.fitvids.js'
+scripts[] = 'js/footable.js'
+scripts[] = 'js/jquery-migrate-1.2.1.js'
+scripts[] = 'js/scripts.js' 
+
+; Additional Block Styles
+block_styles[sidebar] = 'Sidebar' 
+block_styles[blue_menu] = 'Blue Menu' 
+block_styles[red_menu] = 'Red Menu'
+
+; Supported Skins
+skins[cyan] = 'Cyan'
+skins[dark-green] = 'Dark Green'
+skins[light-green] = 'Light Green'
+skins[orange] = 'Orange'
+skins[purple] = 'Purple'
+skins[admin-unit] = 'Admin Unit'
+
+
+; Core regions
+regions[content] = 'Main content'
+regions[header] = 'Header'
+regions[menu_bar] = 'Menu bar'
+regions[header_social_links] = 'Header Social Links'
+regions[landing_header] = 'Landing Header'
+regions[breadcrumb_region] = 'Breadcumb Region'
+regions[slideshow] = 'Slideshow'
+regions[alert] = 'Alert'
+regions[feature] = 'Feature'
+regions[compliance] = '508 Compliance'
+regions[highlighted] = 'Highlighted'
+regions[footer] = 'Footer'
+regions[help] = 'Help'
+regions[page_top] = 'Page top'
+regions[page_bottom] = 'Page bottom'
+regions[news_social_share] = 'News Social Share'
+regions[about_howard_news] = 'About Howard (News Content Type)'
+
+; Sidebar regions
+regions[sidebar_first] = 'Sidebar first'
+
+; panel regions
+regions[panel_first_1] = 'Panel first column 1'
+
+regions[panel_second_1] = 'Panel Second column 1'
+
+regions[panel_third_1] = 'Panel Third column 1'
+
+regions[panel_fourth_1] = 'Panel Fourth column 1'
+regions[panel_fourth_2] = 'Panel Fourth column 2'
+
+regions[panel_fifth_1] = 'Panel Fifth column 1'
+regions[panel_fifth_2] = 'Panel Fifth column 2'
+regions[panel_fifth_3] = 'Panel Fifth column 3'
+regions[panel_fifth_4] = 'Panel Fifth column 4'
+
+
+
+
+; Features (core settings)
+features[] = 'logo'
+features[] = 'name'
+features[] = 'slogan'
+features[] = 'node_user_picture'
+features[] = 'comment_user_picture'
+features[] = 'comment_user_verification'
+features[] = 'favicon'
+features[] = 'go_to_top_button'
+features[] = 'secondary_menu'
+
+; Breadcrumb
+settings[breadcrumb_display] = 'yes'
+settings[breadcrumb_separator] = ' &#187; '
+settings[breadcrumb_home] = 1
+
+; Layouts
+pages[default] = 'Normal page'
+
+; Default settings
+settings[grid] = 'fluid-grid-24'
+settings[layout_width] = '1200px'
+settings[layout_debug_grid] = 0
+settings[page_layout] = 'default'
+
+; Sidebar width settings
+settings[sidebar_first_width] = 9
+
+; Panel width settings
+settings[panel_first_1_width] = 24
+
+settings[panel_second_1_width] = 24
+
+settings[panel_third_1_width] = 24
+
+settings[panel_fourth_1_width] = 12
+settings[panel_fourth_2_width] = 12
+
+settings[panel_fifth_1_width] = 6
+settings[panel_fifth_2_width] = 6
+settings[panel_fifth_3_width] = 12
+settings[panel_fifth_4_width] = 6
+
+
+
+; Fonts
+settings[base_font] = 'bf-a'
+settings[site_name_font] = ''
+settings[site_slogan_font] = ''
+settings[page_title_font] = ''
+settings[node_title_font] = ''
+settings[comment_title_font] = ''
+settings[block_title_font] = ''
+settings[font_size] = 'fs-medium'
+
+; Extra Typo
+settings[load_extra_typo_styles] = 1
+
+; Default fonts family
+default_fonts[sss] = Calibri, 'howard_sans_regular, Candara, Helvetica Neue, Trebuchet MS, Arial, Helvetica, sans-serif'
+default_fonts[ssl] = Calibri, 'howard_sans_regular, Verdana, Geneva, Arial, Helvetica, sans-serif'
+default_fonts[a] = Calibri, 'howard_sans_regular, Arial, Helvetica, sans-serif'
+default_fonts[ss] = Calibri, 'howard_sans_regular, Garamond, Perpetua, Times New Roman, serif'
+default_fonts[sl] = Calibri, 'howard_sans_regular, Georgia, Baskerville, Palatino, Palatino Linotype, Book Antiqua, Times New Roman, serif'
+default_fonts[m] = Calibri, 'howard_sans_regular, Segoe UI, Myriad Pro, Myriad, Arial, Helvetica, sans-serif;'
+default_fonts[l] = Calibri, 'howard_sans_regular, Lucida Sans Unicode, Lucida Sans, Lucida Grande, Verdana, Geneva, sans-serif'
+default_fonts[ms] = Calibri, 'howard_sans_regular, Consolas, Monaco, Courier New, Courier, monospace'
+
+block_styles[raw] = 'Raw'
+block_styles[rounded] = 'Rounded'
+block_styles[xhtml] = 'XHTML'
+
+block_extend_classes[badge-hot] = 'Badge Hot'
+block_extend_classes[badge-new] = 'Badge New'
+block_extend_classes[badge-pick] = 'Badge Pick'
+block_extend_classes[badge-top] = 'Badge Top'
+block_extend_classes[no-padding] = 'No Padding'
+block_extend_classes[sidebar-slide] = 'Sidebar Slideshow'
+block_extend_classes[grey-block] = 'Grey Block'
+block_extend_classes[user-menu] = 'User Menu'
+
+; Superfish Styles
+superfish_styles[corpal] = 'Corpal Style for Superfish'
+settings[superfish_extend_style_1] = 'corpal'
+
+; Quicktabs Styles
+quicktabs_styles[corpal] = 'Corpal Style for Quicktabs'
+settings[quicktabs_extend_style_quicktabs] = 'corpal'
+
+settings[default_region_footer_style] = 'raw'
+settings[default_region_header_style] = 'raw'
+settings[default_region_slideshow_style] = 'raw'
+
+settings[toggle_logo] = 0
+settings[toggle_name] = 1
+settings[toggle_slogan] = 1
+settings[toggle_node_user_picture] = 1
+settings[toggle_comment_user_picture] = 1
+settings[toggle_comment_user_verification] = 1
+settings[toggle_favicon] = 1
+settings[toggle_secondary_menu] = 1
+settings[default_logo] = 1
+settings[default_favicon] = 1
+
+settings[default_logo] = 1
+settings[logo_path] = ''
+settings[default_favicon] = 1
+settings[favicon_path] = ''

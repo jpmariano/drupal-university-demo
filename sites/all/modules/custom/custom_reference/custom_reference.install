@@ -1,0 +1,37 @@
+<?php
+
+function custom_reference_install() {
+  // Create a field for company reference to be used by various entities
+  $field = array(
+    'field_name' => 'company_reference',
+    'type' => 'entityreference',
+    'settings' => array(
+      'target_type' => 'company',
+      'handler_settings' => array('target_bundles' => NULL),
+    ),
+    'cardinality' => 1,
+    'translatable' => FALSE,
+  );
+  field_create_field($field);
+  
+  // Attach the company reference field to employee instance
+  $instance = array(
+    'field_name' => 'company_reference',
+    'entity_type' => 'employee',
+    'bundle' => 'employee',
+    'label' => 'Company',
+    'required' => false,
+    'widget' => array(
+      'type' => 'options_select'
+    ),
+    'settings' => array(
+      'target_type' => 'company',
+      'handler_settings' => array('target_bundles' => NULL),
+    ),
+    'display' => array(
+      'default' => array('label' => 'inline', 'type' => 'entityreference_label'),
+    ),
+  );
+
+  field_create_instance($instance); 
+}

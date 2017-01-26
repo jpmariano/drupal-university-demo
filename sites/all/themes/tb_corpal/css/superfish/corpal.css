@@ -1,0 +1,273 @@
+.block .sf-menu.sf-style-corpal {
+  background: none;
+  border: none;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.block .sf-menu.sf-style-corpal ul {
+  padding-left: 0;
+}
+
+.block .sf-menu.sf-style-corpal li {
+  background: none;
+  border-bottom: none;
+  margin: 0;
+}
+
+.block .sf-menu.sf-style-corpal a {	
+  background: none !important;
+  border-right: 1px solid #151213;
+  color: #999;
+  font-family: 'texgyreadventorBold', sans-serif;  
+  height: 70px;
+  line-height: 70px;
+  margin: 0px;
+  padding: 0px 20px;
+  text-decoration: none;	
+  text-transform: uppercase;
+}
+
+.block .sf-menu.sf-style-corpal li.last a { border-right: none; }
+
+/* "Have child" Item */
+.sf-menu li:hover ul, .sf-menu li.sfHover ul {
+	
+}
+
+a > .sf-sub-indicator {
+  background: url("../../images/bg-arrow-mainmenu.png") no-repeat 0 0 !important;  
+  height: 4px;
+  right: 20px;
+  top: 2.6em;
+  width: 7px;  
+}
+
+.sf-menu ul li a > .sf-sub-indicator {
+  background: url("../../images/arrow-5.png") no-repeat 0 0 !important;  
+  height: 7px;
+  top: 1.5em;
+}
+
+/* Child Menu */
+.block .sf-menu.sf-style-corpal ul {
+  background-color: #241f20;
+  border-left: 5px solid #e47e6b;   
+  margin-top: 37px;
+  padding: 0 17px;
+}
+
+.block .sf-menu.sf-style-corpal ul ul {
+	margin-top: 1px;
+}
+
+.block .sf-menu.sf-style-corpal ul li,
+.block .sf-menu.sf-style-corpal ul ul li {
+  
+}
+
+.block .sf-menu.sf-style-corpal li.menuparent.sfHover li a:hover,
+.block .sf-menu.sf-style-corpal li.menuparent.sfHover li a:focus,
+.block .sf-menu.sf-style-corpal li.menuparent.sfHover li a:active {
+   color: #e47e6b;
+}
+
+.block .sf-menu.sf-style-corpal ul li a,
+.block .sf-menu.sf-style-corpal ul li.sfHover li a,
+.block .sf-menu.sf-style-corpal.sf-navbar ul li ul li a {
+  border-top: 1px solid #302b2c;
+  border-right: none;
+  color: #999;	
+  font-family: 'texgyreadventorregular',sans-serif;
+  font-weight: normal;
+  height: auto;  
+  line-height: normal;
+  padding: 10px 0;
+  text-transform: none;
+}
+
+.block .sf-menu.sf-style-corpal ul li.first a {
+  border-top: none;
+  border-left: none;
+}
+
+.block .sf-menu.sf-style-corpal ul li a.menuparent {
+}
+
+.block .sf-menu.sf-style-corpal ul li.sfHover a.menuparent,
+.block .sf-menu.sf-style-corpal ul li a.menuparent:hover,
+.block .sf-menu.sf-style-corpal ul li a.menuparent:focus,
+.block .sf-menu.sf-style-corpal ul li a.menuparent:active {  
+}
+
+.block .sf-menu.sf-style-corpal ul li a.menuparent.active {  
+}
+
+/* Hover Links */
+.block .sf-menu.sf-style-corpal a:hover,
+.block .sf-menu.sf-style-corpal a:focus,
+.block .sf-menu.sf-style-corpal a:active {
+  color: #fff;
+}
+
+/* Child Menu Items Hover */
+.block .sf-menu.sf-style-corpal ul li.sfHover a,
+.block .sf-menu.sf-style-corpal ul li a:focus,
+.block .sf-menu.sf-style-corpal ul li a:hover,
+.block .sf-menu.sf-style-corpal ul li a:active { 
+  color: #e47e6b;
+}
+
+/* Active Links */
+.block .sf-menu.sf-style-corpal a.active {	  
+  color: #e47e6b;
+}
+
+.block .sf-menu.sf-style-corpal .active-trail .sf-depth-1,
+.block .sf-menu.sf-style-corpal li.active-trail a:hover, 
+.block .sf-menu.sf-style-corpal li.active-trail a:focus { 
+  color: #e47e6b;
+}
+
+/* Child Menu Items Active */
+.block .sf-menu.sf-style-corpal ul li a.active,
+.block .sf-menu.sf-style-corpal li.menuparent.sfHover li a.active { 
+  color: #e47e6b;
+}
+
+
+/* Navbar */
+.block .sf-menu.sf-style-corpal.sf-navbar {  
+  width: 100%;
+}
+
+.block .sf-menu.sf-style-corpal.sf-navbar .sfHover .sf-depth-1 {
+  color: #e47e6b;
+}
+
+.block .sf-menu.sf-style-corpal.sf-navbar ul {
+   background-color: #fff;
+   border-left: none;
+}
+
+.block .sf-menu.sf-style-corpal.sf-navbar ul li {
+  display: inline-block;
+  float: none;
+  padding: 15px 0;
+}
+
+.block .sf-menu.sf-style-corpal.sf-navbar ul li a {   
+  border-top: none;
+  border-right: 1px solid #e5e5e5;
+  color: #333;
+  display: inline-block;  
+  padding: 0 20px;
+}
+
+.block .sf-menu.sf-style-corpal.sf-navbar ul li.last a {
+  border-right: none;
+}
+
+.block .sf-menu.sf-style-corpal.sf-navbar ul li a.menuparent {
+  padding-right: 40px;
+}
+
+.block .sf-menu.sf-style-corpal.sf-navbar ul li a > .sf-sub-indicator {
+  background: url("../../images/bg-arrow-mainmenu.png") no-repeat 0 0 !important;  
+  top: .8em;
+}
+
+.block .sf-menu.sf-style-corpal.sf-navbar ul li ul {
+  background-color: #fff;
+  margin-top: 1.8em;
+}
+
+.block .sf-menu.sf-style-corpal.sf-navbar ul li ul li {
+  padding: 0;
+}
+
+.block .sf-menu.sf-style-corpal.sf-navbar ul li ul li a {
+  display: block;
+  border-top-color: #e5e5e5;
+  float: left;
+}
+
+.block .sf-menu.sf-style-corpal.sf-navbar ul li ul li.first a {
+  border-top: none;
+}
+
+/* MegaMenu */
+.block .sf-menu.sf-style-corpal span.sf-description {
+  color: #999;
+  display: block;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  margin: 5px 0 0 5px;
+  padding: 0;
+}
+
+.block .sf-menu.sf-style-corpal a.sf-with-ul {
+  padding-right: 37px;
+}
+
+.block .sf-menu.sf-style-corpal.rtl a.sf-with-ul { /* RTL */
+  padding-left: 2.25em;
+  padding-right: 1em;
+}
+
+.block .sf-menu.sf-style-corpal ul.sf-megamenu li.sf-megamenu-wrapper ol li.sf-megamenu-column {
+  display: inline;
+  float: left;
+  width: 12em;
+}
+
+.block .sf-menu.sf-style-corpal.rtl ul.sf-megamenu li.sf-megamenu-wrapper ol li.sf-megamenu-column {
+  float: right; /* RTL */
+}
+
+.block .sf-menu.sf-style-corpal ul.sf-megamenu li.sf-megamenu-wrapper ol,
+.block .sf-menu.sf-style-corpal ul.sf-megamenu li.sf-megamenu-wrapper ol li {
+  margin: 0;
+  padding: 0;
+}
+
+.block .sf-menu.sf-style-corpal li.sf-parent-children-1 ul.sf-megamenu {
+  width: 12em;
+}
+
+.block .sf-menu.sf-style-corpal li.sf-parent-children-10 ul.sf-megamenu {
+  width: 120em;
+}
+
+.block .sf-menu.sf-style-corpal li.sf-parent-children-2 ul.sf-megamenu {
+  width: 24em;
+}
+
+.block .sf-menu.sf-style-corpal li.sf-parent-children-3 ul.sf-megamenu {
+  width: 36em;
+}
+
+.block .sf-menu.sf-style-corpal li.sf-parent-children-4 ul.sf-megamenu {
+  width: 48em;
+}
+
+.block .sf-menu.sf-style-corpal li.sf-parent-children-5 ul.sf-megamenu {
+  width: 60em;
+}
+
+.block .sf-menu.sf-style-corpal li.sf-parent-children-6 ul.sf-megamenu {
+  width: 72em;
+}
+
+.block .sf-menu.sf-style-corpal li.sf-parent-children-7 ul.sf-megamenu {
+  width: 84em;
+}
+
+.block .sf-menu.sf-style-corpal li.sf-parent-children-8 ul.sf-megamenu {
+  width: 96em;
+}
+
+.block .sf-menu.sf-style-corpal li.sf-parent-children-9 ul.sf-megamenu {
+  width: 108em;
+}

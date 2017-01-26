@@ -1,0 +1,271 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 28, 2014, 5:51:25 PM
+    Author     : ThemeBrain
+*/
+.node.acm-cta{
+  padding-top: 104px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: auto;
+}
+
+.node.acm-cta a{
+  /*color: #039be5;*/
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+}
+.node.acm-cta h1{
+  font-size: 45px;
+}
+
+.acm-cta .cta-showcase-header {
+  font-weight: bold;
+}
+.acm-cta .call-to-action-image {
+  margin-top: 80px;
+  margin-bottom: -104px;
+}
+.acm-cta .call-to-action-image img {
+  max-width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .acm-cta .call-to-action-image {
+    margin-bottom: -52px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .acm-cta.default a {
+    margin-left: 26px;
+    margin-right: 26px;
+  }
+}
+.acm-cta.default{
+  color: #B8E9F6;
+  background: #039BE5;
+}
+.acm-cta.default.has-photo{
+  background: #F4F6F7;
+  color: #999999;
+}
+.acm-cta.default.has-photo h1.cta-showcase-header{
+  color: black;
+}
+.acm-cta.default .cta-img{
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+.acm-cta.default .cta-showcase-actions{
+  text-align: center;
+  padding: 78px 0;
+}
+
+.node.acm-cta.default .cta-showcase-actions a:hover{
+  background-color: #e6e6e6;
+  color: #333333;
+  background-color: rgba(225, 225, 225, 0.9);
+  border-color: transparent;
+}
+
+.acm-cta.default.has-photo .cta-showcase-actions a:hover{
+  background-color: #0279B3;
+  color: white;
+}
+
+.node.acm-cta.default .cta-showcase-actions a:after{
+  content: "\f105";
+  margin-left: 10px;
+  font-family: FontAwesome;
+}
+.acm-cta.default a + a {
+  margin-left: 26px;
+}
+.acm-cta.default h1{
+  text-align: center;
+  color: #fff;
+  margin-top: 0;
+}
+.acm-cta.default .cta-showcase-intro{
+  max-width: 760px;
+  margin: auto;
+  text-align: center;
+
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.625;
+}
+@media screen and (max-width: 767px) {
+  .acm-cta.default a + a {
+    margin-top: 26px;
+  }
+  .acm-cta.default .cta-showcase-header{
+    font-size: 24px;
+  }
+}
+.acm-cta.style-2 {
+  padding-top: 104px;
+  padding-bottom: 70px;
+  /*padding: 104px 0;*/
+  background-repeat: no-repeat;
+  background-position: 30px bottom;
+  background-size: auto;
+}
+.node.acm-cta.style-2 h1{
+  font-size: 56px;
+}
+.node.acm-cta.style-2 .main-img{
+  /*padding-top: 140px;*/
+  padding-left: 30px;
+  position: absolute;
+  bottom: 0;
+}
+
+.acm-cta.style-2 .main-img img{
+  max-width: 940px;
+}
+
+.acm-cta.style-2 .cta-showcase-item{
+  padding-right: 50px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+/*    .acm-cta.style-2 {
+        padding-top: 78px;
+        padding-bottom: 78px;
+    }*/
+}
+@media screen and (max-width: 767px) {
+/*    .node .acm-cta.style-2 {
+        margin: 0;
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }*/
+}
+@media screen and (max-width: 992px){
+  .main-img{
+    display: none;
+  }
+}
+.acm-cta.style-2 .cta-showcase-item {
+  position: relative;
+}
+.acm-cta.style-2 .cta-showcase-item .cta-showcase-badge {
+  position: absolute;
+  top: -208px;
+  width: 130px;
+  margin-top: -65px;
+  z-index: 9;
+}
+.acm-cta.style-2 .cta-showcase-item .cta-showcase-badge img {
+  width: 100%;
+  height: auto;
+}
+.acm-cta.style-2 .cta-showcase-item .cta-showcase-header {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  line-height: 1;
+  color: #ffffff;
+}
+.acm-cta.style-2 .cta-showcase-actions .field{
+  display: inline-block;
+  float: left;
+  margin-right: 25px;
+}
+/*@media (min-width: 992px) and (max-width: 1199px) {
+    .acm-cta.style-2 .cta-showcase-item .cta-showcase-header {
+        font-size: 45px;
+    }
+}*/
+.acm-cta.style-2 .cta-showcase-item .cta-showcase-intro {
+  color: #999999;
+}
+.acm-cta.style-2 .cta-showcase-item .cta-showcase-actions {
+  margin: 26px 0 0;
+  padding: 26px 0 0;
+  border-top: 1px solid #666666;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.acm-cta.style-2 .cta-showcase-item .cta-showcase-actions a {
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 26px;
+}
+.acm-cta.style-2 .cta-showcase-item .cta-showcase-actions a:last-child {
+  margin-right: 0;
+}
+.acm-cta.style-2 .cta-showcase-item .cta-showcase-actions a:hover,
+.acm-cta.style-2 .cta-showcase-item .cta-showcase-actions a:focus {
+  color: #ffffff;
+}
+
+/*** Style 3 ***/
+.acm-cta.style-3 {
+  background-size: cover;
+  background-position: 50% 0px;
+  background-repeat: no-repeat;
+  padding-bottom: 104px;
+}
+.acm-cta.style-3 .cta-showcase-actions a:before{
+  content: "\f105";
+  margin-right: 10px;
+  font-family: FontAwesome;
+}
+.acm-cta.style-3 > .content{
+  max-width: 1152px;
+  margin: auto;
+}
+.acm-cta.style-3 .cta-showcase-header {
+  margin-top: 0;
+}
+.acm-cta.style-3 .cta-showcase-actions {
+  margin-top: 52px;
+}
+.acm-cta.style-3 .cta-showcase-actions a {
+  padding: 6.5px 26px;
+  display: inline-block;
+}
+.acm-cta.style-3 .cta-showcase-actions a:hover {
+  background: #039BE5;
+  border-color: #039BE5; 
+  color: #fff;
+}
+@media screen and (max-width: 767px) {
+  .acm-cta.style-3 .cta-showcase-actions a {
+    display: block;
+    margin-right: 26px;
+  }
+}
+.acm-cta.style-3 .cta-showcase-actions a + a {
+  margin-top: 26px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .acm-cta.style-3 .cta-showcase-actions a + a {
+    margin-top: 0;
+    margin-left: 26px;
+  }
+}
+.acm-cta.style-3 .cta-showcase-actions .fa {
+  margin-right: 6.5px;
+}
+.acm-cta.style-3.light {
+  color: #666666;
+}
+.acm-cta.style-3.light .cta-showcase-header {
+  color: #333333;
+}
+@media (max-width: 991px) {
+  .node-user-showcase {
+    background-image: none !important;
+  }
+  .node-user-showcase .style-2 {
+    padding-top: 104px;
+  }
+}

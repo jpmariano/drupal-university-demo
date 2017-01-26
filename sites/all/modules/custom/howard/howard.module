@@ -1,0 +1,278 @@
+<?php
+function howard_init() {
+	//drupal_add_js(drupal_get_path('module','howard').'/js/jquery.carousel.js');
+	//drupal_add_js(drupal_get_path('module','howard').'/js/howard.js');
+	//drupal_add_css(drupal_get_path('module','howard').'/css/howard.css');
+	global $user;
+	if($user->uid != 0 && (sizeof($user->roles) == 1 && $user->roles[2] == 'authenticated user')){
+		unset($_SESSION['messages']);
+		$logoutLink = l('Logout', 'user/logout');
+		drupal_set_message('You are now logged in. Contact the site administrator to provide you domain access and necessary permissions. '.$logoutLink);
+	}
+}
+
+function howard_menu(){
+	$items = array();
+	$items['admin/config/people/configure/ldap'] = array(
+	    'title' => 'LDAP Server Config',
+	    'description' => 'Configure LDAP Authentication',
+	    'page callback' => 'drupal_get_form',
+	    'page arguments' => array('howard_ldap_config_form'),
+	    'access arguments' => array('administer site configuration'),
+	    'type' => MENU_LOCAL_TASK,
+  	);
+	$items['login/%/%'] = array(
+	    'title' => 'Login Test',
+	    'description' => 'Login Test',
+	    'page callback' => 'logintestpage',
+	    'page arguments' => array(1,2),
+	    'access callback' => TRUE,
+	    'type' => MENU_CALLBACK,
+  	);
+
+  	return $items;
+}
+
+function logintestpage($username, $password){
+	echo "Hello World <br/>";
+
+	$status = FALSE;
+	$server = variable_get('howard_ldap_server','');
+	$port = variable_get('howard_ldap_port','');
+	$basedn = variable_get('howard_ldap_basedn','');
+
+	$ldaprdn = "howardu\\".$username;
+	//$ldaprdn = 'CN='.$username.','.$basedn;
+	$ldappass = $password;
+	echo "<pre>";
+	echo "<br/>UName: ".$ldaprdn;
+	echo "<br/>Password: ".$ldappass;
+	echo "<br/><br/><br/>";
+	$ldapconn = ldap_connect($server,$port);
+	echo "1";
+	if ($ldapconn) {
+		echo "2";
+		var_dump(@ldap_bind($ldapconn, $ldaprdn, $ldappass));
+	    $ldapbind = @ldap_bind($ldapconn, $ldaprdn, $ldappass);
+		print_r($ldapbind);
+	    if ($ldapbind) { 
+	    	echo "3";
+			print_r($ldapbind);
+	        $status = TRUE;
+	    } else {
+        	echo "LDAP bind failed...";
+    	}
+	}
+	/*if($status == TRUE){
+		user_external_login_register($form_state['values']['name'], 'howard');
+		if(empty($userObj->uid)){
+			unset($_SESSION['messages']);
+			drupal_set_message('You have successfully logged in. Please contact site administrator to provide you domain access and necessary permissions.');
+		}
+		global $user;
+		$account = user_load($user->uid);
+		global $_domain;
+		$domainId = $_domain['domain_id'];
+		if(empty($account->mail)){
+			$edit['mail'] = $form_state['values']['name'].'@howard.edu';
+			$edit['init'] = $form_state['values']['name'].'@howard.edu';
+			$edit['domain_user'][$domainId] = $domainId;
+			user_save($account,$edit);
+		}
+		drupal_goto('user');
+	}else{
+		//unset($_SESSION['messages']);
+		//form_set_error('', 'Login Failed');
+		//drupal_set_message('Invalid LDAP Credentials.', 'error');
+	}*/
+}
+
+function howard_ldap_config_form($form, $form_state){
+	$form = array();
+	$server = variable_get('howard_ldap_server','');
+	$port = variable_get('howard_ldap_port','');
+	$basedn = variable_get('howard_ldap_basedn','');
+
+	$form['intro'] = array(
+        '#type' => 'item',
+        '#markup' => t('<h1>LDAP Server Settings</h1>'),
+    );
+	$form['config'] = array(
+      '#type' => 'fieldset',
+      '#title' => t('Server Options'),
+      '#collapsible' => TRUE,
+      '#collapsed' => FALSE,
+    );
+	$form['config']['server'] = array(
+      '#type' => 'textfield',
+      '#title' => t('LDAP server'),
+      '#required' => 1,
+      '#default_value' => $server,
+    );
+	$form['config']['port'] = array(
+      '#type' => 'textfield',
+      '#title' => t('LDAP port'),
+      '#required' => 1,
+      '#default_value' => $port,
+    );
+	$form['config']['basedn'] = array(
+      '#type' => 'textfield',
+      '#title' => t('Base DN for LDAP users'),
+      '#required' => 1,
+      '#default_value' => $basedn,
+    );
+	$form['submit'] = array(
+      '#type' => 'submit',
+      '#value' => 'Save',
+    );
+	return $form;
+}
+
+function howard_ldap_config_form_submit($form, &$form_state){
+	variable_set('howard_ldap_server', $form_state['values']['server']);
+	variable_set('howard_ldap_port', $form_state['values']['port']);
+	variable_set('howard_ldap_basedn', $form_state['values']['basedn']);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function howard_form_alter(&$form, &$form_state, $form_id) {
+	$empty = array('user_name' => '');
+	$nid = db_select('webform', 'wf')->fields('wf',array('nid'))->orderBy('nid', 'DESC')->execute()->fetchField();
+	$webform_id = isset($nid)?'webform_client_form_'.$nid:'webform_client_form_1';
+	switch ($form_id) {
+		// Custom redirection for any webforms you choose
+		case $webform_id :
+			// Set a hidden field for the parent node and add submit handler to handle redirect
+			if (empty($form_state['values']['redirect_override'])) {
+				// The redirect needs a normal path
+				$form['redirect_override'] = array('#type' => 'hidden', '#value' => serialize($_GET['q']), );
+				// But the action needs a url() path if errors happen
+				$form['#action'] = _howard_get_current_path();
+			}
+			// Add our custom submit handler LAST so that Webforms doesn't overwrite it with its redirect behaviors
+			array_push($form['#submit'], '_howard_webform_redirect_override');
+			$form['#validate'][] = 'webform_validate';
+			break;
+		case 'user_login' :
+			$form['#validate'][] = 'howard_ldap_user_login';
+			$form['#submit'][] = 'howard_ldap_user_login_submit';
+			break;
+		
+	}
+}
+
+/** Not Sure */
+function save_menu_preferences($form, &$form_state){
+ $mlids = $form_state['values']['field_page_to_display']['und'];
+ foreach($mlids as $key => $mlid){
+  $form_state['values']['field_menu_pages']['und'][$key]['value'] = $mlid['mlid'];
+  $form_state['values']['field_menu_pages']['und'][$key]['_weight'] = $mlid['_weight'];
+ }
+}
+
+
+function howard_ldap_user_login($form, &$form_state){
+	if(!empty($form_state['values']['name']) && !empty($form_state['values']['pass'])){
+		$userObj = user_load_by_name($form_state['values']['name']);
+		if(!(!empty($userObj->uid) && $userObj->uid == 1)){
+			unset($_SESSION['messages']);
+			$status = FALSE;
+			$server = variable_get('howard_ldap_server','');
+			$port = variable_get('howard_ldap_port','');
+			$basedn = variable_get('howard_ldap_basedn','');
+
+			$ldaprdn = 'howardu\\'.$form_state['values']['name'];
+			$ldappass = $form_state['values']['pass'];
+
+			$ldapconn = ldap_connect($server,$port);
+
+			if ($ldapconn) {
+				$ldapbind = ldap_bind($ldapconn, $ldaprdn, $ldappass);
+				if ($ldapbind) {
+					$status = TRUE;
+				}
+			}
+			if($status == TRUE){
+				user_external_login_register($form_state['values']['name'], 'howard');
+				if(empty($userObj->uid) || (sizeof($userObj->roles) == 1 && $userObj->roles[2] == 'authenticated user')){
+					unset($_SESSION['messages']);
+					$logoutLink = l('Logout', 'user/logout');
+					drupal_set_message('You have successfully logged in. Please contact site administrator to provide you domain access and necessary permissions. '.$logoutLink);
+				}
+				global $user;
+				$account = user_load($user->uid);
+				global $_domain;
+				$domainId = $_domain['domain_id'];
+				if(empty($account->mail)){
+					$edit['mail'] = $form_state['values']['name'].'@howard.edu';
+					$edit['init'] = $form_state['values']['name'].'@howard.edu';
+					$edit['domain_user'][$domainId] = $domainId;
+					user_save($account,$edit);
+				}
+				drupal_goto('user');
+			}else{
+				//unset($_SESSION['messages']);
+				//form_set_error('', 'Login Failed');
+				//drupal_set_message('Invalid LDAP Credentials.', 'error');
+			}
+		}
+	}
+}
+
+function howard_ldap_user_login_submit($form, &$form_state){
+	global $user;
+	if($user->uid != 1){
+		unset($_SESSION['messages']);
+		drupal_set_message('Invalid LDAP Credentials. (You have successfully logged in through Drupal.)', 'error');
+	}
+}
+
+
+// Custom redirect submission for Webforms
+function _howard_webform_redirect_override($form, &$form_state) {
+  if (!empty($form_state['values']['redirect_override'])) {
+    $form_state['redirect'] = array(unserialize($form_state['values']['redirect_override']));
+  }
+}
+// Get the proper path for the current page
+function _howard_get_current_path() {
+  $url = drupal_lookup_path('alias', $_GET['q']);
+  if (empty($url)) {
+    $url = $_GET['q'];
+  }
+  // Front-page url should be empty
+  if ($url == "front") {
+    $url = "";
+  }
+  $url = url($url);
+  return $url;
+}
+
+
+
+/*Webform Validation*/
+function webform_validate(&$form, &$form_state){
+	 $email1 = $form['submitted']['e_mail']['#value'];
+	 $name = $form['submitted']['first_name']['#value'];
+	 $name_pattern = "/^[a-zA-Z\s]*$/";
+	 $email_pattern = "/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/";
+	 if (!preg_match($email_pattern, $email1)) {
+	 	form_set_error($email1,"Please enter a valid e-mail id");
+	}
+}
+
+
+

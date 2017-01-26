@@ -1,0 +1,41 @@
+/**
+ * IE 7 Compatibility Tweaks
+ */
+#header #search-block-form .form-text {
+  height: auto;
+  padding: 9px 10px 5px;
+}
+
+.block-newsletter span.button input.form-submit {
+	padding: 7px 5px;
+}
+.sidebar .block div.list-courses ul li:hover,
+.sidebar .block div.list-courses ul li {
+  background-position: 0 11px;
+}
+#search-form .form-item {
+	clear: both;
+	width: 100%;
+}
+#search-form .form-item  input {
+  padding: 3px 3px;
+}
+.block-newsletter .form-item-email input {
+	width: 180px;
+}
+
+.field-type-taxonomy-term-reference ul li {
+  line-height: 26px;
+}
+.field-type-taxonomy-term-reference .field-label {
+  margin-bottom: 0;
+  line-height: 26px;
+}
+ul.pager li.pager-item {
+	font-size: 1.1em;
+	font-weight: normal;
+}
+
+.view-videos .views-field-field-videos img {
+  max-width: 100% !important;
+}

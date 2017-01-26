@@ -1,0 +1,3 @@
+name = John Node JS
+description = NodeJS + Mongodb integration to Drupal
+core = 7.x

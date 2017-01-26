@@ -1,0 +1,185 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 21, 2014, 11:17:08 AM
+    Author     : Jhcm1
+*/
+.node.acm{
+  position: relative;
+}
+
+/** HEADER **/
+#header{
+  border: 1px solid #e6e6e6;
+}
+
+#header > div{
+  display: inline;
+  float:left;
+}
+
+div#top-right-navigation{
+  float:right;
+}
+div#top-right-navigation > div{
+  display: inline-block;
+  float: left;
+}
+#name-and-slogan{  
+  padding: 14px 10px 0 20px;
+  height: 50px;
+}
+
+#name-and-slogan .site-name{
+  min-width: 130px;
+}
+
+#name-and-slogan .site-name a{
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333333;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+/*MENU BAR*/
+#menu-bar-wrapper .tb-megamenu .nav > li > a{
+  border: none;
+}
+
+#menu-bar-wrapper .tb-megamenu ul.tb-megamenu-nav > li:first-child{
+  border-left: 1px solid #e6e6e6;
+}
+#menu-bar-wrapper .tb-megamenu ul.tb-megamenu-nav > li{
+  border-right: 1px solid #e6e6e6;
+  background: #fff;
+}
+
+#menu-bar-wrapper .tb-megamenu ul.tb-megamenu-nav li.active > a, 
+#menu-bar-wrapper .tb-megamenu ul.tb-megamenu-nav > li:hover, 
+#menu-bar-wrapper .tb-megamenu .nav li.dropdown.active > .dropdown-toggle, 
+#menu-bar-wrapper .tb-megamenu .nav li.dropdown.open.active > .dropdown-toggle, 
+#menu-bar-wrapper .tb-megamenu .nav > li.dropdown.open.active > a:hover{
+  background: #eeeeee;
+  color: #666666;
+}
+
+#menu-bar-wrapper .tb-megamenu li.tb-megamenu-item > a{
+  color: #666666;
+  text-transform: uppercase;
+}
+
+#menu-bar-wrapper .tb-megamenu li.tb-megamenu-item.mega > a .caret{
+  border: 0;
+  margin-left: 5px;
+  margin-top: -1px;
+}
+#menu-bar-wrapper .tb-megamenu li.tb-megamenu-item.mega > a .caret:after {
+  content: "\f107";
+  font-family: FontAwesome;
+}
+
+.off-canvas-toggle {
+  border-radius: 0;
+  border: 0;
+  margin: 0;
+  border-left: 1px solid #e6e6e6;
+  padding: 0 26px;
+  width: auto;
+  height: 56px;
+  line-height: 56px;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #666666;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 767px){
+  .off-canvas-toggle span{
+    display: none;
+  }
+  .off-canvas-toggle{
+    padding: 2px 20px;
+  }
+}
+
+
+/*Navigation Bar*/
+#navigation-bar-wrapper .block-menu .block-inner, #navigation-bar-wrapper ul.menu li.leaf{
+  padding: 0;
+}
+
+#navigation-bar-wrapper ul.menu > li a{
+  padding: 15px 20px;
+  text-transform: uppercase;
+}
+
+#navigation-bar-wrapper ul.menu > li{
+  display: inline-block;
+  float: left;
+  border-left: 1px solid #e6e6e6;
+}
+
+#navigation-bar-wrapper ul.menu > li:first-child a{
+  background: #ff5722;
+  color: #ffffff;  
+}
+
+@media screen and (max-width: 767px) {
+  #navigation-bar-wrapper ul.menu > li{
+    width: 60px;
+    height: 56px;
+  }
+  
+  #navigation-bar-wrapper ul.menu > li:first-child{
+    background-color: #ff5722;
+  }
+  
+  #navigation-bar-wrapper ul.menu > li > a{
+    overflow: hidden;
+    height: 44px;
+    padding: 15px 12px;
+  }
+}
+
+/*Mega Menu*/
+#menu-bar-wrapper .tb-megamenu .uber-mega-menu-blocks .views-row{
+  margin-bottom: 35px;
+}
+
+#menu-bar-wrapper .tb-megamenu .uber-mega-menu-blocks .views-col .grid-inner{
+  padding: 10px;
+  box-sizing: border-box;
+  margin-left: 5px;
+  border-radius: 3px;
+}
+#menu-bar-wrapper .tb-megamenu .uber-mega-menu-blocks .views-col .grid-inner .views-field-title{
+  margin-top: 15px;
+}
+
+#menu-bar-wrapper .tb-megamenu .uber-mega-menu-blocks .views-col .grid-inner a{
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0;
+}
+
+#menu-bar-wrapper .tb-megamenu .uber-mega-menu-blocks .views-col .grid-inner:hover{
+  background: #039be5;  
+  
+}
+#menu-bar-wrapper .tb-megamenu .uber-mega-menu-blocks .views-col .grid-inner:hover a{
+  color: white;
+}
+.tb-megamenu .uber-mega-menu-blocks .nav li.dropdown.open > .dropdown-toggle{
+  background-color: transparent;
+}
+@media screen and (max-width: 979px) {
+  #header > div#menu-bar-wrapper{
+    display: none;
+  }
+}

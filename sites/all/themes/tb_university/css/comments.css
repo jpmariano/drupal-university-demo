@@ -1,0 +1,230 @@
+/**
+ *
+ * TODO: check classes still apply in D7 - in particular the unpublished classes and the extra classes.
+ */
+
+/* Comment wrapper */
+#comments {
+  border-top: 1px dotted #a8a8a8;
+  clear: both;
+  margin-top: 2em;
+  padding-top: 1em;
+}
+
+#comments > h2 {  
+  font-size: 16px;
+  margin-bottom: .5em;
+  padding-top: 2em;
+  text-transform: uppercase;
+}
+
+#comments > h2:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+/* Individual comment */
+.comment {
+  margin-bottom: 2em;
+  border-bottom: 1px dotted #A8A8A8;
+}
+
+.comment:last-of-type {
+  margin-bottom: 2em;  
+}
+
+/* Indentation */
+#comments .indented {
+
+  margin-bottom: 1em;
+  margin-left: 0;
+  padding-left: 30px;
+}
+
+#comments .indented .comment {
+}
+
+/* Comment Title */
+.comment > .header {
+}
+
+.comment-title {
+  margin: 0 0 5px 0;
+  padding: 0;
+}
+
+.comment-title a {
+  text-decoration: none;
+}
+
+/* Skinr comment title alignment. */
+.ta-l .comment-title {
+  text-align: left;
+}
+
+.ta-r .comment-title {
+  text-align: right;
+}
+
+.ta-c .comment-title {
+  text-align: center;
+}
+
+/* Comment "new" title */
+.comment-title .new {
+  color: #f80;
+}
+
+/* User Picture */
+.comment .user-picture {
+	border: 1px solid #DDDDDD;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	display: block;
+	margin: 5px 20px 5px 0 ;
+	padding: 8px;
+	float: left;
+	border-radius: 500px;
+}
+
+.comment .new {
+  color: #D42B1E;
+  font-weight: bold;
+}
+
+.comment .user-picture img {
+  border-radius: 500px;
+}
+
+.comment .content {
+  padding: 0 0 0 109px;
+}
+
+/* Comment Content */
+.comment-content {
+}
+
+/* Submitted */
+.comment > .footer {
+  color: #666;
+  font-size: 0.92em;
+  margin: .5em 0 1em;
+}
+/* Submitted */
+.comment .submitted {
+  color: #b0b0b0;
+  font-size: 11px;
+  margin: 0 0 10px 0;
+}
+
+.comment > .footer .username {
+}
+
+.comment > .footer .time {
+}
+
+.comment > .footer a {
+}
+
+.comment > .footer a:hover,
+.comment > .footer a:active,
+.comment > .footer a:focus {
+}
+
+/* Links */
+.comment .comment-links {
+  margin-top: 0;
+}
+
+.comment ul.links {
+  display: block;
+  margin: 0 0 20px 109px;
+  padding: 0;
+}
+
+.comment ul.links li {
+  margin: 0 5px 0 0;
+}
+
+.comment ul.links li a {
+  background: url("../images/readon-bg.png") no-repeat left 2px;
+  font-weight: normal;
+  padding-left: 17px;
+}
+
+ul.links li a.active:hover,
+ul.links li a:active,
+ul.links li a:focus,
+ul.links li a:hover {  
+  background-position: 0 -16px;
+  color: #d42b1e;
+  text-decoration: none;
+}
+
+/* Core comment link classes. */
+ul.links li.comment_reply a {
+}
+
+ul.links li.comment_edit a {
+}
+
+ul.links li.comment_delete a {
+}
+
+.comment ul.links li.first {
+}
+
+.comment ul.links li.last {
+}
+
+/**
+ * Different status for comments
+ */
+
+/* Author */
+.comment-by-anonymous {
+}
+
+.comment-by-node-author {
+}
+
+.comment-by-viewer {
+}
+
+/* New */
+.comment-new {
+}
+
+/* Unpublished */
+.comment-unpublished {
+}
+.comment-unpublished .unpublished {
+}
+
+/**
+ * Comment Form
+ */
+.comment-form .form-type-item{
+  margin: 20px 0;
+  width: 100%;
+  float: left;
+}
+
+.comment-form .form-type-item label,
+.comment-form .form-type-item .username{
+  float: left;
+}
+
+.comment-form .form-type-item label {
+  margin: 0 10px 0 0;
+}
+
+.comment-form-wrapper h2 {
+}
+
+.comment-form-wrapper form#comment-form {
+}
+
+.form-item-subject input {
+  width: 99%;
+  padding: 6px 2px;
+}

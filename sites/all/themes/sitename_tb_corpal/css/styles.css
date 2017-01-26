@@ -1,0 +1,236 @@
+
+
+
+
+/*********************************** Laptop Desktop   ****************************************/
+
+
+/** Size 2575px */
+/** This applies from 1920px to 2575px */
+@media screen and (max-width: 2575px) {
+
+}
+
+/** Size 2000px */
+/** This applies from 1920px to 2000px */
+@media screen and (max-width: 2000px) {
+
+}
+
+/** Size 1920px */
+/** This applies from 1750px to 1920px */
+@media screen and (max-width: 1920px) {
+
+}
+
+
+/** Size 1750px */
+/** This applies from 1536px to 1750px */
+@media screen and (max-width: 1750px) {
+
+}
+
+
+/** Size 1536 */
+/** This applies from 1200px to 1536px */
+@media screen and (max-width: 1536px) {
+
+
+}
+
+
+/** Size 1200 */
+/**This applies from 1050px to 1200px  */
+@media screen and (max-width: 1200px) {
+
+}
+
+
+
+/** Size 1050 */
+/** This applies from 1024px to 1050px */
+@media screen and (max-width: 1050px) {
+	
+}
+
+
+
+/** Size 1024 */
+/** This applies from 800px to 1024px  */
+@media screen and (max-width: 1024px) {
+
+}
+
+/** Size 800 */
+/** This applies from 768px to 800px  */
+@media screen and (max-width: 979px ) {
+
+
+}
+
+
+
+/** Size 800 */
+/** This applies from 768px to 800px  */
+@media screen and (max-width: 800px ) {
+
+}
+
+
+
+
+
+
+/*********************************** End Laptop Desktop  ****************************************/
+
+/*********************************** Large Tab   ****************************************/
+/**Large Tablets: Samsung Galaxy 768, IPad 2 633.6, Acer Icona Tab 646.08, Fire HDX 8.9model 595.2, HTC Nexus 580.8
+
+
+
+/** Samsung Galaxy  Support */
+/** This applies from 647px to 768px  */
+@media screen and (max-width: 767px) {
+
+
+}
+
+
+/** Acer Icona Tab */
+/** This applies from 634px to 647px  */
+@media screen and (max-width: 647px) {
+
+}
+
+/** IPad 2 */
+/** This applies from 596px to 634px  */
+@media screen and (max-width: 634px) {
+
+
+}
+
+/** Fire HDX 8.9 */
+/** This applies from 581px to 596px  */
+@media screen and (max-width: 596px) {
+
+}
+
+
+
+/** HTC Nexus */
+/** This applies from 509px to 581px  */
+@media screen and (max-width: 581px) {
+
+}
+
+
+/*********************************** End large Tab  ****************************************/
+
+
+/*********************************** SMall Tab   ****************************************/
+/** Small Tablets: Ipad Mini 508.8, Fire HD 7 480,  Toshiba Excite Go 451.2, Galaxy Tab 3 441.6, Fire HD 6 393.6 */
+
+
+/**  Ipad Mini Support */
+/**  This applies from 480px to 509px  */
+@media screen and (max-width: 509px) {
+	div.field-name-field-news-full-image, div.field-name-field-announcement-full-image, div.field-name-field-basic-full-image, div.field-name-field-event-full-image,  p.second-full-image {
+		display: none;
+	}
+	div.field-name-field-news-mobile-image, div.field-name-field-announcement-mobile-image, div.field-name-field-basic-mobile-image, div.field-name-field-event-mobile-image {
+		display: block;
+	}
+
+}
+
+/**  Fire HD 7  */
+/**  This applies from 452px to 480px  */
+@media screen and (max-width: 480px) {
+
+}
+
+
+
+/**  Toshiba Excite Go */
+/** This applies from 442px to 452px  */
+@media screen and (max-width: 452px) {
+
+}
+
+
+/** Galaxy Tab 3 */
+/** This applies from 394px to 442px  */
+@media screen and (max-width: 442px) {
+
+}
+
+/**  Fire HD 6 */
+/** This applies from 294px to 394px  */
+@media screen and (max-width: 394px) {
+
+}
+
+
+
+
+
+/*********************************** End Small Tab  ****************************************/
+
+/*********************************** SMall Tab   ****************************************/
+
+/**  IP 6 Plus Support */
+/** This applies from 276px to 294px  */
+@media screen and (max-width: 294px) {
+
+
+}
+
+
+/**  Samsung S4 */
+/**  This applies from 265px to 276px */
+@media screen and (max-width: 276px) {
+
+}
+
+/** Samsung S4 */
+/** This applies from 254px to 265px  */
+@media screen and (max-width: 265px) {
+
+}
+
+
+/** IP 6 Support */
+/** This applies from 246px to 254px */
+@media screen and (max-width: 254px) {
+
+}
+
+/** Samsung S5 mini 231px to 246px */
+/** This applies from 246 px  */
+@media screen and (max-width: 246px) {
+
+}
+
+/** Samsung s4 Support */
+/** This applies from 224px to 231px  */
+@media screen and (max-width: 231px) {
+
+}
+
+/** IP 5c Support  */
+/** This applies from 222px to 224px   */
+@media screen and (max-width: 224px) {
+
+}
+
+/** IP 4-5-5s Support  */
+/** This applies from 0px to 222px  */
+@media screen and (max-width: 222px) {
+
+}
+
+
+/*********************************** End Mobile  ****************************************/
+
+
+

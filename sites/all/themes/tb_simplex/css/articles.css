@@ -1,0 +1,444 @@
+/* --- Articles (nodes) --- */
+.article {
+  margin-bottom: 40px; /* Articles spacing */
+}
+
+/* Teaser */
+.node-teaser {
+}
+
+.node-teaser {
+ border-top: 1px solid #e5e5e5;
+ padding-top: 40px;
+}
+
+.node-teaser:first-child,
+.view .views-row:first-child .node-teaser:first-child {
+  border-top: none;
+  padding-top: 0;  
+}
+
+.view .views-row .node-teaser:first-child {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 40px;
+}
+
+.node-teaser .field-type-image {
+  border: 0;
+  float: left;
+  margin: 5px 30px 10px 0;
+}
+
+/* Node default */
+.node {
+  margin-left: 160px;
+  position: relative;
+}
+
+.node-webform {
+  margin-left: 0;
+}
+
+.node-product {
+  margin-left: 0;
+}
+
+/* Article Title */
+.article > .header {
+}
+
+.node-title {
+  color: #333;
+  font-size: 140%;
+  margin: 0 0 15px;
+}
+
+.node-title a,
+.node-title a:visited {
+  color: #333;
+}
+
+.node-title a:hover,
+.node-title a:active,
+.node-title a:focus {  
+  color: #ef4135;
+  text-decoration: none;
+}
+
+/* User Picture */
+.article .user-picture {
+  margin-right: .5em;
+}
+
+.article .user-picture img {
+}
+
+/* Meta */
+.node-author {
+}
+
+.username {
+}
+
+.article > .submitted {
+	width: 120px;
+	text-align: right;
+	text-transform: capitalize;
+	font-size: 84%;
+	color: #999;
+	margin: 40px 0 0;
+	position: absolute;
+	top: 0;
+	left: -160px;
+}
+
+.article > .submitted strong {
+  color: #333;
+}
+
+.article > .submitted > span {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.article > .submitted .comment-count-title {
+  color: #333;
+  font-weight: bold;
+}
+
+.article > .submitted a {
+}
+
+.article > .submitted a:hover,
+.article > .submitted a:active,
+.article > .submitted a:focus {
+}
+
+.article > .submitted .username {
+
+}
+
+.article > .submitted .time {
+}
+
+.view .views-row .article:first-child > .submitted {
+  margin-top: 40px;
+}
+
+.article:first-child > .submitted,
+.view .views-row-first .article:first-child > .submitted {
+  margin-top: 0;
+}
+
+/* Field Image */
+.article .field-type-image {
+ 
+}
+
+/* Article Lists */
+.article ul {
+}
+
+.article ul li {
+}
+
+.article ol {
+}
+
+.article ol li {
+}
+
+/* Article Links */
+.article .menu {
+  margin-top: 1.5em;
+}
+
+.article ul.links {
+  color: #999;
+  font-size: 0.846em;
+  margin: 0;
+}
+
+.article ul.links li {
+  margin: 0 0.455em 0 0;
+  padding: 0;
+}
+
+.article ul.links li a,
+.hosting-pricing-table .views-field-field-button a {
+	height: 30px;
+	line-height: 28px;
+	padding: 0 14px;
+	font-size: 12px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 0;
+	box-shadow: none;
+	display: inline-block;
+	color: #333;
+	text-align: center;
+	text-shadow: none;
+	cursor: pointer;
+	border: 1px solid #ccc;
+	text-transform: uppercase;
+	background: #ffffff;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNmU2ZTYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #ffffff 0%, #e6e6e6 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e6e6e6));
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#e6e6e6 100%);
+	background: -o-linear-gradient(top,  #ffffff 0%,#e6e6e6 100%);
+	background: -ms-linear-gradient(top,  #ffffff 0%,#e6e6e6 100%);
+	background: linear-gradient(to bottom,  #ffffff 0%,#e6e6e6 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e6e6e6',GradientType=0 );
+}
+
+.article ul.links li a:hover,
+.article ul.links li a:active,
+.article ul.links li a:focus,
+.hosting-pricing-table .views-field-field-button a:hover,
+.hosting-pricing-table .views-field-field-button a:focus {
+	-webkit-transition: none;
+	-moz-transition: none;
+	-o-transition: none;
+	transition: none;
+	background: none;
+	box-shadow: 0 -10px 15px rgba(0,0,0,.1) inset;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e6e6', endColorstr='#e6e6e6',GradientType=0 );
+}
+
+.article ul.links li.node-readmore a {
+   	background: url(data:image/svg+xml;		base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNmU2ZTYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #2f2f2f 0%, #141414 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2f2f2f), color-stop(100%,#141414));
+	background: -webkit-linear-gradient(top,  #2f2f2f 0%,#141414 100%);
+	background: -o-linear-gradient(top,  #2f2f2f 0%,#141414 100%);
+	background: -ms-linear-gradient(top,  #2f2f2f 0%,#141414 100%);
+	background: linear-gradient(to bottom,  #2f2f2f 0%,#141414 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f2f2f', endColorstr='#141414',GradientType=0 );
+	color: #fff;
+	border-color: #0d0d0d;
+	margin-bottom: 5px;
+}
+.article ul.links li.node-readmore a:hover,
+.article ul.links li.node-readmore a:focus {
+  box-shadow: 0 -10px 15px rgba(255,255,255,.1) inset;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#141414', endColorstr='#141414',GradientType=0 );
+}
+.article ul.links li.comment-add a {
+}
+
+.article ul.links li.comment-comments a {
+  background: none;
+  border: none;
+  color: #999;
+  padding: 0;
+}
+
+.article ul.links li.comment-comments a:hover,
+.article ul.links li.comment-comments a:focus {
+  background: none;
+  box-shadow: none;
+  color: #ef4135;
+}
+
+.article ul.links li.comment-new-comments a {
+}
+
+.article ul.links li.blog_usernames_blog a {
+}
+
+.article ul.links li.print_html a {
+}
+
+.article ul.links li.print_email a {
+}
+
+.article ul.links li.print_pdf a {
+}
+
+.article ul.links li.first {
+}
+
+.article ul.links li.last {
+}
+
+/* Workflow states */
+.article-add {
+}
+
+.article-edit {
+}
+
+.article-delete {
+}
+
+.article-preview {
+}
+
+.article-sticky {
+}
+
+.article-promoted {
+}
+
+/* Status */
+.article-unpublished {
+}
+
+/* --- Blogs --- */
+.page-blog .article {
+}
+
+/* Teaser */
+.page-blog .node-teaser {
+}
+
+/* Blog Title */
+.node-blog > .header {
+}
+
+.node-blog .node-title {
+}
+
+.node-blog .node-title a,
+.node-blog .node-title a:visited {
+}
+
+.node-blog .node-title a:hover,
+.node-blog .node-title a:active,
+.node-blog .node-title a:focus {
+}
+.node-blog .comment_forbidden.last{
+}
+/* Blog User Picture */
+.node-blog .user-picture {
+  display: inline-block;
+  vertical-align: text-top;
+}
+
+.node-blog .user-picture img {
+}
+
+/* Blog Meta */
+.node-blog > .submitted {
+}
+
+.node-blog > .submitted a {
+}
+
+.node-blog > .submitted a:hover,
+.node-blog > .submitted a:active,
+.node-blog > .submitted a:focus {
+}
+
+.node-blog > .submitted .username {
+}
+
+.node-blog > .submitted .time {
+}
+
+/* Blog Field Image */
+.node-blog .field-type-image {
+}
+
+/* Blog Links */
+.node-blog .menu {
+}
+
+.node-blog ul.links {
+}
+
+.node-blog ul.links li {
+}
+
+.node-blog ul.links li a {
+}
+
+.node-blog ul.links li a:hover,
+.node-blog ul.links li a:active,
+.node-blog ul.links li a:focus {
+}
+
+.node-blog ul.links li.node-readmore a {
+}
+
+.node-blog ul.links li.comment-add a {
+}
+
+.node-blog ul.links li.comment-comments a {
+  background: none;
+  border: none;
+  height: auto;
+  line-height: normal;
+  padding: 0;
+  color: #999;
+}
+
+.node-blog ul.links li.comment-comments a:hover,
+.node-blog ul.links li.comment-comments a:focus {
+  box-shadow: none;
+  color: #ef4135;
+}
+
+.node-blog ul.links li.comment-new-comments a {
+}
+
+.node-blog ul.links li.blog_usernames_blog a {
+}
+
+.node-blog ul.links li.print_html a {
+}
+
+.node-blog ul.links li.print_email a {
+}
+
+.node-blog ul.links li.print_pdf a {
+}
+
+.node-blog ul.links li.first {
+}
+
+.node-blog ul.links li.last {
+}
+
+/* Blog Workflow states */
+.page-blog .article-add {
+}
+
+.page-blog .article-edit {
+}
+
+.page-blog .article-delete {
+}
+
+.page-blog .article-preview {
+}
+
+.page-blog .article-sticky {
+}
+
+.page-blog .article-promoted {
+}
+
+/* Status */
+.page-blog .article-unpublished {
+}
+
+/**
+ * Misc.
+ */
+
+/* Skinr article title alignment */
+.ta-l .article-title {
+  text-align: left;
+}
+
+.ta-r .article-title {
+  text-align: right;
+}
+
+.ta-c .article-title {
+  text-align: center;
+}

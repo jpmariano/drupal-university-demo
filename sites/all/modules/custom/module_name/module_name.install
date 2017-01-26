@@ -1,0 +1,107 @@
+<?php
+/**
+* @file
+* Install file for Job Post module.
+*/
+/**
+* Implements hook_install().
+* - Add the body field.
+* - Configure the body field.
+* - Create the company name field.
+*/
+function module_name_install() {
+	node_types_rebuild();
+	$types = node_type_get_types();
+	// add the body field to the node type
+	node_add_body_field($types['module_name_tablename']);
+	// Load the instance definition for our content type's body
+	$body_instance = field_info_instance('node', 'body', 'module_name_tablename');
+	// Configure the body field
+	$body_instance['type'] = 'text_summary_or_trimmed';
+	// Save our changes to the body field instance.
+	field_update_instance($body_instance);
+	// Create all the fields we are adding to our content type.
+	foreach (_module_name_installed_fields() as $field) {
+		field_create_field($field);
+	}
+	// Create all the instances for our fields.
+	foreach (_module_name_installed_instances() as $instance) {
+		$instance['entity_type'] = 'node';
+		$instance['bundle'] = 'module_name_tablename';
+		field_create_instance($instance);
+	}
+	variable_set('comment_module_name_tablename', '1');
+}
+
+/**
+* Return a structured array defining the fields created by this content type.
+* For the job post module there is only one additional field – the company name
+* Other fields could be added by defining them in this function as additional elements
+* in the array below
+*/
+
+function _module_name_installed_fields() {
+	$t = get_t();
+	return array(
+		'module_name_field' => array(
+			'field_name' => 'module_name_field',
+			'label' => $t('Field Label'),
+			'type' => 'text',
+		),
+	);
+}
+
+
+/**
+* Return a structured array defining the field instances associated with this content type.
+*/
+function _module_name_installed_instances() {
+	$t = get_t();
+	return array(
+		 'module_name_field' => array(
+				'field_name' => 'module_name_field',
+				'type' => 'text',
+				'label' => $t('Field Label'),
+				'widget' => array(
+				'type' => 'text_textfield',
+			),
+			'display' => array(
+				'example_node_list' => array(
+					'label' => $t('Field Label'),
+					'type' => 'text',
+				),
+			),
+		),
+	);
+}
+
+/**
+* Implements hook_uninstall().
+*/
+function module_name_uninstall() {
+	// Gather all the example content that might have been created while this
+	// module was enabled.
+	$sql = 'SELECT nid FROM {node} n WHERE n.type = :type';
+	$result = db_query($sql, array(':type' => 'module_name_tablename'));
+	$nids = array();
+	foreach ($result as $row) {
+		$nids[] = $row->nid;
+	}
+	// Delete all the nodes at once
+	node_delete_multiple($nids);
+	// Loop over each of the fields defined by this module and delete
+	// all instances of the field, their data, and the field itself.
+	foreach (array_keys(_module_name_installed_fields()) as $field) {
+		field_delete_field($field);
+	}
+	// Loop over any remaining field instances attached to the module_name
+	// content type (such as the body field) and delete them individually.
+	$instances = field_info_instances('node', 'module_name_tablename');
+	foreach ($instances as $instance_name => $instance) {
+		field_delete_instance($instance);
+	}
+	// Delete our content type
+	node_type_delete('module_name_tablename');
+	// Purge all field infromation
+	field_purge_batch(1000);
+}

@@ -1,0 +1,6 @@
+name = Custom Reference 
+description = Custom Reference
+core = 7.x
+dependencies[] = entityreference
+files[] = custom_reference.install
+files[] = custom_reference.module

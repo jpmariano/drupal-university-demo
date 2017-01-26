@@ -1,0 +1,64 @@
+/**
+ * IE 7 Compatibility Tweaks
+ */
+
+/* view.css */
+.christmas-skin .jcarousel-navigation li {
+  margin-bottom: -10px !important;
+}
+
+.view-our-team .views-field-field-member-image:after {
+  display: none;
+}
+
+/**
+ * Popup
+ */
+body.tb-page-popup-iframe .grid-inner {
+	margin: 0px !important;
+	padding: 0px !important;
+}
+
+body.tb-page-popup-iframe .node {
+	width: 550px !important;
+	overflow: hidden !important;
+}
+
+body.tb-page-popup-iframe #block-system-main {
+  overflow: visible !important;
+}
+
+body.tb-page-popup-iframe,
+body.toolbar-drawer.tb-page-popup-iframe {
+  overflow: scroll !important;
+  overflow-x: hidden !important;
+}
+
+body.tb-page-popup-iframe #block-system-main .block-inner {
+  overflow: visible !important;
+}
+
+body.tb-page-popup-iframe #block-system-main .block-content  {
+  overflow: visible;
+}
+
+body.tb-page-popup-iframe .tabs {
+  background-color: red !important;
+  height: 0;
+}
+
+body.tb-page-popup-iframe #page {
+  padding-top: 0;  
+}
+
+#cboxContent { 
+  margin-top: 12px;
+}
+
+#cboxClose {  
+  right: -1px !important;
+  top: -25px !important; 
+}
+
+
+

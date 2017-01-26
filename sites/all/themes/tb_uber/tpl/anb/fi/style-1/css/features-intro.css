@@ -1,0 +1,34 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 16, 2014, 11:29:27 PM
+    Author     : Jhcm1
+*/
+/*** Uber Block Styles ***/
+.node-features-info-5 .content{
+  padding: 0 20px;
+}
+
+.block.title-center h2, .block.content-center .block-content .field-name-body{text-align: center;}
+
+.field-name-field-feature-details > .field-items > .field-item{
+  float: left;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.field-name-field-feature-details .field-collection-view{
+  margin: 0;
+}
+
+.small-head{
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #999999;
+  margin: 0 0 13px;
+}

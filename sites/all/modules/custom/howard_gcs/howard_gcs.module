@@ -1,0 +1,87 @@
+<?php
+/**
+* Howard Google Custom Search
+*
+*/
+
+
+/**
+ * Implements hook_permission().
+ */
+function howard_gcs_form_search_block_form_alter(&$form, &$form_state, $form_id) {
+	/**
+	$form['actions']['submit'] = array(
+	  '#type' => 'image_button',
+		'#value' => '',
+    '#src'  => drupal_get_path('module','howard_gcs').'/search.png');
+	 * */
+  $form['#submit'][0] = 'howard_gcs_custom_submit';
+}
+
+
+function howard_gcs_custom_submit($form, &$form_state) {
+  $search_value = $form_state['values']['search_block_form'];
+  if ($search_value == null) {
+    $search_value = 'Howard';
+  }
+	  
+  drupal_goto('search-results', array('query' => array('as_q' => $search_value)));
+}
+
+/**
+ * Implements howard_gcs_permission()
+ */
+function howard_gcs_permission() {
+  return array(
+    'use_google_custom_search' => array(
+      'title' => t('Use google custom search'),
+      'description' => t('Who can have access to the google search results page.'),
+    ),
+  );
+}
+
+/**
+* Implementation of hook_menu()
+*/
+function howard_gcs_menu() {
+  // Here we set up the page where the results will display:
+  $items['search-results'] = array(  // Change this url to wherever you want the page to be
+    'title' => 'Search ',
+    'description' => 'My Google Custom Search',
+    'page callback' => 'howard_gcs_searchpage', // The function that will be called to set up the search page
+    'page arguments' => array(0),
+    'access arguments' => array('use_google_custom_search'), // Those with this permission will be allowed to see the results
+    'type' => MENU_NORMAL_ITEM,
+  );
+
+
+  return $items;
+}
+
+
+/**
+ * Implements hook_menu_alter.
+ * Disable Default Drupal Search Modules Page
+ */
+
+function howard_gcs_menu_alter(&$items) {
+ // Disable the page node
+  $items['search/node']['access callback'] = FALSE;
+}
+
+
+function howard_gcs_preprocess_search_result(&$variables) {
+  $variables['info'] = '';
+}
+
+/**
+* Setup the search page()
+*/
+function howard_gcs_searchpage() {
+  $content = '';
+  $content .= '<gcse:searchbox-only queryParameterName="as_q" resultsUrl="search-results"></gcse:searchbox-only>';
+  $content .= '<gcse:searchresults-only queryParameterName="as_q" linkTarget="_self"></gcse:searchresults-only>';
+  return $content;
+}
+
+

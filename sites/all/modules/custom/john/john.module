@@ -1,0 +1,57 @@
+<?php
+
+/**
+ * Implements hook_node_insert().
+ * invoked on node creation
+ */
+function john_node_insert($node) {
+  // affect only shopping_list with non-empty grocery
+  if ($node->type == 'john') {
+    $firstname = $node->field_fname['und'][0]['value'];
+    $lastname = $node->field_lastname['und'][0]['value'];
+
+    $request_url = "http://127.0.0.1:3333/john/$firstname/$lastname";
+    $response = drupal_http_request($request_url);
+
+    if (isset($response) && in_array($response->code, array('200', '304'))) {
+      drupal_set_message(t('Your name is @firstname @lastname.', array(
+        '@firstname' => $firstname,
+        '@lastname' => $lastname,
+      )));
+    }
+    else {
+      drupal_set_message(t('Error occured.'));
+    }
+dpm($response);
+    if (isset($_GET['debug']) && function_exists('dpm')) {
+      dpm($response);
+    }
+  }
+}
+
+
+
+/**
+ * Process variables for node.tpl.php
+ *
+ * Most themes utilize their own copy of node.tpl.php. The default is located
+ * inside "modules/node/node.tpl.php". Look in there for the full list of
+ * variables.
+ *
+ * The $variables array contains the following arguments:
+ * - $node
+ * - $view_mode
+ * - $page
+ *
+ * @see node.tpl.php
+ */
+function john_preprocess_node(&$variables) {
+  $request_url = "http://127.0.0.1:3333/name";
+  $response = drupal_http_request($request_url);
+  $output = '<div class="field-label">'. t('Results fetched from remote DB') .':&nbsp;</div>';
+
+  if (isset($response) && in_array($response->code, array('200', '304'))) {
+    $name = json_decode($response->data);
+    dpm(json_decode($name[0]));
+  }
+}

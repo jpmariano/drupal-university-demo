@@ -1,0 +1,82 @@
+/**
+  * Responsive Elements
+  */
+  
+body {
+  -webkit-text-size-adjust: 100%; /* Fix Mobile Safari Font Scale */
+  overflow-x: hidden;
+}
+
+.wrapper .container{
+  padding-left: 2%;
+  padding-right: 2%;
+  width: 96% !important;
+}
+
+.group-cols-2 {
+  width: 100% !important;
+}
+
+.node-page {
+  padding-left: 0 !important;
+}
+
+.grid-inner {
+	padding: 30px;
+}
+
+#menu-bar-wrapper {
+  margin-left: 0;
+}
+
+/* Main Container ---*/
+#main-content {
+  width: 65%;
+  background: #fff;
+}
+
+#sidebar-first-wrapper {
+  width: 35%;
+  background: #fff;
+}
+
+/**
+ * Panels & Views
+ */
+.panel-cols-1 .panel-column {
+  width: 100% !important;
+}
+
+.panel-cols-2 .panel-column {
+  width: 50% !important;
+}
+
+.panel-cols-3 .panel-column {
+  width: 33.3% !important;
+}
+ 
+.panel-cols-4 .panel-column {
+  width: 25% !important;
+}
+
+.cols-4 .views-col {
+  width: 25% !important;
+}
+
+#slideshow-wrapper .views-field-title {
+  top: 30%;
+}
+
+/* Search */
+#header #search-block-form .form-submit {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0 !important;
+}
+
+#header #search-block-form:hover .form-type-textfield {
+  right: -70px;
+}
+
+
+
+

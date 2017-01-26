@@ -1,0 +1,15 @@
+body { word-wrap: break-word; }
+
+a {
+  transition: all 0.3s ease 0s;
+}
+
+.arrow-down,
+.jcarousel-navigation li {
+  border-radius: 500px;
+  -moz-border-radius: 500px;
+  -webkit-border-radius: 500px;  
+}
+
+
+

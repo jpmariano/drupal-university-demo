@@ -1,0 +1,45 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 17, 2014, 11:00:45 AM
+    Author     : Jhcm1
+*/
+
+.block.fi-default .block-title, .node-type-feature-info #page-title{
+  text-align: center;
+  font-size: 45px;
+  color: #202020;
+  font-weight: 700;
+}
+
+.node-feature-info .field-name-body{
+  color: #999999;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.625;
+  text-align: center;
+}
+
+.node-feature-info .field-name-field-feature-title{
+  color: #333333;
+  margin: 0 0 13px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.node-feature-info .field-name-body{
+  color: #999999;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.625em;
+}
+
+.node-feature-info .field-name-field-font-awesome-icon .font-icon{
+  color: #039be5;
+  font-size: 55px;
+  margin-bottom: 26px;
+  line-height: 1;
+}

@@ -1,0 +1,5 @@
+name = Module Name
+description = Module Description
+core = 7.x
+files[] = module_name.install
+files[] = module_name.module

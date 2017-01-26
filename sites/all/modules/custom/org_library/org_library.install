@@ -1,0 +1,488 @@
+<?php
+/**
+* @file
+* Install file for Job Post module.
+*/
+/**
+* Implements hook_install().
+* - Add the body field.
+* - Configure the body field.
+* - Create the company name field.
+*/
+function org_library_install() {
+	node_types_rebuild();
+	$types = node_type_get_types();
+	
+	
+
+				// Create all the fields we are adding to our content type.
+				foreach (_org_library_member_installed_fields() as $field) {
+					field_create_field($field);
+				}
+				// Create all the instances for our fields.
+				foreach (_org_library_member_installed_instances() as $instance) {
+					$instance['entity_type'] = 'node';
+					$instance['bundle'] = 'org_library_member';
+					field_create_instance($instance);
+				}
+				
+				// add the body field to the node type
+				node_add_body_field($types['org_library_member']);
+				// Load the instance definition for our content type's body
+				$body_instance = field_info_instance('node', 'body', 'org_library_member');
+				// Configure the body field
+				$body_instance['type'] = 'text_summary_or_trimmed';
+				// Save our changes to the body field instance.
+				field_update_instance($body_instance);
+				
+				variable_set('comment_org_library_member', '1');
+		
+			  
+				// Create all the fields we are adding to our content type.
+				foreach (_org_library_address_installed_fields() as $field) {
+					field_create_field($field);
+				}
+				// Create all the instances for our fields.
+				foreach (_org_library_address_installed_instances() as $instance) {
+					$instance['entity_type'] = 'node';
+					$instance['bundle'] = 'org_library_address';
+					field_create_instance($instance);
+				}
+				
+				// add the body field to the node type
+				node_add_body_field($types['org_library_address']);
+				// Load the instance definition for our content type's body
+				$body_instance = field_info_instance('node', 'body', 'org_library_address');
+				// Configure the body field
+				$body_instance['type'] = 'text_summary_or_trimmed';
+				// Save our changes to the body field instance.
+				field_update_instance($body_instance);
+				
+				variable_set('comment_org_library_address', '1');
+		
+	
+	
+}
+
+/**
+* Return a structured array defining the fields created by this content type.
+* For the job post module there is only one additional field – the company name
+* Other fields could be added by defining them in this function as additional elements
+* in the array below
+*/
+
+function _org_library_member_installed_fields() {
+	$t = get_t();
+	return array(
+		'org_library_mid' => array(
+			'field_name' => 'org_library_mid',
+			'label' => $t('Member ID'),
+			'type' => 'serial',
+		),
+		'org_library_firstname' => array(
+			'field_name' => 'org_library_firstname',
+			'label' => $t('First Name'),
+			'type' => 'text',
+		),
+		'org_library_lastname' => array(
+			'field_name' => 'org_library_lastname',
+			'label' => $t('Last Name'),
+			'type' => 'text',
+		),
+		'org_library_email' => array(
+			'field_name' => 'org_library_email',
+			'label' => $t('Email'),
+			'type' => 'text',
+		),
+		'org_library_phone' => array(
+			'field_name' => 'org_library_phone',
+			'label' => $t('Phone'),
+			'type' => 'text',
+		),
+		'org_library_address_fk' => array(
+			'field_name' => 'org_library_address_fk',
+			'label' => $t('Library Address'),
+			'type' => 'entity_reference',
+		),
+	);
+}
+
+
+function _org_library_address_installed_fields() {
+	$t = get_t();
+	return array(
+		'org_library_street' => array(
+			'field_name' => 'org_library_street',
+			'label' => $t('Street'),
+			'type' => 'text',
+		),
+		'org_library_city' => array(
+			'field_name' => 'org_library_city',
+			'label' => $t('City'),
+			'type' => 'text',
+		),
+		'org_library_zipcode' => array(
+			'field_name' => 'org_library_zipcode',
+			'label' => $t('Zipcode'),
+			'type' => 'text',
+		),
+		'org_library_state' => array(
+			'field_name' => 'org_library_state',
+			'label' => $t('State'),
+			'type' => 'list_text',
+			'settings' => array(
+	      'allowed_values' => array(
+		      'AL'=>"Alabama",  
+					'AK'=>"Alaska",  
+					'AZ'=>"Arizona",  
+					'AR'=>"Arkansas",  
+					'CA'=>"California",  
+					'CO'=>"Colorado",  
+					'CT'=>"Connecticut",  
+					'DE'=>"Delaware",  
+					'DC'=>"District Of Columbia",  
+					'FL'=>"Florida",  
+					'GA'=>"Georgia",  
+					'HI'=>"Hawaii",  
+					'ID'=>"Idaho",  
+					'IL'=>"Illinois",  
+					'IN'=>"Indiana",  
+					'IA'=>"Iowa",  
+					'KS'=>"Kansas",  
+					'KY'=>"Kentucky",  
+					'LA'=>"Louisiana",  
+					'ME'=>"Maine",  
+					'MD'=>"Maryland",  
+					'MA'=>"Massachusetts",  
+					'MI'=>"Michigan",  
+					'MN'=>"Minnesota",  
+					'MS'=>"Mississippi",  
+					'MO'=>"Missouri",  
+					'MT'=>"Montana",
+					'NE'=>"Nebraska",
+					'NV'=>"Nevada",
+					'NH'=>"New Hampshire",
+					'NJ'=>"New Jersey",
+					'NM'=>"New Mexico",
+					'NY'=>"New York",
+					'NC'=>"North Carolina",
+					'ND'=>"North Dakota",
+					'OH'=>"Ohio",  
+					'OK'=>"Oklahoma",  
+					'OR'=>"Oregon",  
+					'PA'=>"Pennsylvania",  
+					'RI'=>"Rhode Island",  
+					'SC'=>"South Carolina",  
+					'SD'=>"South Dakota",
+					'TN'=>"Tennessee",  
+					'TX'=>"Texas",  
+					'UT'=>"Utah",  
+					'VT'=>"Vermont",  
+					'VA'=>"Virginia",  
+					'WA'=>"Washington",  
+					'WV'=>"West Virginia",  
+					'WI'=>"Wisconsin",  
+					'WY'=>"Wyoming")
+	      ),
+		),
+	);
+}
+
+/**
+* Return a structured array defining the field instances associated with this content type.
+*/
+function _org_library_member_installed_instances() {
+	$t = get_t();
+	return array(
+		 'org_library_mid' => array(
+				'field_name' => 'org_library_mid',
+				'type' => 'serial',
+				'label' => $t('Member ID'),
+				'widget' => array(
+					'type' => 'hidden',
+				),
+				'display' => array(
+	        'default' => array(
+	          'label' => $t('Member ID'),
+	          'type' => 'default',
+	          'weight' => -5,
+	        ),
+	        'teaser' => array(
+	          'label' => $t('Member ID'),
+	          'type' => 'default',
+	          'weight' => -5,
+	        ),
+      	),
+				
+			),
+			
+			'org_library_firstname' => array(
+				'field_name' => 'org_library_firstname',
+				'type' => 'text',
+				'label' => $t('First Name'),
+				'size' => 'small',
+				'not null' => TRUE,
+				'widget' => array(
+					'type' => 'text_textfield',
+				),
+				'display' => array(
+	        'default' => array(
+	          'label' => 'hidden',
+	          'type' => 'text_default',
+	          'weight' => -4,
+	        ),
+	        'teaser' => array(
+	          'label' => 'hidden',
+	          'type' => 'text_default',
+	          'weight' => -4,
+	        ),
+      	),
+				
+			),
+			
+			'org_library_lastname' => array(
+				'field_name' => 'org_library_lastname',
+				'type' => 'text',
+				'label' => $t('Last Name'),
+				'size' => 'small',
+				'not null' => TRUE,
+				'widget' => array(
+					'type' => 'text_textfield',
+				),
+				'display' => array(
+	        'default' => array(
+	          'label' => 'hidden',
+	          'type' => 'text_default',
+	          'weight' => -3,
+	        ),
+	        'teaser' => array(
+	          'label' => 'hidden',
+	          'type' => 'text_default',
+	          'weight' => -3,
+	        ),
+      	),	
+			),
+			
+		 'org_library_email' => array(
+				'field_name' => 'org_library_email',
+				'type' => 'text',
+				'label' => $t('Email'),
+				'size' => 'small',
+				'not null' => TRUE,
+				'widget' => array(
+					'type' => 'text_textfield',
+				),
+				'display' => array(
+	        'default' => array(
+	          'label' => 'hidden',
+	          'type' => 'text_default',
+	          'weight' => -2,
+	        ),
+	        'teaser' => array(
+	         'label' => 'hidden',
+	          'type' => 'text_default',
+	          'weight' => -2,
+	        ),
+      	),
+			),
+			
+		 'org_library_phone' => array(
+				'field_name' => 'org_library_phone',
+				'type' => 'text',
+				'label' => $t('Phone Number'),
+				'size' => 'small',
+				'widget' => array(
+					'type' => 'text_textfield',
+				),
+				'display' => array(
+	        'default' => array(
+	          'label' => 'hidden',
+	          'type' => 'text_default',
+	          'weight' => -1,
+	        ),
+	        'teaser' => array(
+	         'label' => 'hidden',
+	          'type' => 'text_default',
+	          'weight' => -1,
+	        ),
+      	),
+			),
+			
+			'org_library_address_fk' => array(
+				'field_name' => 'org_library_address_fk',
+				'type' => 'entity_reference',
+				'label' => $t('entity_reference'),
+				'widget' => array(
+					'type' => 'select_list',
+				),
+				'settings' => array(
+		      'target_type' => 'node',
+		      'handler_settings' => array('target_bundles' => 'org_library_address'),
+	    	),
+				'display' => array(
+	        'default' => array(
+	          'label' => 'hidden',
+	          'type' => 'entityreference_label',
+	          'weight' => -1,
+	        ),
+	        'teaser' => array(
+	         'label' => 'hidden',
+	          'type' => 'entityreference_label',
+	          'weight' => -1,
+	        ),
+      	),
+			),
+	);
+}
+
+function _org_library_address_installed_instances() {
+	$t = get_t();
+	return array(
+		 'org_library_street' => array(
+				'field_name' => 'org_library_street',
+				'type' => 'text',
+				'size' => 'small',
+				'label' => $t('Street'),
+				'widget' => array(
+					'type' => 'text_textfield',
+			  ),
+			  'display' => array(
+	        'default' => array(
+	          'label' => 'hidden',
+	          'type' => 'text_default',
+	          'weight' => -4,
+	        ),
+	        'teaser' => array(
+	         'label' => 'hidden',
+	          'type' => 'text_default',
+	          'weight' => -4,
+	        ),
+      	),
+		 ),
+		 
+		 'org_library_city' => array(
+				'field_name' => 'org_library_city',
+				'type' => 'text',
+				'size' => 'small',
+				'label' => $t('City'),
+				'widget' => array(
+					'type' => 'text_textfield',
+			  ),
+			  'display' => array(
+	        'default' => array(
+	          'label' => 'hidden',
+	          'type' => 'text_default',
+	          'weight' => -3,
+	        ),
+	        'teaser' => array(
+	         'label' => 'hidden',
+	          'type' => 'text_default',
+	          'weight' => -3,
+	        ),
+      	),
+		 ),
+		 
+		 'org_library_zipcode' => array(
+				'field_name' => 'org_library_zipcode',
+				'type' => 'text',
+				'size' => 'small',
+				'label' => $t('Zipcode'),
+				'widget' => array(
+					'type' => 'text_textfield',
+			  ),
+			  'display' => array(
+	        'default' => array(
+	          'label' => 'hidden',
+	          'type' => 'text_default',
+	          'weight' => -2,
+	        ),
+	        'teaser' => array(
+	         'label' => 'hidden',
+	          'type' => 'text_default',
+	          'weight' => -2,
+	        ),
+      	),
+		 ),
+		 
+		 'org_library_state' => array(
+				'field_name' => 'org_library_state',
+				'type' => 'text',
+				'size' => 'small',
+				'label' => $t('State'),
+				'widget' => array(
+					'type' => 'select_list',
+			  ),
+			  'display' => array(
+	        'default' => array(
+	          'label' => 'hidden',
+	          'type' => 'default',
+	          'weight' => -1,
+	        ),
+	        'teaser' => array(
+	         'label' => 'hidden',
+	          'type' => 'default',
+	          'weight' => -1,
+	        ),
+      	),
+		 ),
+	);
+}
+/**
+* Implements hook_uninstall().
+*/
+function org_library_uninstall() {
+	// Gather all the example content that might have been created while this
+	// module was enabled.
+	$sql = 'SELECT nid FROM {node} n WHERE n.type = :type';
+	$org_library_member = db_query($sql, array(':type' => 'org_library_member'));
+	$org_library_address = db_query($sql, array(':type' => 'org_library_address'));
+	
+	if ($result = $org_library_member) {
+		$nids = array();
+		foreach ($result as $row) {
+			$nids[] = $row->nid;
+		}
+		// Delete all the nodes at once
+		node_delete_multiple($nids);
+		// Loop over each of the fields defined by this module and delete
+		// all instances of the field, their data, and the field itself.
+		foreach (array_keys(_org_library_member_installed_fields()) as $field) {
+			field_delete_field($field);
+		}
+		// Loop over any remaining field instances attached to the org_library
+		// content type (such as the body field) and delete them individually.
+		$instances = field_info_instances('node', 'org_library_member');
+		foreach ($instances as $instance_name => $instance) {
+			field_delete_instance($instance);
+		}
+		// Delete our content type
+		node_type_delete('org_library_member');
+		// Purge all field infromation
+		field_purge_batch(1000);
+	} 
+	
+	if ($result = $org_library_address) {
+		$nids = array();
+		foreach ($result as $row) {
+			$nids[] = $row->nid;
+		}
+		// Delete all the nodes at once
+		node_delete_multiple($nids);
+		// Loop over each of the fields defined by this module and delete
+		// all instances of the field, their data, and the field itself.
+		foreach (array_keys(_org_library_address_installed_fields()) as $field) {
+			field_delete_field($field);
+		}
+		// Loop over any remaining field instances attached to the org_library
+		// content type (such as the body field) and delete them individually.
+		$instances = field_info_instances('node', 'org_library_address');
+		foreach ($instances as $instance_name => $instance) {
+			field_delete_instance($instance);
+		}
+		// Delete our content type
+		node_type_delete('org_library_address');
+		// Purge all field infromation
+		field_purge_batch(1001);
+	}
+	
+}

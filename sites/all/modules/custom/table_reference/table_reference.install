@@ -1,0 +1,489 @@
+<?php
+/**
+* @file
+* Install file for Job Post module.
+*/
+/**
+* Implements hook_install().
+* - Add the body field.
+* - Configure the body field.
+* - Create the company name field.
+*/
+function table_reference_install() {
+	node_types_rebuild();
+	$types = node_type_get_types();
+	
+	
+
+				// Create all the fields we are adding to our content type.
+				foreach (_table_reference_member_installed_fields() as $field) {
+					field_create_field($field);
+				}
+				// Create all the instances for our fields.
+				foreach (_table_reference_member_installed_instances() as $instance) {
+					$instance['entity_type'] = 'node';
+					$instance['bundle'] = 'table_reference_member';
+					field_create_instance($instance);
+				}
+				
+				// add the body field to the node type
+				node_add_body_field($types['table_reference_member']);
+				// Load the instance definition for our content type's body
+				$body_instance = field_info_instance('node', 'body', 'table_reference_member');
+				// Configure the body field
+				$body_instance['type'] = 'text_summary_or_trimmed';
+				// Save our changes to the body field instance.
+				field_update_instance($body_instance);
+				
+				variable_set('comment_table_reference_member', '1');
+		
+			  
+				// Create all the fields we are adding to our content type.
+				foreach (_table_reference_address_installed_fields() as $field) {
+					field_create_field($field);
+				}
+				// Create all the instances for our fields.
+				foreach (_table_reference_address_installed_instances() as $instance) {
+					$instance['entity_type'] = 'node';
+					$instance['bundle'] = 'table_reference_address';
+					field_create_instance($instance);
+				}
+				
+				// add the body field to the node type
+				node_add_body_field($types['table_reference_address']);
+				// Load the instance definition for our content type's body
+				$body_instance = field_info_instance('node', 'body', 'table_reference_address');
+				// Configure the body field
+				$body_instance['type'] = 'text_summary_or_trimmed';
+				// Save our changes to the body field instance.
+				field_update_instance($body_instance);
+				
+				variable_set('comment_table_reference_address', '1');
+		
+	
+	
+}
+
+/**
+* Return a structured array defining the fields created by this content type.
+* For the job post module there is only one additional field – the company name
+* Other fields could be added by defining them in this function as additional elements
+* in the array below
+*/
+
+function _table_reference_member_installed_fields() {
+	$t = get_t();
+	return array(
+		'table_reference_mid' => array(
+			'field_name' => 'table_reference_mid',
+			'label' => $t('Member ID'),
+			'type' => 'serial',
+		),
+		'table_reference_firstname' => array(
+			'field_name' => 'table_reference_firstname',
+			'label' => $t('First Name'),
+			'type' => 'text',
+		),
+		'table_reference_lastname' => array(
+			'field_name' => 'table_reference_lastname',
+			'label' => $t('Last Name'),
+			'type' => 'text',
+		),
+		'table_reference_email' => array(
+			'field_name' => 'table_reference_email',
+			'label' => $t('Email'),
+			'type' => 'text',
+		),
+		'table_reference_phone' => array(
+			'field_name' => 'table_reference_phone',
+			'label' => $t('Phone'),
+			'type' => 'text',
+		),
+		/**
+		'table_reference_address_fk' => array(
+			'field_name' => 'table_reference_address_fk',
+			'label' => $t('Library Address'),
+			'type' => 'entity_reference',
+		), */
+	);
+}
+
+
+function _table_reference_address_installed_fields() {
+	$t = get_t();
+	return array(
+		'table_reference_street' => array(
+			'field_name' => 'table_reference_street',
+			'label' => $t('Street'),
+			'type' => 'text',
+		),
+		'table_reference_city' => array(
+			'field_name' => 'table_reference_city',
+			'label' => $t('City'),
+			'type' => 'text',
+		),
+		'table_reference_zipcode' => array(
+			'field_name' => 'table_reference_zipcode',
+			'label' => $t('Zipcode'),
+			'type' => 'text',
+		),
+		'table_reference_state' => array(
+			'field_name' => 'table_reference_state',
+			'label' => $t('State'),
+			'type' => 'list_text',
+			'settings' => array(
+	      'allowed_values' => array(
+		      'AL'=>"Alabama",  
+					'AK'=>"Alaska",  
+					'AZ'=>"Arizona",  
+					'AR'=>"Arkansas",  
+					'CA'=>"California",  
+					'CO'=>"Colorado",  
+					'CT'=>"Connecticut",  
+					'DE'=>"Delaware",  
+					'DC'=>"District Of Columbia",  
+					'FL'=>"Florida",  
+					'GA'=>"Georgia",  
+					'HI'=>"Hawaii",  
+					'ID'=>"Idaho",  
+					'IL'=>"Illinois",  
+					'IN'=>"Indiana",  
+					'IA'=>"Iowa",  
+					'KS'=>"Kansas",  
+					'KY'=>"Kentucky",  
+					'LA'=>"Louisiana",  
+					'ME'=>"Maine",  
+					'MD'=>"Maryland",  
+					'MA'=>"Massachusetts",  
+					'MI'=>"Michigan",  
+					'MN'=>"Minnesota",  
+					'MS'=>"Mississippi",  
+					'MO'=>"Missouri",  
+					'MT'=>"Montana",
+					'NE'=>"Nebraska",
+					'NV'=>"Nevada",
+					'NH'=>"New Hampshire",
+					'NJ'=>"New Jersey",
+					'NM'=>"New Mexico",
+					'NY'=>"New York",
+					'NC'=>"North Carolina",
+					'ND'=>"North Dakota",
+					'OH'=>"Ohio",  
+					'OK'=>"Oklahoma",  
+					'OR'=>"Oregon",  
+					'PA'=>"Pennsylvania",  
+					'RI'=>"Rhode Island",  
+					'SC'=>"South Carolina",  
+					'SD'=>"South Dakota",
+					'TN'=>"Tennessee",  
+					'TX'=>"Texas",  
+					'UT'=>"Utah",  
+					'VT'=>"Vermont",  
+					'VA'=>"Virginia",  
+					'WA'=>"Washington",  
+					'WV'=>"West Virginia",  
+					'WI'=>"Wisconsin",  
+					'WY'=>"Wyoming")
+	      ),
+		),
+	);
+}
+
+/**
+* Return a structured array defining the field instances associated with this content type.
+*/
+function _table_reference_member_installed_instances() {
+	$t = get_t();
+	return array(
+		 'table_reference_mid' => array(
+				'field_name' => 'table_reference_mid',
+				'type' => 'serial',
+				'label' => $t('Member ID'),
+				'widget' => array(
+					'type' => 'hidden',
+				),
+				'display' => array(
+	        'default' => array(
+	          'label' => $t('Member ID'),
+	          'type' => 'default',
+	          'weight' => -5,
+	        ),
+	        'teaser' => array(
+	          'label' => $t('Member ID'),
+	          'type' => 'default',
+	          'weight' => -5,
+	        ),
+      	),
+				
+			),
+			
+			'table_reference_firstname' => array(
+				'field_name' => 'table_reference_firstname',
+				'type' => 'text',
+				'label' => $t('First Name'),
+				'size' => 'small',
+				'not null' => TRUE,
+				'widget' => array(
+					'type' => 'text_textfield',
+				),
+				'display' => array(
+	        'default' => array(
+	          'label' => 'hidden',
+	          'type' => 'text_default',
+	          'weight' => -4,
+	        ),
+	        'teaser' => array(
+	          'label' => 'hidden',
+	          'type' => 'text_default',
+	          'weight' => -4,
+	        ),
+      	),
+				
+			),
+			
+			'table_reference_lastname' => array(
+				'field_name' => 'table_reference_lastname',
+				'type' => 'text',
+				'label' => $t('Last Name'),
+				'size' => 'small',
+				'not null' => TRUE,
+				'widget' => array(
+					'type' => 'text_textfield',
+				),
+				'display' => array(
+	        'default' => array(
+	          'label' => 'hidden',
+	          'type' => 'text_default',
+	          'weight' => -3,
+	        ),
+	        'teaser' => array(
+	          'label' => 'hidden',
+	          'type' => 'text_default',
+	          'weight' => -3,
+	        ),
+      	),	
+			),
+			
+		 'table_reference_email' => array(
+				'field_name' => 'table_reference_email',
+				'type' => 'text',
+				'label' => $t('Email'),
+				'size' => 'small',
+				'not null' => TRUE,
+				'widget' => array(
+					'type' => 'text_textfield',
+				),
+				'display' => array(
+	        'default' => array(
+	          'label' => 'hidden',
+	          'type' => 'text_default',
+	          'weight' => -2,
+	        ),
+	        'teaser' => array(
+	         'label' => 'hidden',
+	          'type' => 'text_default',
+	          'weight' => -2,
+	        ),
+      	),
+			),
+			
+		 'table_reference_phone' => array(
+				'field_name' => 'table_reference_phone',
+				'type' => 'text',
+				'label' => $t('Phone Number'),
+				'size' => 'small',
+				'widget' => array(
+					'type' => 'text_textfield',
+				),
+				'display' => array(
+	        'default' => array(
+	          'label' => 'hidden',
+	          'type' => 'text_default',
+	          'weight' => -1,
+	        ),
+	        'teaser' => array(
+	         'label' => 'hidden',
+	          'type' => 'text_default',
+	          'weight' => -1,
+	        ),
+      	),
+			),
+			/**
+			'table_reference_address_fk' => array(
+				'field_name' => 'table_reference_address_fk',
+				'type' => 'entity_reference',
+				'label' => $t('entity_reference'),
+				'widget' => array(
+					'type' => 'select_list',
+				),
+				'settings' => array(
+		      'target_type' => 'node',
+		      'handler_settings' => array('target_bundles' => 'table_reference_address'),
+	    	),
+				'display' => array(
+	        'default' => array(
+	          'label' => 'hidden',
+	          'type' => 'entityreference_label',
+	          'weight' => -1,
+	        ),
+	        'teaser' => array(
+	         'label' => 'hidden',
+	          'type' => 'entityreference_label',
+	          'weight' => -1,
+	        ),
+      	),
+			),*/
+	);
+}
+
+function _table_reference_address_installed_instances() {
+	$t = get_t();
+	return array(
+		 'table_reference_street' => array(
+				'field_name' => 'table_reference_street',
+				'type' => 'text',
+				'size' => 'small',
+				'label' => $t('Street'),
+				'widget' => array(
+					'type' => 'text_textfield',
+			  ),
+			  'display' => array(
+	        'default' => array(
+	          'label' => 'hidden',
+	          'type' => 'text_default',
+	          'weight' => -4,
+	        ),
+	        'teaser' => array(
+	         'label' => 'hidden',
+	          'type' => 'text_default',
+	          'weight' => -4,
+	        ),
+      	),
+		 ),
+		 
+		 'table_reference_city' => array(
+				'field_name' => 'table_reference_city',
+				'type' => 'text',
+				'size' => 'small',
+				'label' => $t('City'),
+				'widget' => array(
+					'type' => 'text_textfield',
+			  ),
+			  'display' => array(
+	        'default' => array(
+	          'label' => 'hidden',
+	          'type' => 'text_default',
+	          'weight' => -3,
+	        ),
+	        'teaser' => array(
+	         'label' => 'hidden',
+	          'type' => 'text_default',
+	          'weight' => -3,
+	        ),
+      	),
+		 ),
+		 
+		 'table_reference_zipcode' => array(
+				'field_name' => 'table_reference_zipcode',
+				'type' => 'text',
+				'size' => 'small',
+				'label' => $t('Zipcode'),
+				'widget' => array(
+					'type' => 'text_textfield',
+			  ),
+			  'display' => array(
+	        'default' => array(
+	          'label' => 'hidden',
+	          'type' => 'text_default',
+	          'weight' => -2,
+	        ),
+	        'teaser' => array(
+	         'label' => 'hidden',
+	          'type' => 'text_default',
+	          'weight' => -2,
+	        ),
+      	),
+		 ),
+		 
+		 'table_reference_state' => array(
+				'field_name' => 'table_reference_state',
+				'type' => 'text',
+				'size' => 'small',
+				'label' => $t('State'),
+				'widget' => array(
+					'type' => 'select_list',
+			  ),
+			  'display' => array(
+	        'default' => array(
+	          'label' => 'hidden',
+	          'type' => 'default',
+	          'weight' => -1,
+	        ),
+	        'teaser' => array(
+	         'label' => 'hidden',
+	          'type' => 'default',
+	          'weight' => -1,
+	        ),
+      	),
+		 ),
+	);
+}
+/**
+* Implements hook_uninstall().
+*/
+function table_reference_uninstall() {
+	// Gather all the example content that might have been created while this
+	// module was enabled.
+	$sql = 'SELECT nid FROM {node} n WHERE n.type = :type';
+	$table_reference_member = db_query($sql, array(':type' => 'table_reference_member'));
+	$table_reference_address = db_query($sql, array(':type' => 'table_reference_address'));
+	
+	if ($result = $table_reference_member) {
+		$nids = array();
+		foreach ($result as $row) {
+			$nids[] = $row->nid;
+		}
+		// Delete all the nodes at once
+		node_delete_multiple($nids);
+		// Loop over each of the fields defined by this module and delete
+		// all instances of the field, their data, and the field itself.
+		foreach (array_keys(_table_reference_member_installed_fields()) as $field) {
+			field_delete_field($field);
+		}
+		// Loop over any remaining field instances attached to the table_reference
+		// content type (such as the body field) and delete them individually.
+		$instances = field_info_instances('node', 'table_reference_member');
+		foreach ($instances as $instance_name => $instance) {
+			field_delete_instance($instance);
+		}
+		// Delete our content type
+		node_type_delete('table_reference_member');
+		// Purge all field infromation
+		field_purge_batch(1000);
+	} 
+	
+	if ($result = $table_reference_address) {
+		$nids = array();
+		foreach ($result as $row) {
+			$nids[] = $row->nid;
+		}
+		// Delete all the nodes at once
+		node_delete_multiple($nids);
+		// Loop over each of the fields defined by this module and delete
+		// all instances of the field, their data, and the field itself.
+		foreach (array_keys(_table_reference_address_installed_fields()) as $field) {
+			field_delete_field($field);
+		}
+		// Loop over any remaining field instances attached to the table_reference
+		// content type (such as the body field) and delete them individually.
+		$instances = field_info_instances('node', 'table_reference_address');
+		foreach ($instances as $instance_name => $instance) {
+			field_delete_instance($instance);
+		}
+		// Delete our content type
+		node_type_delete('table_reference_address');
+		// Purge all field infromation
+		field_purge_batch(1001);
+	}
+	
+}

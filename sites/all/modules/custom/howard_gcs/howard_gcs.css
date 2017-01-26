@@ -1,0 +1,40 @@
+
+div#___gcse_0 {
+	display: inline-block !important;
+	clear: both !important;
+}
+
+input.gsc-search-button {
+	height: 40px !important;
+}
+
+.gsc-search-box tbody {
+	border-top: 0 !important;
+}
+
+.gsc-above-wrapper-area {
+	border-bottom: 0 !important;
+	padding: 0 !important;
+}
+
+.gsc-selected-option-container {
+	/* min-width: 54px; */
+	min-width: 80px !important; 
+}
+
+div#___gcse_1 div.gsc-control-cse {
+	padding: 0em !important;
+}
+
+.gsc-above-wrapper-area-container tbody{
+	border: 0 !important;
+	border-top: 0 !important;
+}
+
+.gsc-result .gs-title {
+height: 100% !important;
+}
+
+.gsc-tabData.gsc-tabdActive .gsc-resultsHeader tbody {
+	border-top: 0 !important;
+}

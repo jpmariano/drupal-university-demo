@@ -1,0 +1,9 @@
+/**
+ * IE 9
+ */
+
+.block .sf-menu.sf-style-simplex ul li:first-child:before,
+.block .sf-menu.sf-style-simplex ul li:first-child:after {
+	border-right-style: solid;
+	border-left-style: solid;
+}

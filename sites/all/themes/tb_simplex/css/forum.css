@@ -1,0 +1,191 @@
+#forum {
+  width: 100%;
+}
+
+#forum .name {
+  font-weight: bold;
+}
+
+#forum .description {
+  color: #666;
+  font-size: .92em;
+}
+
+/* Forums Table */
+#forum table {
+  width: 100%;
+}
+
+#forum tr.even td,
+#forum tr.odd td {
+  border-bottom: 1px dotted #ccc;
+}
+
+#forum tr.odd {
+  background: #f7f7f7;
+}
+
+#forum thead tr {
+  background: #333;
+}
+
+#forum thead th {
+}
+
+#forum thead th a {
+}
+
+#forum thead th.active {
+}
+
+#forum td {
+}
+
+#forum td a {
+}
+
+#forum td.topics,
+#forum td.posts,
+#forum td.replies,
+#forum td.created,
+#forum td.last-reply {
+  font-size: .857em;
+}
+
+/* Forums Head */
+#forum tr td.container {
+  background: #ddd;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  padding: .75em 5px .75em 25px;
+}
+
+#forum tr td.container a {
+}
+
+#forum tr td.container .name {
+  font-size: 1.15em;
+}
+
+#forum tr td.container .description {
+}
+
+/* Forums List */
+#forum td.forum {
+  width: 60%;
+}
+
+#forum tr.new-topics td.forum {
+}
+
+#forum td.forum .name {
+  background-image: url(../images/forum-default.png);
+  background-position: left center; /* LTR */
+  background-repeat: no-repeat;
+  padding-left: 30px; /* LTR */
+}
+
+#forum tr.new-topics td.forum .name {
+  background-image: url(../images/forum-default.png);
+}
+
+#forum td.forum .name a {
+}
+
+#forum td.forum .description {
+}
+
+#forum td.topics {
+}
+
+#forum td.posts {
+}
+
+/* Topic List */
+#forum td.title {
+}
+
+#forum td.title a {
+}
+
+#forum td.title .submitted {
+  font-size: .92em;
+}
+
+#forum td.replies {
+}
+
+#forum td.last-reply {
+}
+
+/* Forums Indent */
+#forum div.indent {
+  margin-left: 20px;
+}
+
+/* Forums Icons */
+#forum .icon div {
+  background-image: url(../images/forum-icons.png);
+  background-repeat: no-repeat;
+  height: 24px;
+  width: 24px;
+}
+
+#forum .icon .topic-status-new {
+  background-position: -24px 0;
+}
+
+#forum .icon .topic-status-hot {
+  background-position: -48px 0;
+}
+
+#forum .icon .topic-status-hot-new {
+  background-position: -72px 0;
+}
+
+#forum .icon .topic-status-sticky {
+  background-position: -96px 0;
+}
+
+#forum .icon .topic-status-closed {
+  background-position: -120px 0;
+}
+
+/* Forums Action Links */
+.page-forum ul.action-links {
+  margin: 0 0 2em;
+  padding: 0;
+}
+
+.page-forum ul.action-links li {
+  margin: 0;
+}
+
+.page-forum ul.action-links li a {
+	border-color: #d53429;
+	color: #fff;
+	background: #ee4135 !important;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VlNDEzNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkNTM0MjkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #ee4135 0%, #d53429 100%) !important;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ee4135), color-stop(100%,#d53429));
+	background: -webkit-linear-gradient(top,  #ee4135 0%,#d53429 100%) !important;
+	background: -o-linear-gradient(top,  #ee4135 0%,#d53429 100%) !important;
+	background: -ms-linear-gradient(top,  #ee4135 0%,#d53429 100%) !important;
+	background: linear-gradient(to bottom,  #ee4135 0%,#d53429 100%) !important;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee4135', endColorstr='#d53429',GradientType=0 );
+	padding: 0 14px;
+	height: 30px;
+	line-height: 28px;
+	display: inline-block;
+}
+
+.page-forum ul.action-links a:hover,
+.page-forum ul.action-links a:active,
+.page-forum ul.action-links a:focus {
+	-webkit-transition: none;
+	-moz-transition: none;
+	-o-transition: none;
+	transition: none;
+	background: none;
+	box-shadow: 0 -10px 15px rgba(0,0,0,.1) inset;
+}

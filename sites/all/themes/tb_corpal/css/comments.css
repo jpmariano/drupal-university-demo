@@ -1,0 +1,222 @@
+/**
+ *
+ * TODO: check classes still apply in D7 - in particular the unpublished classes and the extra classes.
+ */
+
+/* Comment wrapper */
+#comments {
+  border-top: 1px solid #f0f0f0;
+  margin-left: -90px;
+  margin-top: 30px;
+  padding-left: 90px;
+  padding-top: 30px;
+}
+
+#comments > h2 {
+  border-top: 1px solid #f0f0f0;
+  color: #333;
+  font-family: 'texgyreadventorregular', sans-serif;
+  font-size: 2em;
+  font-weight: normal;
+  margin-bottom: 30px;
+  padding-top: 1em;
+  text-transform: uppercase;
+}
+
+#comments > h2:first-child {
+  border-top: 0;  
+  margin-left: -90px;
+  padding-top: 0;    
+}
+
+/* Individual comment */
+.comment {
+  background-color: #fafafa;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  margin-bottom: 2em;
+  padding: 20px;
+}
+
+/* Indentation */
+#comments .indented { 
+  margin-bottom: 1em;
+  margin-left: 0;
+  padding-left: 30px;
+}
+
+#comments .indented .comment {
+}
+
+#comments input.form-text {
+  width: 97%;
+}
+
+/* Comment Title */
+.comment > .header {
+}
+
+.comment-title {
+   font-family: 'texgyreadventorregular',sans-serif;
+  font-size: 1.167em;
+  font-weight: bold;  
+  padding: 0;
+}
+
+.comment-title a {  
+}
+
+.comment-title a:hover,
+.comment-title a:active,
+.comment-title a:focus {
+  
+}
+
+/* Skinr comment title alignment. */
+.ta-l .comment-title {
+  text-align: left;
+}
+
+.ta-r .comment-title {
+  text-align: right;
+}
+
+.ta-c .comment-title {
+  text-align: center;
+}
+
+/* Comment "new" title */
+.comment-title .new {
+  color: #f80;
+}
+
+/* User Picture */
+.comment .user-picture {
+  left: -20px;
+  margin-left: -90px;
+  max-height: 0;
+  position: relative;
+  top: -20px;
+}
+
+.comment .user-picture img {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  height: 54px;
+  padding: 2px;
+  width: 54px;
+}
+
+/* Comment Content */
+.comment-content {
+}
+
+/* Submitted */
+.comment > .footer {
+  color: #666;
+  font-size: 0.92em;
+  margin: .5em 0 1em;
+}
+
+.comment > .footer .username {
+}
+
+.comment > .footer .time {
+}
+
+.comment > .footer a {
+}
+
+.comment > .footer a:hover,
+.comment > .footer a:active,
+.comment > .footer a:focus {
+}
+
+.comment > .submitted {
+  margin-bottom: 1em;
+}
+
+/* Links */
+.comment .comment-links {
+  margin-top: 0;
+}
+
+.comment ul.links {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.comment ul.links li {
+}
+
+.comment ul.links li a {
+  text-transform: capitalize;
+}
+
+/* Core comment link classes. */
+ul.links li.comment_reply a {
+}
+
+ul.links li.comment_edit a {
+}
+
+ul.links li.comment_delete a {
+}
+
+.comment ul.links li.first {
+}
+
+.comment ul.links li.last {
+}
+
+/**
+ * Different status for comments
+ */
+
+/* Author */
+.comment-by-anonymous {
+}
+
+.comment-by-node-author {
+}
+
+.comment-by-viewer {
+}
+
+/* New */
+.comment-new {
+}
+
+/* Unpublished */
+.comment-unpublished {
+}
+.comment-unpublished .unpublished {
+}
+
+/**
+ * Comment Form
+ */
+.page-comment-reply .comment-form {  
+  padding-left: 90px;
+}
+
+.comment-form-wrapper h2 {
+}
+
+.comment-form-wrapper form#comment-form {
+}
+
+html.js input.form-autocomplete {
+  background-image: none;
+}
+
+html.js input.throbbing {
+  background-image: none; /* LTR */
+  
+}
+
+#autocomplete li {
+  padding: 5px;
+}
+

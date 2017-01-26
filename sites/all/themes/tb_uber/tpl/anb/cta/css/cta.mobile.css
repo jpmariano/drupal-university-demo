@@ -1,0 +1,31 @@
+.acm-cta.style-2{
+  padding: 26px 0;
+}
+
+.acm-cta.style-2 .cta-showcase-item .cta-showcase-header {
+  font-size: 25px;
+}
+
+.node.acm-cta.style-2 .main-img{
+  position: inherit;
+  bottom: inherit;
+}
+
+.node .acm-cta.style-2 {
+  margin: 0;
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
+.node.acm-cta.style-2 .main-img{
+  padding-right: 30px;
+}
+
+.acm-cta.style-2 .cta-showcase-item{
+  padding: 0 30px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}

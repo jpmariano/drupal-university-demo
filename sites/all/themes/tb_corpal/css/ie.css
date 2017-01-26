@@ -1,0 +1,41 @@
+/**
+ * IE Compatibility Tweaks
+ */
+
+/* blocks.css */
+.block-user .item-list li {
+  zoom: 1;
+}
+
+.block-intro img {
+  padding: 0;
+}
+
+/* forms.css */
+input.form-submit {
+  overflow: visible; /* IE Fix */
+}
+
+input.form-submit,
+a.button {
+  padding: 3px 10px;
+}
+
+#comment-form .filter-wrapper {
+  padding-top: 1em;
+}
+
+/* fields.css */
+.field-type-taxonomy-term-reference ul li {
+  display: inline;
+  zoom: 1;
+}
+
+pre {
+    white-space: pre-line; /* CSS3 - Text module (Candidate Recommendation) http://www.w3.org/TR/css3-text/#white-space */
+    word-wrap: break-word; /* IE 5.5+ */
+}
+
+#cboxTitle { 
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#4cffffff', endColorstr='#4cffffff'); /* IE */
+}

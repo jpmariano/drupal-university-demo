@@ -1,0 +1,193 @@
+; Theme info
+name = 'Tb University'
+description = TB University is a light weight Drupal theme that is based on <a href="http://themebrain.com/about-nucleus">Nucleus</a> and shows a slick styling of some basic Drupal content types such as blog, poll, forum and a contact form. Requires <a href="http://drupal.org/project/nucleus">Nucleus</a> base theme.
+core = '7.x'
+engine = 'phptemplate'
+base theme = 'nucleus'
+screenshot = 'screenshot.png'
+
+; Stylesheets
+stylesheets[all][] = 'css/html-elements.css'
+stylesheets[all][] = 'css/forms.css'
+stylesheets[all][] = 'css/page.css'
+stylesheets[all][] = 'css/articles.css'
+stylesheets[all][] = 'css/comments.css'
+stylesheets[all][] = 'css/views.css'
+stylesheets[all][] = 'css/forum.css'
+stylesheets[all][] = 'css/fields.css'
+stylesheets[all][] = 'css/blocks.css'
+stylesheets[all][] = 'css/navigation.css'
+stylesheets[all][] = 'css/fonts.css'
+stylesheets[all][] = 'css/typo.css'
+stylesheets[all][] = 'css/tb-megamenu/tb-university.css'
+
+; Seperate CSS3 to css3.css
+stylesheets[all][] = 'css/css3.css'
+
+; Stylesheets for Print Media
+stylesheets[print][] = 'css/print.css'
+
+; Conditional Stylesheets for IE
+stylesheets-conditional[IE][all][] = css/ie.css
+stylesheets-conditional[lt IE 9][all][] = css/ie8.css
+
+; Scripts in this theme
+scripts[] = 'js/jquery.matchHeights.min.js'
+scripts[] = 'js/tb_university.js'
+scripts[] = 'js/tb_responsive.js'
+scripts[] = 'js/tb.plugins.js'
+
+; Responsive
+stylesheets[only screen and (min-width: 959px) and (max-width: 1049px)][] = 'css/screens/tablet.css'
+stylesheets[only screen and (min-width: 720px) and (max-width: 959px)][] = 'css/screens/tablet-vertical.css'
+stylesheets[only screen and (max-width:719px)][] = 'css/screens/mobile.css'
+stylesheets[only screen and (max-width:479px)][] = 'css/screens/mobile-vertical.css'
+
+; Supported Skins
+skins[blue] = 'Blue'
+skins[brown] = 'Brown'
+skins[green] = 'Green'
+skins[grey] = 'Grey'
+skins[iron] = 'Iron'
+skins[teal] = 'Teal'
+skins[violet] = 'Violet'
+
+; Core regions
+regions[content] = 'Main content'
+regions[header] = 'Header'
+regions[menu_bar] = 'Menu bar'
+regions[slideshow] = 'Slideshow'
+regions[feature] = 'Feature'
+regions[highlighted] = 'Highlighted'
+regions[footer] = 'Footer'
+regions[help] = 'Help'
+regions[page_top] = 'Page top'
+regions[page_bottom] = 'Page bottom'
+
+; Sidebar regions
+regions[sidebar_first] = 'Sidebar first'
+regions[sidebar_second] = 'Sidebar second'
+
+; panel regions
+regions[panel_first_1] = 'Panel first column 1'
+
+regions[panel_second_1] = 'Panel Second column 1'
+
+regions[panel_third_1] = 'Panel Third column 1'
+
+regions[panel_fourth_1] = 'Panel Fourth column 1'
+regions[panel_fourth_2] = 'Panel Fourth column 2'
+regions[panel_fourth_3] = 'Panel Fourth column 3'
+
+regions[panel_fifth_1] = 'Panel Fifth column 1'
+regions[panel_fifth_2] = 'Panel Fifth column 2'
+regions[panel_fifth_3] = 'Panel Fifth column 3'
+regions[panel_fifth_4] = 'Panel Fifth column 4'
+regions[panel_fifth_5] = 'Panel Fifth column 5'
+regions[panel_fifth_6] = 'Panel Fifth column 6'
+
+; Features (core settings)
+features[] = 'logo'
+features[] = 'name'
+features[] = 'slogan'
+features[] = 'node_user_picture'
+features[] = 'comment_user_picture'
+features[] = 'comment_user_verification'
+features[] = 'favicon'
+features[] = 'go_to_top_button'
+features[] = 'secondary_menu'
+
+; Breadcrumb
+settings[breadcrumb_display] = 'yes'
+settings[breadcrumb_separator] = ' &#187; '
+settings[breadcrumb_home] = 1
+
+; Layouts
+pages[default] = 'Normal page'
+
+; Default settings
+settings[grid] = 'fluid-grid-24'
+settings[layout_width] = '960px'
+settings[layout_debug_grid] = 0
+settings[page_layout] = 'default'
+
+; Sidebar width settings
+settings[sidebar_first_width] = 6
+settings[sidebar_second_width] = 6
+
+; Panel width settings
+settings[panel_first_1_width] = 24
+
+settings[panel_second_1_width] = 24
+
+settings[panel_third_1_width] = 24
+
+settings[panel_fourth_1_width] = 8
+settings[panel_fourth_2_width] = 8
+settings[panel_fourth_3_width] = 8
+
+settings[panel_fifth_1_width] = 4
+settings[panel_fifth_2_width] = 4
+settings[panel_fifth_3_width] = 4
+settings[panel_fifth_4_width] = 4
+settings[panel_fifth_5_width] = 4
+settings[panel_fifth_6_width] = 4
+
+; Fonts
+settings[base_font] = 'bf-a'
+settings[site_name_font] = ''
+settings[site_slogan_font] = ''
+settings[page_title_font] = ''
+settings[node_title_font] = ''
+settings[comment_title_font] = ''
+settings[block_title_font] = ''
+settings[font_size] = 'fs-medium'
+
+; Extra Typo
+settings[load_extra_typo_styles] = 1
+
+; Default fonts family
+default_fonts[sss] = 'Calibri, Candara, Helvetica Neue, Trebuchet MS, Arial, Helvetica, sans-serif'
+default_fonts[ssl] = 'Verdana, Geneva, Arial, Helvetica, sans-serif'
+default_fonts[a] = 'Arial, Helvetica, sans-serif'
+default_fonts[ss] = 'Garamond, Perpetua, Times New Roman, serif'
+default_fonts[sl] = 'Georgia, Baskerville, Palatino, Palatino Linotype, Book Antiqua, Times New Roman, serif'
+default_fonts[m] = 'Segoe UI, Myriad Pro, Myriad, Arial, Helvetica, sans-serif;'
+default_fonts[l] = 'Lucida Sans Unicode, Lucida Sans, Lucida Grande, Verdana, Geneva, sans-serif'
+default_fonts[ms] = 'Consolas, Monaco, Courier New, Courier, monospace'
+
+block_styles[raw] = 'Raw'
+block_styles[rounded] = 'Rounded'
+block_styles[xhtml] = 'XHTML'
+
+; Superfish Styles
+superfish_styles[university] = 'University Style for Superfish'
+settings[superfish_extend_style_1] = 'university'
+settings[superfish_extend_style_2] = 'university'
+
+; Quicktabs Styles
+quicktabs_styles[university] = 'University Style for Quicktabs'
+settings[quicktabs_extend_style_quicktabs] = 'university'
+
+settings[default_region_footer_style] = 'raw'
+settings[default_region_header_style] = 'raw'
+settings[default_region_slideshow_style] = 'raw'
+
+settings[toggle_logo] = 1
+settings[toggle_name] = 0
+settings[toggle_slogan] = 0
+settings[toggle_node_user_picture] = 1
+settings[toggle_comment_user_picture] = 1
+settings[toggle_comment_user_verification] = 1
+settings[toggle_favicon] = 1
+settings[toggle_secondary_menu] = 0
+settings[default_logo] = 1
+settings[default_favicon] = 1
+
+settings[default_logo] = 1
+settings[logo_path] = ''
+settings[default_favicon] = 1
+settings[favicon_path] = ''
+
+settings[show_skins_menu] = 1
+settings[breadcrumb-display] = 1

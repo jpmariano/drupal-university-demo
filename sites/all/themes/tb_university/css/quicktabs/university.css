@@ -1,0 +1,185 @@
+/**
+ * university Style for Quiktabs
+ */
+
+/* --- Quicktabs ---*/
+.quicktabs_wrapper {
+}
+
+.quicktabs_main {
+  padding-top: 1em;
+}
+
+.quicktabs-style-university ul.quicktabs-tabs {
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.quicktabs-style-university ul.quicktabs-tabs li {
+  background: none;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 5px;
+  white-space: nowrap;
+}
+
+.quicktabs-style-university ul.quicktabs-tabs li a {
+  background: none;
+  color: #666;
+  float: left;
+  font-size: 16px;
+  padding: 5px 20px;
+}
+
+.quicktabs-style-university ul.quicktabs-tabs li a:hover,
+.quicktabs-style-university ul.quicktabs-tabs li a:active,
+.quicktabs-style-university ul.quicktabs-tabs li a:focus {
+  background: none;
+  color: #d42b1e;
+  text-decoration: none;
+}
+
+.quicktabs-style-university ul.quicktabs-tabs li.active {
+  background: url('../../images/arrow-tab.png') no-repeat center bottom;  
+}
+
+.quicktabs-style-university ul.quicktabs-tabs li.active a {
+  background: #000;
+  color: #fff;
+}
+
+.quicktabs-style-university .block .item-list ul li {
+  background: none;
+  list-style: none;
+  padding: 5px 0;
+}
+
+.quicktabs-style-university .block,
+.quick-accordion .block,
+.quicktabs-ui-university .block  {
+  margin-bottom: 10px;
+}
+
+.quicktabs-style-university .block .item-list ul li a {
+  background: url('../../images/bullet2.gif') no-repeat 0 5px;
+  padding-left: 10px; 
+}
+
+/* --- Arcodion --- */
+.quick-accordion-university {
+  font-family: Arial, Helvetica, sans-serif; /* Override the font */
+  font-size: 1em; /* Ensure font size is approriate with the container */
+}
+
+/* Accordion Header */
+.quick-accordion-university .ui-accordion-header {
+  background: #ccc;
+  border-radius: 0;
+  color: #333;
+  font-weight: bold;
+}
+
+.quick-accordion-university .ui-accordion-header a {
+  color: #333;
+  font-size: 1em;
+  padding: 0.25em 0.5em 0.25em 2em;
+}
+
+.quick-accordion-university .ui-state-default .ui-icon {
+  background: url("../../images/arrow.png") no-repeat 5px 5px;
+}
+
+/* Hover Accordion Header */
+.quick-accordion-university .ui-state-hover {
+  background: #333;
+  border: 1px solid #333;
+  color: #fff;
+}
+
+.quick-accordion-university .ui-state-hover a {
+  color: #fff;
+}
+
+.quick-accordion-university .ui-state-hover .ui-icon {
+  background: url("../../images/arrow-2.png") no-repeat 5px 5px;
+}
+
+/* Active Accordion Header */
+.quick-accordion-university .ui-state-active {
+  background: #d42b1e;
+  border: 1px solid #d42b1e;
+  color: #fff;
+}
+
+.quick-accordion-university .ui-state-active a {
+  color: #fff;
+}
+
+.quick-accordion-university .ui-state-active .ui-icon {
+  background: url("../../images/arrow-3.png") no-repeat 5px 5px;
+}
+
+/* Accordion Content */
+.quick-accordion-university .ui-accordion-content {
+  border-radius: 0;
+  padding: .5em;
+}
+
+/* --- UI Tabs --- */
+.quicktabs-ui-university {
+  border: 1px solid #ccc;
+  border-radius: 0;
+  font-family: Arial, Helvetica, sans-serif; /* Override the font */
+  font-size: 1em; /* Ensure font size is approriate with the container */
+  padding: 0;
+}
+
+/* Tabs */
+.quicktabs-ui-university .ui-tabs-nav {
+  background: #ccc;
+  border: 0;
+  border-bottom: 1px solid #aaa;
+  border-radius: 0;
+  margin: 0;
+  padding: .25em .25em 0;
+}
+
+.quicktabs-ui-university .ui-tabs-nav li {
+  background: #eee;
+  border: 1px solid #aaa;
+  border-bottom: 0;
+}
+
+.quicktabs-ui-university .ui-tabs-nav li a {
+  color: #666;
+  padding: .375em .75em;
+}
+
+/* Hover Tabs */
+.quicktabs-ui-university .ui-tabs-nav li.ui-state-hover {
+  background: #ccc;
+  border: 1px solid #aaa;
+  border-bottom: 0;
+}
+
+.quicktabs-ui-university .ui-tabs-nav li.ui-state-hover a {
+  color: #666;
+}
+
+/* Selected Tabs */
+.quicktabs-ui-university .ui-tabs-nav li.ui-tabs-selected {
+  background: #fff;
+  border: 1px solid #aaa;
+  border-bottom: 0;
+}
+
+.quicktabs-ui-university .ui-tabs-nav li.ui-tabs-selected a {
+  color: #333;
+}
+
+/* Tabs Content */
+.quicktabs-ui-university .ui-tabs-panel {
+  padding: .5em;
+}

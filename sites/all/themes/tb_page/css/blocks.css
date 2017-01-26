@@ -1,0 +1,643 @@
+/**
+ * Common Block
+ */
+
+/* --- Blocks --- */
+.block {
+  margin: 0;
+}
+
+.block-inner {
+  padding: 0;
+}
+
+.block-title {
+  color: #000;
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.block-content {
+}
+
+/* --- Block Lists --- */
+.block ul {
+}
+
+.block ul li {
+  margin: 0 0 0 0.5em;
+}
+
+.block ol {
+}
+
+.block ol li {
+}
+
+#system-messages-wrapper {
+  background: #000;
+}
+.not-front #system-messages-wrapper{
+	background: #ddd;
+}
+
+#system-messages-wrapper div.messages {
+  background-color: #ddd;
+  border: 1px solid #ddd;
+  background-position: 10px 50%;
+  margin: 0;
+  padding: 0 0 0 40px;
+}
+.not-front #system-messages-wrapper div.messages{
+	margin: 0 0 20px;
+	padding: 10px 0 10px 40px;
+}
+#system-messages-wrapper p {
+  font-size: 15px;
+  text-align: left;
+}
+
+
+.block-webform div.messages {
+  background-color: #f2dede;
+  border: none;
+  margin-left: 2%;
+  width: 83%;
+}
+
+.block-webform div.messages ul li {
+  list-style: none;
+}
+
+.block-webform div.messages label {
+  font-weight: normal;
+}
+
+.form-item input.error, 
+.form-item textarea.error, 
+.form-item select.error {
+  border-width: 1px;
+}
+
+/* Block Item list */
+.block .item-list ul {
+}
+
+.block .item-list ul li {
+}
+
+/* Block Links List */
+.block ul.links {
+}
+
+.block ul.links li {
+}
+
+/* Block More Links */
+.block .more-link {
+  margin-top: 5px;
+}
+
+.block .more-link a {
+}
+
+/* Custom Block */
+.map {
+  border: 1px solid #333;
+  clear: both;
+  padding: 4px;
+}
+
+.social li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 2px;
+}
+
+.social li span {
+  background: url("../images/social-icon.png") no-repeat;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+
+.social .icon-facebook {
+  background-position: 0 -40px;
+}
+
+.social .icon-twitter {
+  background-position: -20px -40px;
+}
+
+.social .icon-flickr {
+  background-position: -40px -40px;
+}
+
+.contact-info p {
+  text-align: left;
+}
+.region-page-contact > .block:nth-child(2n){
+  float: left;
+  margin-right: 0;
+  width: 50%;
+}
+
+.region-page-contact > .block:nth-child(4n) {
+  width: 100%;
+}
+
+
+#block-views-our-clients-block {
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+  padding-top: 40px;
+}
+
+.address-block address {
+  float: left;
+  font-style: normal;
+  padding-left: 25px;
+  position: relative;
+  text-align: left;
+  width: 44%;
+}
+
+.address-block [class^="icon-"] {
+  display: inline-block;
+  height: 14px;
+  left: 5px;
+  position: absolute;
+  top: 2px;
+  width: 14px;
+}
+
+.address-block .address, 
+.address-block .phone, 
+.address-block .mail {
+  padding-left: 30px;
+  position: relative;
+}
+
+.icon-map-marker {
+  background-position: -24px -72px;
+}
+
+.icon-user {
+  background-position: -168px 0;
+}
+
+.icon-envelope {
+  background-position: -72px 0;
+}
+
+.region-page-contact > .block {
+  clear: both;
+}
+
+.region-page-contact .block-webform {
+  clear: right;
+  float: right;
+  width: 45%;
+}
+
+.home-block {
+  overflow: hidden;
+  padding: 60px 10% 0;
+}
+
+/* Block Button */
+.node-button {
+  background-color: #f7682c;
+  border-color: #f7682c;
+  color: #fff;
+  display: inline-block;
+  line-height: 20px;
+}
+
+.node-button:hover, 
+.node-button:focus,
+.node-button:active {
+  background-color: #f65613;
+  border-color: #f65613;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-large {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 20px 60px;
+}
+
+.arrow-down a {
+  background: url(../images/arrow-down.png) no-repeat 0 0;
+  display: block;
+  height: 40px;
+  margin: 70px auto 0;
+  text-indent: -999em;
+  width: 40px;
+}
+
+/* --- Sidebar Blocks --- */
+.sidebar .block {
+  color: #666;
+}
+
+.sidebar .block-inner {
+}
+
+.sidebar .block-title {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: .5em;
+  margin-top: 0;
+}
+
+.sidebar .block-content {
+}
+
+/* First Sidebar Blocks */
+#sidebar-first .block {
+}
+
+#sidebar-first .block-inner {
+}
+
+#sidebar-first .block-title {
+}
+
+#sidebar-first .block-content {
+}
+
+/* Second Sidebar Blocks */
+#sidebar-second .block {
+}
+
+#sidebar-second .block-inner {
+}
+
+#sidebar-second .block-title {
+}
+
+#sidebar-second .block-content {
+}
+
+/* --- Header Blocks --- */
+#header-wrapper .block {
+}
+
+/* ---- Footer Blocks --- */
+#footer-wrapper .block {
+}
+
+/* --- First Panels Blocks --- */
+#panel-first-wrapper .block {
+}
+
+/* --- Second Panels Blocks --- */
+#panel-second-wrapper .block {
+}
+
+/**
+ * Specfic Blocks
+ */
+
+/* --- Menu Block --- */
+.block-menu {
+}
+
+.block-menu ul.menu {
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.block-menu ul.menu ul {
+  margin-left: 1em;
+}
+
+/* --- Node Blocks --- */
+.block-node .block-content {
+}
+
+.block-node table {
+  overflow: hidden;
+  width: 100%;
+}
+
+.block-node tbody {
+  border-top: 0;
+}
+
+.block-node table tr td {
+  border-bottom: 1px dotted #ccc;
+}
+
+.block-node table .title-author {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.block-node table .node-title {
+  font-size: 1em;
+}
+
+.block-node table .node-title a {
+  color: #666;
+}
+
+.block-node table .node-title a:hover,
+.block-node table .node-title a:active,
+.block-node table .node-title a:focus {
+  color: #fff;
+}
+
+.block-node table .node-author {
+  color: #999;
+  font-size: 1em;
+}
+
+body.not-logged-in .block-node table td.edit,
+body.not-logged-in .block-node table td.delete {
+  display: none; /* Hide Edit & Delete TD if not log-in */
+}
+
+/* --- Forums Block --- */
+.block-forum .item-list ul {
+  margin: 0;
+  padding: 0;
+}
+
+.block-forum .item-list ul li {
+}
+
+.block-forum .item-list ul li:first-child {
+}
+
+.block-forum .item-list ul li a {
+}
+
+.block-forum .item-list ul li a:hover,
+.block-forum .item-list ul li a:active,
+.block-forum .item-list ul li a:focus {
+}
+
+.block-forum .more-link {
+}
+
+.block-forum .contextual-links-wrapper {
+  display: none; /* Drupal Bug. Temporary hiding this link */
+}
+
+/* --- Comment Blocks --- */
+.block-comment {
+}
+
+/* --- Aggregator Blocks --- */
+block-aggregator {
+}
+
+.block-aggregator .item-list ul {
+  margin: 0;
+  padding: 0;
+}
+
+.block-aggregator .item-list ul li {
+  background-image: none;
+  border-bottom: 1px dotted #ccc;
+  padding: .5em 0;
+}
+
+.block-aggregator .item-list ul li:first-child {
+  padding-top: 0;
+}
+
+.block-aggregator .item-list ul li a {
+  color: #666;
+}
+
+.block-aggregator .item-list ul li a:hover,
+.block-aggregator .item-list ul li a:active,
+.block-aggregator .item-list ul li a:focus {
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* --- Search Blocks --- */
+.block-search {
+}
+
+/* Search blocks in header */
+#header .block-search .block-inner,
+#header .block-search .form-item,
+#header #search-block-form {
+  margin: 0;
+  padding: 0;
+}
+
+#header .block-search .container-inline div {
+  display: block;
+  float: left;
+}
+
+#header #search-block-form .form-text {
+  background: #fff;
+  border: 1px solid #ddd;
+  font-size: 1em;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 12px;
+  width: 160px;
+}
+
+#header #search-block-form .form-submit {
+  background: #ddd;
+  border: 0;
+  color: #7b7b7b;
+  font-size: 1em;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 12px;
+  vertical-align: top;
+}
+
+#header #search-block-form .form-submit:hover {
+  background: #c00;
+  color: #fff;
+}
+
+/* --- User Blocks --- */
+.block-user {
+}
+
+.block-user .form-item {
+}
+
+.block-user .form-item label {
+}
+
+.block-user .form-item-name {
+}
+
+.block-user .form-item-name input {
+  width: 90%;
+}
+
+.block-user .form-item-pass {
+}
+
+.block-user .form-item-pass input {
+  width: 90%;
+}
+
+.block-user .item-list li {
+  display: inline-block;
+}
+
+.block-user p {
+  margin: 0;
+}
+
+/* --- Poll Blocks --- */
+.block-poll {
+}
+
+.block-poll .poll {
+}
+
+.block-poll .title {
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.block-poll .links {
+  margin-top: .5em;
+}
+
+/* --- Book Blocks --- */
+.block-book {
+}
+
+/* --- Quicktabs Blocks --- */
+.block-quicktabs {
+}
+
+.block-quicktabs .block-inner .block-inner {
+  margin: 0; /* Prevent extra padding in nested blocks */
+  padding: 0;
+}
+
+/* --- Views Blocks --- */
+.block-views {
+}
+
+/**
+ * Misc.
+ */
+
+/* Login Block - horizontal (theme setting) basic styles */
+.lb-h {
+  margin-top: 1px;
+  min-width: 320px;
+}
+
+.region-header .lb-h {
+  float: right;
+}
+
+.lb-h .block-inner,
+.lb-h .block-content {
+  background: none;
+  padding: 0;
+}
+
+.lb-h #user-login-form {
+  margin: 0;
+}
+
+.lb-h #user-login-form label {
+  line-height: 1.2;
+}
+
+.lb-h .form-item {
+  float: left;
+  margin: 0;
+}
+
+.lb-h input.form-text {
+  margin: 0 3px 0 0;
+  width: 110px;
+}
+
+.lb-h #edit-actions {
+  margin: 0;
+}
+
+.lb-h input.form-submit {
+  margin: 0;
+  position: absolute;
+  top: 1.2em;
+}
+
+.lb-h .form-required,
+.lb-h .item-list {
+  display: none;
+}
+
+.lb-h h2 {
+  display: none;
+}
+
+/* Skinr block title alignment */
+.ta-l .block-title,
+.ta-l .mini-panel-title {
+  text-align: left;
+}
+
+.ta-r .block-title,
+.ta-r .mini-panel-title {
+  text-align: right;
+}
+
+.ta-c .block-title,
+.ta-c .mini-panel-title {
+  text-align: center;
+}
+
+/* Mini panels */
+.mini-panel-title {
+  margin: 0 10px;
+}
+
+/* Gpanel blocks */
+.gpanel .block-inner {
+}
+
+.gpanel .block-title {
+}
+
+.gpanel .block-content {
+}
+
+#main-content .gpanel .block-inner {
+}
+
+#main-content .gpanel .block-title {
+}
+
+#main-content .gpanel .block-content {
+}
+
+/* Block wrapper for Mini Panels */
+.block-panels_mini {
+}
+
+.block-panels_mini .block-inner {
+}
+
+.block-panels_mini .block-content {
+}
+
+.block-panels_mini .mini-panel-title {
+  margin: 0 10px;
+}

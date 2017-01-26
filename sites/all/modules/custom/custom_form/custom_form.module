@@ -1,0 +1,15 @@
+<?php
+
+function custom_form_menu() {
+  $items = array();
+  $items['custom-form/form-1'] = array(
+    'title' => "Partners!",
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('custom_form_form_1'),
+    'access arguments' => array('access content'),
+    'file' => 'custom_form_form_1.inc',
+    'weight' => 1,
+  );
+
+  return $items;
+}

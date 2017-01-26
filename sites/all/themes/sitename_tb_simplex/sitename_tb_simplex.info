@@ -1,0 +1,164 @@
+
+name = 'Sitename TB Simplex'
+description = TB Simplex is a Drupal theme that is based on <a href="http://themebrain.com/about-nucleus">Nucleus</a> and shows a slick styling of some basic Drupal content types such as blog, poll, forum and a contact form. Requires <a href="http://drupal.org/project/nucleus">Nucleus</a> base theme.
+core = '7.x'
+engine = 'phptemplate'
+base theme = 'tb_simplex'
+screenshot = 'screenshot.png'
+
+; Howard Font Stylesheets 
+stylesheets[all][] = 'fonts/howard/howard-font.css'
+
+; Conditional Stylesheets for IE
+stylesheets-conditional[IE][all][] = 'css/ie.css'
+stylesheets-conditional[IE 9][all][] = 'css/ie7.css'
+stylesheets-conditional[IE 7][all][] = 'css/ie7.css'
+
+; Stylesheets
+stylesheets[all][] = 'css/footable.core.min.css'
+stylesheets[all][] = 'css/footable.metro.css'
+stylesheets[all][] = 'css/styles.css'
+
+; Scripts
+scripts[] = 'js/jquery.fitvids.js'
+scripts[] = 'js/footable.js'
+scripts[] = 'js/jquery-migrate-1.2.1.js'
+scripts[] = 'js/scripts.js' 
+
+
+; Core regions
+regions[content] = 'Main content'
+regions[header] = 'Header'
+regions[menu_bar] = 'Menu bar'
+regions[slideshow] = 'Slideshow'
+regions[feature] = 'Feature'
+regions[highlighted] = 'Highlighted'
+regions[footer] = 'Footer'
+regions[help] = 'Help'
+regions[page_top] = 'Page top'
+regions[page_bottom] = 'Page bottom'
+
+; Sidebar regions
+regions[sidebar_first] = 'Sidebar first'
+regions[sidebar_second] = 'Sidebar second'
+
+; panel regions
+regions[panel_first_1] = 'Panel first column 1'
+regions[panel_second_1] = 'Panel second column 1'
+regions[panel_third_1] = 'Panel third column 1'
+regions[panel_fourth_1] = 'Panel fourth column 1'
+regions[panel_fifth_1] = 'Panel fifth column 1'
+regions[panel_sixth_1] = 'Panel sixth column 1'
+regions[panel_sixth_2] = 'Panel sixth column 2'
+regions[panel_sixth_3] = 'Panel sixth column 3'
+regions[panel_sixth_4] = 'Panel sixth column 4'
+regions[panel_seventh_1] = 'Panel seventh column 1'
+regions[panel_seventh_2] = 'Panel seventh column 2'
+regions[panel_multiple_1] = 'Panel multiple view 1'
+regions[panel_multiple_2] = 'Panel multiple view 2'
+regions[panel_multiple_3] = 'Panel multiple view 3'
+
+; Features (core settings)
+features[] = 'logo'
+features[] = 'name'
+features[] = 'slogan'
+features[] = 'node_user_picture'
+features[] = 'comment_user_picture'
+features[] = 'comment_user_verification'
+features[] = 'favicon'
+features[] = 'go_to_top_button'
+features[] = 'secondary_menu'
+
+; Breadcrumb
+settings[breadcrumb_display] = 'no'
+settings[breadcrumb_separator] = ' &#187; '
+settings[breadcrumb_home] = 0
+
+; Layouts
+pages[default] = 'Normal page'
+
+; Default settings
+settings[grid] = 'fluid-grid-24'
+settings[layout_width] = '960px'
+settings[layout_debug_grid] = 0
+settings[page_layout] = 'default'
+
+; Sidebar width settings
+settings[sidebar_first_width] = 7
+
+; Panel width settings
+settings[panel_first_1_width] = 24
+
+settings[panel_second_1_width] = 24
+settings[panel_third_1_width] = 24
+settings[panel_fourth_1_width] = 24
+settings[panel_fifth_1_width] = 24
+settings[panel_sixth_1_width] = 6
+settings[panel_sixth_2_width] = 6
+settings[panel_sixth_3_width] = 6
+settings[panel_sixth_4_width] = 6
+settings[panel_seventh_1_width] = 12
+settings[panel_seventh_2_width] = 12
+settings[panel_multiple_1_width] = 12
+settings[panel_multiple_2_width] = 6
+settings[panel_multiple_3_width] = 6
+
+; Fonts
+settings[base_font] = 'bf-a'
+settings[site_name_font] = ''
+settings[site_slogan_font] = ''
+settings[page_title_font] = ''
+settings[node_title_font] = ''
+settings[comment_title_font] = ''
+settings[block_title_font] = ''
+settings[font_size] = 'fs-medium'
+
+; Extra Typo
+settings[load_extra_typo_styles] = 1
+
+; Default fonts family
+default_fonts[sss] = 'Calibri, Candara, Helvetica Neue, Trebuchet MS, Arial, Helvetica, sans-serif'
+default_fonts[ssl] = 'Verdana, Geneva, Arial, Helvetica, sans-serif'
+default_fonts[a] = 'Arial, Helvetica, sans-serif'
+default_fonts[ss] = 'Garamond, Perpetua, Times New Roman, serif'
+default_fonts[sl] = 'Georgia, Baskerville, Palatino, Palatino Linotype, Book Antiqua, Times New Roman, serif'
+default_fonts[m] = 'Segoe UI, Myriad Pro, Myriad, Arial, Helvetica, sans-serif;'
+default_fonts[l] = 'Lucida Sans Unicode, Lucida Sans, Lucida Grande, Verdana, Geneva, sans-serif'
+default_fonts[ms] = 'Consolas, Monaco, Courier New, Courier, monospace'
+
+block_styles[raw] = 'Raw'
+block_styles[rounded] = 'Rounded'
+block_styles[xhtml] = 'XHTML'
+
+block_extend_classes[badge-hot] = 'Badge Hot'
+block_extend_classes[badge-new] = 'Badge New'
+block_extend_classes[badge-pick] = 'Badge Pick'
+block_extend_classes[badge-top] = 'Badge Top'
+block_extend_classes[blue-color] = 'Blue Color'
+block_extend_classes[white-color] = 'White Color'
+block_extend_classes[yellow-color] = 'Yellow Color'
+block_extend_classes[no-padding] = 'No Padding'
+
+; Superfish Styles
+superfish_styles[simplex] = 'Simplex Style for Superfish'
+settings[superfish_extend_style_1] = 'simplex'
+
+; Quicktabs Styles
+quicktabs_styles[simplex] = 'Simplex Style for Quicktabs'
+settings[quicktabs_extend_style_quicktabs] = 'simplex'
+
+settings[toggle_logo] = 1
+settings[toggle_name] = 0
+settings[toggle_slogan] = 1
+settings[toggle_node_user_picture] = 1
+settings[toggle_comment_user_picture] = 1
+settings[toggle_comment_user_verification] = 1
+settings[toggle_favicon] = 1
+settings[toggle_secondary_menu] = 0
+settings[default_logo] = 1
+settings[default_favicon] = 1
+
+settings[default_logo] = 1
+settings[logo_path] = ''
+settings[default_favicon] = 1
+settings[favicon_path] = ''

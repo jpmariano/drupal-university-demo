@@ -1,0 +1,243 @@
+<?php
+/**
+* @file
+* This module provides a node type called job post
+*/
+/**
+* Implements hook_node_info() to provide our org_library type.
+*/
+function org_library_node_info() {
+	return array(
+		'org_library_member' => array(
+			'name' => t('Member'),
+			'base' => 'org_library_member',
+			'description' => t('Use this content type to add a member.'),
+			'has_title' => TRUE,
+			'title_label' => t('Member'),
+			'help' => t('Enter the member firstname, lastname, email, phone number, member details, and select membership location'),
+		),
+			'org_library_address' => array(
+			'name' => t('Library Address'),
+			'base' => 'org_library_address',
+			'description' => t('Use this content type to library address.'),
+			'has_title' => TRUE,
+			'title_label' => t('Address Title'),
+			'help' => t('Enter the libary street, city, zipcode, and state'),
+		),
+	);
+}
+
+
+/**
+* Implements hook_permission().
+*/
+function org_library_permission() {
+	return array(
+		'create library member' => array(
+			'title' => t('Create a member'),
+			'description' => t('Create a library member'),
+		),
+		'edit own library member' => array(
+			'title' => t('Edit own library member'),
+			'description' => t('Edit your own library member'),
+		),
+		'edit any library member' => array(
+			'title' => t('Edit any library member'),
+			'description' => t('Edit any library member'),
+		),
+		'delete own library member' => array(
+			'title' => t('Delete own library member'),
+			'description' => t('Delete own library member'),
+		),
+		'delete any library member' => array(
+			'title' => t('Delete any library member'),
+			'description' => t('Delete any library member'),
+		),
+		
+		'create library address' => array(
+			'title' => t('Create a library address'),
+			'description' => t('Create a library address'),
+		),
+		'edit own library address' => array(
+			'title' => t('Edit own library address'),
+			'description' => t('Edit your own library address'),
+		),
+		'edit any library address' => array(
+			'title' => t('Edit any library address'),
+			'description' => t('Edit any library address'),
+		),
+		'delete own library address' => array(
+			'title' => t('Delete own library address'),
+			'description' => t('Delete own library address'),
+		),
+		'delete any library address' => array(
+			'title' => t('Delete any library address'),
+			'description' => t('Delete any library address'),
+		),
+	);
+}
+
+/**
+* Implements hook_node_access().
+*/
+function org_library_node_access($op, $node, $account) {
+	$is_author = $account->uid == $node->uid;
+	switch ($op) {
+		case 'create':
+			// Allow if user's role has 'create joke' permission.
+			if ((user_access('create library member', $account))||(user_access('create library address', $account))) {
+				return NODE_ACCESS_ALLOW;
+			}
+		case 'update':
+			// Allow if user's role has 'edit own joke' permission and user is
+			// the author; or if the user's role has 'edit any joke' permission.
+			if (
+						( user_access('edit own library member', $account) && $is_author ||
+							user_access('edit any library member', $account) ) ||
+						
+						( user_access('edit own library address', $account) && $is_author ||
+							user_access('edit any library address', $account))
+				  ) {
+				return NODE_ACCESS_ALLOW;
+			}
+		case 'delete':
+			// Allow if user's role has 'delete own joke' permission and user is
+			// the author; or if the user's role has 'delete any joke' permission.
+			if (
+						(user_access('delete own library member', $account) && $is_author ||
+						 user_access('delete any library member', $account)) ||
+						(user_access('delete own library address', $account) && $is_author ||
+						 user_access('delete any library address', $account)) 
+				 ){
+				return NODE_ACCESS_ALLOW;
+			}
+	}
+}
+
+
+/**
+* Implement hook_form() with the standard default form.
+*/
+function org_library_form($node, $form_state) {
+	return node_content_form($node, $form_state);
+}
+
+
+/**
+* Implements hook_insert().
+*/
+function org_library_insert($node) {
+
+	
+	if (isset( $node->type )){
+	$nodetype = $node->type;
+
+	 
+	 switch ($nodetype) {
+	 	
+	    case 'org_library_member':
+
+					watchdog('libary member', 'A new member: '.$node->title.' for libray: '.
+					$node->org_library_member['und'][0]['value'].
+					' was added by UID: '.$node->uid, $variables = array(),
+					WATCHDOG_NOTICE, $link = 'node/'.$node->nid);
+		
+		  break; 
+		  
+	    case 'org_library_address': 
+					watchdog('libary member', 'A new member: '.$node->title.' for libray: '.
+					$node->org_library_address['und'][0]['value'].
+					' was added by UID: '.$node->uid, $variables = array(),
+					WATCHDOG_NOTICE, $link = 'node/'.$node->nid);
+	      break;
+		  
+	    default:
+	      break;
+	  }
+
+	}
+	
+	
+}
+
+/**
+* Implements hook_update().
+*/
+function org_library_update($node) {
+	
+	
+	if (isset( $node->type )){
+	$nodetype = $node->type;
+
+	 
+	 switch ($nodetype) {
+	 	
+	    case 'org_library_member':
+
+					// log details of the job posting to watchdog
+					watchdog('libary member', 'A new member: '.$node->title.' for libray: '.
+					$node->org_library_member['und'][0]['value'].
+					' was updated by UID: '.$node->uid, $variables = array(),
+					WATCHDOG_NOTICE, $link = 'node/'.$node->nid);
+		
+		  break; 
+		  
+	    case 'org_library_address': 
+					// log details of the job posting to watchdog
+					watchdog('libary member', 'A new member: '.$node->title.' for libray: '.
+					$node->org_library_address['und'][0]['value'].
+					' was updated by UID: '.$node->uid, $variables = array(),
+					WATCHDOG_NOTICE, $link = 'node/'.$node->nid);
+	      break;
+		  
+	    default:
+	      break;
+	  }
+
+	}
+	
+	
+	
+	
+}
+
+
+/**
+* Implements hook_delete().
+*/
+function org_library_delete($node) {
+	
+	
+		if (isset( $node->type )){
+	$nodetype = $node->type;
+
+	 
+	 switch ($nodetype) {
+	 	
+	    case 'org_library_member':
+
+					// log details of the job posting to watchdog
+					watchdog('libary member', 'A new member: '.$node->title.' for libray: '.
+					$node->org_library_member['und'][0]['value'].
+					' was deleted by UID: '.$node->uid, $variables = array(),
+					WATCHDOG_NOTICE, $link = 'node/'.$node->nid);
+		
+		  break; 
+		  
+	    case 'org_library_address': 
+					// log details of the job posting to watchdog
+					watchdog('libary member', 'A new member: '.$node->title.' for libray: '.
+					$node->org_library_address['und'][0]['value'].
+					' was deleted by UID: '.$node->uid, $variables = array(),
+					WATCHDOG_NOTICE, $link = 'node/'.$node->nid);
+	      break;
+		  
+	    default:
+	      break;
+	  }
+
+	}
+}
+
+
+

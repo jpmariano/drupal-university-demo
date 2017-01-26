@@ -1,0 +1,152 @@
+; Theme info
+name = 'Sitename Tb Page'
+description = TB Page is a light weight Drupal theme that is based on <a href="http://themebrain.com/about-nucleus">Nucleus</a> and shows a slick styling of some basic Drupal content types such as blog, poll, forum and a contact form. Requires <a href="http://drupal.org/project/nucleus">Nucleus</a> base theme.
+core = '7.x'
+engine = 'phptemplate'
+base theme = 'tb_page'
+screenshot = 'screenshot.png'
+
+; Howard Font Stylesheets 
+stylesheets[all][] = 'fonts/howard/howard-font.css'
+
+; Conditional Stylesheets for IE
+stylesheets-conditional[IE][all][] = 'css/ie.css'
+stylesheets-conditional[IE 9][all][] = 'css/ie7.css'
+stylesheets-conditional[IE 7][all][] = 'css/ie7.css'
+
+; Stylesheets
+stylesheets[all][] = 'css/footable.core.min.css'
+stylesheets[all][] = 'css/footable.metro.css'
+stylesheets[all][] = 'css/styles.css'
+
+; Scripts
+scripts[] = 'js/jquery.fitvids.js'
+scripts[] = 'js/footable.js'
+scripts[] = 'js/jquery-migrate-1.2.1.js'
+scripts[] = 'js/scripts.js' 
+
+
+; Core regions
+regions[content] = 'Main content'
+regions[help] = 'Help'
+regions[page_home] = 'Home'
+regions[page_introduction] = 'Introduction'
+regions[page_portfolio] = 'Portfolio'
+regions[page_team] = 'Team'
+regions[page_client] = 'Client'
+regions[page_contact] = 'Contact'
+regions[footer] = 'Footer'
+
+; Sidebar regions
+regions[sidebar_first] = 'Sidebar first'
+;regions[sidebar_second] = 'Sidebar second'
+
+; Sidebar width settings
+settings[sidebar_first_width] = 5
+
+; panel regions
+;regions[panel_first_1] = 'Panel first column 1'
+;regions[panel_first_2] = 'Panel first column 2'
+
+; one page menus
+onepage_menu[page_home] = 'Home'
+onepage_menu[page_introduction] = 'Introduction'
+onepage_menu[page_portfolio] = 'Portfolio'
+onepage_menu[page_team] = 'Team'
+onepage_menu[page_client] = 'Client'
+onepage_menu[page_contact] = 'Contact'
+
+; Supported Skins
+skins[christmas] = 'Christmas'
+skins[solid] = 'Solid Style'
+skins[metro] = 'Metro Style'
+
+; Features (core settings)
+features[] = 'logo'
+features[] = 'name'
+features[] = 'slogan'
+features[] = 'node_user_picture'
+features[] = 'comment_user_picture'
+features[] = 'comment_user_verification'
+features[] = 'favicon'
+features[] = 'go_to_top_button'
+features[] = 'secondary_menu'
+
+; Breadcrumb
+settings[breadcrumb_display] = 'yes'
+settings[breadcrumb_separator] = ' &#187; '
+settings[breadcrumb_home] = 1
+
+; Layouts
+pages[default] = 'Normal page'
+
+; Default settings
+settings[grid] = 'fluid-grid-12'
+settings[layout_width] = '1050px'
+settings[layout_debug_grid] = 0
+settings[page_layout] = 'default'
+
+; Fonts
+settings[base_font] = 'bf-a'
+settings[site_name_font] = ''
+settings[site_slogan_font] = ''
+settings[page_title_font] = ''
+settings[node_title_font] = ''
+settings[comment_title_font] = ''
+settings[block_title_font] = ''
+settings[font_size] = 'fs-medium'
+
+; Extra Typo
+settings[load_extra_typo_styles] = 1
+
+; Default fonts family
+default_fonts[sss] = 'Calibri, Candara, Helvetica Neue, Trebuchet MS, Arial, Helvetica, sans-serif'
+default_fonts[ssl] = 'Verdana, Geneva, Arial, Helvetica, sans-serif'
+default_fonts[a] = 'Arial, Helvetica, sans-serif'
+default_fonts[ss] = 'Garamond, Perpetua, Times New Roman, serif'
+default_fonts[sl] = 'Georgia, Baskerville, Palatino, Palatino Linotype, Book Antiqua, Times New Roman, serif'
+default_fonts[m] = 'Segoe UI, Myriad Pro, Myriad, Arial, Helvetica, sans-serif;'
+default_fonts[l] = 'Lucida Sans Unicode, Lucida Sans, Lucida Grande, Verdana, Geneva, sans-serif'
+default_fonts[ms] = 'Consolas, Monaco, Courier New, Courier, monospace'
+
+block_styles[raw] = 'Raw'
+block_styles[rounded] = 'Rounded'
+block_styles[xhtml] = 'XHTML'
+
+block_extend_classes[contact-form] = 'Contact Form'
+
+; Superfish Styles
+superfish_styles[simply] = 'One Page Style for Superfish'
+settings[superfish_extend_style_1] = 'onepage'
+
+
+settings[default_region_footer_style] = 'raw'
+settings[default_region_header_style] = 'raw'
+settings[default_region_slideshow_style] = 'raw'
+
+settings[toggle_logo] = 1
+settings[toggle_name] = 0
+settings[toggle_slogan] = 0
+settings[toggle_node_user_picture] = 1
+settings[toggle_comment_user_picture] = 1
+settings[toggle_comment_user_verification] = 1
+settings[toggle_favicon] = 1
+settings[toggle_secondary_menu] = 0
+settings[breadcrumb_display] = 0
+settings[back_to_top_display] = 1
+settings[show_skins_menu] = 1
+
+settings[default_logo] = 1
+settings[default_favicon] = 1
+settings[logo_path] = ''
+settings[favicon_path] = ''
+
+; Region Styles
+region_styles[style-1] = 'Style 1'
+region_styles[style-2] = 'Style 2'
+region_styles[style-3] = 'Style 3'
+
+settings[page_home] = 'style-1'
+settings[page_portfolio] = 'style-1'
+settings[page_client] = 'style-2'
+settings[page_contact] = 'style-1'

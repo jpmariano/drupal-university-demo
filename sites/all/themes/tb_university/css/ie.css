@@ -1,0 +1,49 @@
+/**
+ * IE Compatibility Tweaks
+ */
+pre {
+    white-space: pre-line; /* CSS3 - Text module (Candidate Recommendation) http://www.w3.org/TR/css3-text/#white-space */
+    word-wrap: break-word; /* IE 5.5+ */
+}
+
+img {
+  max-width: none !important;
+}
+
+/* blocks.css */
+.block-user .item-list li {
+  display: inline;
+  zoom: 1;
+}
+
+#user-login-form .item-list li {
+  display: block;
+}
+
+/* forms.css */
+input.form-submit {
+  overflow: visible; /* IE Fix */
+}
+
+input.form-radio {   
+  vertical-align: middle;
+}
+
+input.form-submit,
+a.button {
+  padding: 3px 10px;
+}
+
+#comment-form .filter-wrapper {
+  padding-top: 1em;
+}
+
+/* fields.css */
+.field-type-taxonomy-term-reference ul li {
+  display: inline;
+  zoom: 1;
+}
+
+.view-videos .views-field-field-videos img { 
+  width: 100%;
+}

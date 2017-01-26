@@ -1,0 +1,93 @@
+/**
+  * Responsive Elements
+  */
+#main-wrapper .container,
+#main-wrapper .container .grid-12,
+.wrapper .container {
+  width: 100% !important;
+}
+
+#main-wrapper {
+  padding: 20px;
+  margin: 0;
+}
+
+.wrapper .grid-inner {
+  padding: 0 20px;
+}
+
+/* Images, Object */
+img, object {
+  max-width: 100%;
+}
+
+
+/**
+  * Header
+  */
+#header-wrapper .container {
+  border-bottom: none;
+}
+
+.christmas-skin #header-wrapper #header {
+  border-bottom: none;
+}
+
+/* Menu */
+#onepage-menu .change-skin-menu {
+  right: 0;
+}
+
+/* View */
+ul.jcarousel li .view-item {
+  width: 22%;
+}
+
+.map iframe {
+  width: 100% !important;
+}
+
+.christmas-skin .testimonial {
+  margin-left: 2%;
+}
+
+/**
+  * Footer
+  */
+#footer-wrapper .container {
+  border: none; 
+  padding-top: 0;
+}
+
+#footer-wrapper .region-footer {
+  border-top: 1px solid #333;
+  padding-top: 40px;
+}
+
+#footer-wrapper .grid-inner {
+  margin: 0 20px;
+  padding-top: 0 !important;
+}
+
+/* Skin */
+.christmas-skin .view-our-team .views-field-field-member-image img {
+  width: 240px;
+  left: 0;
+  margin-left: -35px;
+}
+
+.christmas-skin #footer-wrapper .region-footer {
+  border-color: #8f1b14;
+}
+
+.solid-skin .view-our-team .views-field-field-member-image img {
+  width: 240px;
+}
+
+.solid-skin #footer-wrapper {
+  padding-bottom: 0;
+}
+
+.solid-skin #user-login .form-text {
+  color: #fff;
+}

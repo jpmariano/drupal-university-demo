@@ -1,0 +1,103 @@
+<?php 
+
+function jptools_preprocess(&$variables, $hook) {
+	  //to see all hooks that run
+ 			//kpr($hook);
+ 		
+ 		
+ 		//to see all hooks that run in their order
+ 		/**
+	 		static $i;
+			kpr($i . '' . $hook);
+			$i++;
+		*/
+		
+		//To see specific hook
+		/**
+			if ($hook == 'page') {
+				static $i;
+				kpr($i . '' . $hook);
+				$i++;
+			}
+		*/
+}
+
+function jptools_preprocess_page(&$variables, $hook) {
+	   //to see inside page hook this is same as line 15
+	   /**
+			static $i;
+			kpr($i . '' . $hook);
+			$i++;
+		 */
+		 
+		 //This shows the page's variables
+		 //kpr($variables);
+		 
+		 //kpr($hook);
+		 
+}
+
+
+
+function jptools_preprocess_node(&$variables) {
+	      // to see what variables avaiblabe for node
+		   //kpr($variables);
+		   
+		  //to see all node articles variables
+		  /**
+			  if($variables['type'] == 'article') {
+					$node = $variables['node'];
+					kpr($node); 
+				}
+			*/
+		
+}
+
+/**
+1. Use Devel Themer
+2. highlight the specific part of the theme you want to check
+3. Find what function is called
+4. copy and paste the function from the drupal.org api into your template.php
+5. In your template.php, replace your function with the candidate function name
+6. use kpr to check the variables
+7. edit as needed
+ */
+ 
+// css
+function jptools_css_alter(&$css) {
+	//kpr($css); 
+	
+	//unset($css['modules/system/system.menus.css']);
+};
+
+
+// js
+function jptools_js_alter(&$javascript) {
+	
+	//kpr($javascript);
+	
+	//unset($css['modules/system/system.menus.js']);
+};
+
+
+function jptools_page_alter(&$page){
+	//kpr($page);
+	
+	//Example code moving from one array to another
+	/**
+	if (arg(0) == 'node' && is_numeric(arg(1))){
+		$nid = arg(1);
+		$image = $page['content']['system)main']['nodes'][$nid]['field_image'];
+		//move the image to $page['sidebar_first'] 
+		array_unshift($page['sidebar_first'], array('image' => $image));
+		//remove from the old location
+		unset( $page['content']['system)main']['nodes'][$nid]['field_image']);
+	}
+	*/
+}
+
+//&$form - form Elements, $form_state contains processing information, $form_id - is the form's unique id
+function jptools_form_alter(&$form, &$form_state, $form_id){
+	//dsm($form_id);
+	//debug($form_id);
+}

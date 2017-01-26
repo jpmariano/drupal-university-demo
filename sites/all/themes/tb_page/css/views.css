@@ -1,0 +1,519 @@
+/**
+ * Common View Elements
+ */
+
+/* --- Views Header --- */
+.view-header {
+  margin-bottom: 40px;
+}
+
+.view-header p {  
+  padding: 0;
+}
+
+.view-header p.desc,
+p.desc {
+  color: #999;
+  font-weight: bold;
+  padding: 0;
+}
+
+/* --- Views Field --- */
+.views-field {
+}
+
+.field-content {
+}
+
+/* Views Field Title */
+.views-field-title {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.views-field-title a,
+.views-field-title span {
+  color: #000;
+  font-size: 15px;
+  font-weight: bold;  
+}
+
+.style-1 .views-field-title a,
+.style-1 .views-field-title span {
+  color: #fff
+}
+
+.views-field-title a:hover,
+.views-field-title a:focus,
+.style-1 .views-field-title a:hover,
+.style-1 .views-field-title a:focus {
+  color: #f7682c;
+}
+
+/* Views Field Image */
+.views-field-field-image {
+  margin-bottom: 20px;
+}
+
+.views-field-field-image .field-content {
+}
+
+/* Views Field Body */
+.views-field-body {
+}
+
+.views-field-body .field-content {
+}
+
+/* Views Field Changed */
+.views-field-changed {
+}
+
+.views-field-changed .field-content {
+}
+
+/* --- Views Inline Grid --- */
+.views-row {
+}
+
+.views-row-odd {
+}
+
+.views-row-even {
+}
+
+.views-col {
+}
+
+.cols-1 .views-col {
+  width: 100%;
+}
+
+.cols-2 .views-col {
+  width: 50%;
+}
+
+.cols-3 .views-col {
+  width: 33.33%;
+}
+
+.cols-4 .views-col {
+  width: 25%;
+}
+
+.cols-5 .views-col {
+  width: 20%;
+}
+
+.cols-6 .views-col {
+  width: 16.66%;
+}
+
+/**
+ * Supported Views Formats
+ */
+/* --- Slideshow --- */
+.region-page-home .views_slideshow_main > div > div,
+.views-slideshow-cycle-main-frame-row, 
+.views-slideshow-cycle-main-frame {  
+  width: 100% !important;
+}
+
+.region-page-home .views-field-title {
+  margin-bottom: 30px;
+}
+
+.region-page-home .views-field-title span,
+.region-page-home .views-field-title a {
+  color: #fff;
+  font-size: 60px;
+  line-height: 1;
+  margin: 10px 0 30px;
+}
+
+.region-page-home  p {
+  line-height: 30px;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+
+/* Titles */
+#slideshow-wrapper .views-field-title {
+  background: #333;
+  bottom: 0;
+  color: #fff;
+  display: none; /* Hide the title . Remove this line to show. */
+  font-size: 0.875em;
+  left: 0;
+  position: absolute;
+  text-transform: uppercase;
+}
+
+#slideshow-wrapper .views-field-title .field-content {
+  display: block;
+  padding: .25em 2em;
+}
+
+#slideshow-wrapper .views-field-title a {
+  color: #fff;
+}
+
+#slideshow-wrapper .views-field-title a:hover,
+#slideshow-wrapper .views-field-title a:active,
+#slideshow-wrapper .views-field-title a:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Slideshow Navigator */
+#slideshow-wrapper .views-slideshow-controls-bottom {
+  bottom: 0;
+  display: none;
+  font-size: .92em;
+  height: auto;
+  position: absolute;
+  right: 0;
+  width: auto;
+  z-index: 20; /* if you have more than 18 images in slideshow, increase this value */
+}
+
+#slideshow-wrapper .region-slideshow:hover .views-slideshow-controls-bottom {
+  display: block;
+}
+
+#slideshow-wrapper .views-slideshow-controls-top {
+  display: none;
+}
+
+#slideshow-wrapper .views_slideshow_controls_text {
+  background: #333;
+  color: #ccc;
+  float: left;
+}
+
+#slideshow-wrapper .views_slideshow_controls_text span {
+  cursor: pointer;
+  display: inline-block;
+  padding: .25em 1em;
+}
+
+#slideshow-wrapper .views_slideshow_controls_text span:hover {
+  background: #666;
+  color: #fff;
+}
+
+#slideshow-wrapper .views_slideshow_slide_counter {
+  background: #c00;
+  color: #fff;
+  float: left;
+  margin-left: 1px;
+  padding: .25em 1em;
+}
+
+/* Slideshow Full Pager */
+#slideshow-wrapper .view > .pager {
+  bottom: 0;
+  height: auto;
+  position: absolute;
+  right: 0;
+  width: auto;
+  z-index: 20; /* if you have more than 18 images in slideshow, increase this value */
+}
+
+/* Slideshow Mini Pager */
+#slideshow-wrapper .views-mini-pager {
+  bottom: 0;
+  height: auto;
+  position: absolute;
+  right: 0;
+  width: auto;
+  z-index: 20; /* if you have more than 18 images in slideshow, increase this value */
+}
+
+/*
+ * jCarousel view
+ */
+.jcarousel-container {
+  background: url(../images/bg-line.gif) repeat-x left bottom;
+}
+
+ul.jcarousel li .view-item {
+  float: left;
+  display: inline;
+  margin: 0 12px 15px; 
+  position: relative;
+}
+
+ul.jcarousel .views-field-title {
+  margin-top: 20px;
+}
+
+ul.jcarousel .views-field-field-category {
+  margin-bottom: 10px;
+}
+
+ul.jcarousel .field-content {
+  position: relative;
+}
+
+ul.jcarousel .views-field-field-portfolio-image a:after {
+  background: #000;  
+  content: "";
+  height: 100%;
+  left: 0;
+  margin-left:0;
+  opacity: 0.3;
+  position: absolute;
+  transition: all 1s ease 0s;
+  width: 100%;
+  z-index: 1;
+}
+
+ul.jcarousel li .view-item:hover .views-field-field-portfolio-image a:after {
+  opacity: 0;
+}
+
+ul.jcarousel .views-field-field-portfolio-image a img { 
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+ */
+	filter: gray; /* IE6-9 */
+	transition: all .6s ease;
+	-webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+	-webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
+	-webkit-backface-visibility: hidden; /* Fix for transition flickering */
+	-moz-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	width: 230px;
+	height: 180px;
+}
+
+ul.jcarousel li .view-item:hover .views-field-field-portfolio-image a:hover img {
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+	-moz-filter: grayscale(0%);
+	-o-filter: grayscale(0%);
+	-ms-filter: grayscale(0%);
+	transition: all .6s ease;
+	-webkit-transition: all .6s ease;
+}
+
+.jcarousel-container-horizontal {
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+
+.jcarousel-clip-horizontal {
+  width: auto;
+  overflow: hidden;
+}
+
+.jcarousel-navigation {
+  background: #000;
+  display: inline;
+  margin: 0;
+  padding: 10px;
+}
+
+.jcarousel-navigation li {
+  border: 1px solid #333;
+  display: inline-block;
+  height: 11px;
+  margin-bottom: -10px !important;
+  margin-left: 5px !important;
+  width: 11px;
+}
+
+.jcarousel-navigation li:first-child {
+  margin-left: 0 !important;
+}
+
+.jcarousel-navigation li a {
+  -moz-box-sizing: border-box;
+  display: block; 
+  left: -4px;
+  float: left;
+  padding: 7px;
+  position: relative;
+  top: -4px;  
+}
+
+.jcarousel-navigation li a span {
+  display: block;
+  height: 5px;
+  text-indent: -999em;
+  width: 5px;
+}
+
+.jcarousel-navigation li.active a span,
+.jcarousel-navigation li:hover a span {
+   background: #F7682C;
+   border-radius: 500px;   
+}
+
+/*
+ * Custom view
+ */
+.testimonial {
+  margin: 20px 0; 
+}
+
+.wrapper .container .testimonial p {
+  text-align: left;
+}
+
+.testimonial .grid-inner {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 30px !important;
+}
+
+.testimonial .views-field-field-image {
+  float: left;
+  margin-right: 20px;
+}
+
+.views-field-field-author-reference p:before {
+  content: "— ";  
+}
+
+.views-field-field-author-reference p {
+  font-size: 11px;
+}
+
+.views-field-field-job-title {
+  color: #999;
+  font-size: 11px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.view-our-team .views-field-field-member-image {
+  position: relative;
+}
+
+.view-our-team .views-field-field-member-image:after {
+  background: #000;  
+  content: "";
+  height: 100%;
+  left: 0;
+  margin-left: 0;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  transition: all 1s ease 0s;
+  width: 100%;
+  z-index: 1;
+}
+
+.view-our-team .view-our-team:hover .views-field-field-member-image:after {
+  opacity: 0;
+}
+.clients .views-field img,
+.testimonial .views-field-field-image img,
+.view-our-team .views-field-field-member-image img { 
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+ */
+	filter: gray; /* IE6-9 */
+	transition: all .6s ease;
+	-webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+	-webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
+	-webkit-backface-visibility: hidden; /* Fix for transition flickering */
+	-moz-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+}
+.clients .views-field:hover img,
+.testimonial .views-field-field-image:hover img,
+.view-our-team .view-our-team:hover .views-field-field-member-image img {
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+	filter: grayscale(0%);
+	transition: all .6s ease;
+	-webkit-filter: grayscale(0%);
+	-moz-filter: grayscale(0%);
+	-o-filter: grayscale(0%);
+	-ms-filter: grayscale(0%);
+	-webkit-transition: all .6s ease;
+}
+.view-our-team .views-field-field-member-image img {
+	width: 240px;
+	height: 180px;
+}
+.testimonial .views-field-field-image img {
+	 width: 60px;
+	 height: 60px;
+}
+
+.view-our-team .view-our-team:hover .views-field-title span {
+  color: #f7682c;
+}
+
+.views-field-field-social-share a {
+  background: url("../images/social-icon.png") no-repeat;
+  display: inline-block;
+  height: 20px;
+  text-indent: -999em;
+  width: 20px;
+}
+
+.views-field-field-social-share .facebook {
+  background-position: 0 -20px;
+}
+
+.views-field-field-social-share .twitter {
+  background-position: -20px -20px;
+}
+
+.views-field-field-social-share .flickr {
+  background-position: -40px -20px;
+}
+
+.view-our-team .view-our-team:hover .facebook {
+  background-position: 0 -40px;
+}
+
+.view-our-team .view-our-team:hover .flickr {
+  background-position: -40px -40px;
+}
+
+.view-our-team .view-our-team:hover .twitter {
+  background-position: -20px -40px;
+}
+
+.view-our-team .view-our-team:hover .views-field-title span {
+  color: #f7682c;
+}
+
+.grid.view-our-team .grid-inner { 
+  padding: 0;
+}
+
+.view-intro .views-field-field-image a {
+  -moz-box-sizing: border-box;
+  border: 5px solid #000;
+  border-radius: 500px;
+  display: block;
+  height: 110px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 110px;
+}
+
+.view-intro .views-field-field-image img {
+  margin-top: -30px;
+  position: relative;
+  top: 50%;
+  width: 60px !important;  
+}
+
+.grid.clients .grid-inner {
+  margin-left: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.clients .views-field img {
+  width: 170px;
+}

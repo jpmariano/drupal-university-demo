@@ -1,0 +1,20 @@
+/**
+ * IE 7 Compatibility Tweaks
+ */
+
+/* forms.css */
+
+#search-form input.form-checkbox {
+  margin-top: 1px;
+}
+
+.webform-client-form span.button input.form-submit {
+  margin-top: 15px;
+}
+
+div.resizable-textarea textarea {  
+  overflow: hidden;
+}
+.openid-links .user-link {
+  display: none;
+}

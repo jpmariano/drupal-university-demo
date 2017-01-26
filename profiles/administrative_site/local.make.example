@@ -1,0 +1,59 @@
+; administrative_site make file for local development
+core = "7.x"
+api = "2"
+
+projects[drupal][version] = "7.x"
+; include the d.o. profile base
+includes[] = "drupal-org.make"
+
+; +++++ Libraries +++++
+
+; chosen
+libraries[chosen][directory_name] = "chosen"
+libraries[chosen][type] = "library"
+libraries[chosen][destination] = "libraries"
+libraries[chosen][download][type] = "get"
+libraries[chosen][download][url] = "" ; TODO add download URI
+
+; fontawesome
+libraries[fontawesome][directory_name] = "fontawesome"
+libraries[fontawesome][type] = "library"
+libraries[fontawesome][destination] = "libraries"
+libraries[fontawesome][download][type] = "get"
+libraries[fontawesome][download][url] = "" ; TODO add download URI
+
+; jquery.cycle
+libraries[jquery.cycle][directory_name] = "jquery.cycle"
+libraries[jquery.cycle][type] = "library"
+libraries[jquery.cycle][destination] = "libraries"
+libraries[jquery.cycle][download][type] = "get"
+libraries[jquery.cycle][download][url] = "" ; TODO add download URI
+
+; jquery.imagesloaded
+libraries[jquery.imagesloaded][directory_name] = "jquery.imagesloaded"
+libraries[jquery.imagesloaded][type] = "library"
+libraries[jquery.imagesloaded][destination] = "libraries"
+libraries[jquery.imagesloaded][download][type] = "get"
+libraries[jquery.imagesloaded][download][url] = "" ; TODO add download URI
+
+; modernizr
+libraries[modernizr][directory_name] = "modernizr"
+libraries[modernizr][type] = "library"
+libraries[modernizr][destination] = "libraries"
+libraries[modernizr][download][type] = "get"
+libraries[modernizr][download][url] = "" ; TODO add download URI
+
+; pdf.js
+libraries[pdf.js][directory_name] = "pdf.js"
+libraries[pdf.js][type] = "library"
+libraries[pdf.js][destination] = "libraries"
+libraries[pdf.js][download][type] = "get"
+libraries[pdf.js][download][url] = "" ; TODO add download URI
+
+; administrative_site
+libraries[administrative_site][directory_name] = "administrative_site"
+libraries[administrative_site][type] = "profile"
+libraries[administrative_site][destination] = "../../profiles"
+libraries[administrative_site][download][type] = "get"
+libraries[administrative_site][download][url] = "http://ftp.drupal.org/files/projects/administrative_site-7.x-1.x-dev.tar.gz"
+

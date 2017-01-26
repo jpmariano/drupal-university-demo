@@ -1,0 +1,553 @@
+/**
+ * Common View Elements
+ */
+ 
+.panel .view .grid-inner {
+  padding: 0 20px !important;
+}
+
+/* --- Views Field --- */
+.views-field {
+}
+
+.field-content {
+}
+
+/* Views Field Title */
+.views-field-title {
+  color: #333;
+  font-family: 'texgyreadventorBold', sans-serif;
+  font-size: 1.167em;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+
+.views-field-title .field-content {
+}
+
+/* Views Field Image */
+.views-field-field-image {
+  margin-bottom: 20px;
+}
+
+.views-field-field-image .field-content {
+}
+
+/* Views Field Body */
+.views-field-body {
+}
+
+.views-field-body .field-content {
+}
+
+/* Views Field Changed */
+.views-field-changed {
+}
+
+.views-field-changed .field-content {
+}
+
+/* Views Field View Node */
+.views-field-view-node a {
+  background: url(../images/ui-icons.png) no-repeat 0 3px; 
+  display: inline-block;  
+  padding-left: 25px;
+}
+
+.views-field-view-node a:hover,
+.views-field-view-node a:active,
+.views-field-view-node li a:focus {
+  background-position: 0 -20px;
+  color: #e47e6b;  
+}
+
+/* --- Views Inline Grid --- */
+.views-row {
+}
+
+.views-row-odd {
+}
+
+.views-row-even {
+}
+
+.views-col {
+}
+
+.cols-1 .views-col {
+  width: 100%;
+}
+
+.cols-2 .views-col {
+  width: 50%;
+}
+
+.cols-3 .views-col {
+  width: 33.33%;
+}
+
+.cols-4 .views-col {
+  width: 25%;
+}
+
+.cols-5 .views-col {
+  width: 20%;
+}
+
+.cols-6 .views-col {
+  width: 16.66%;
+}
+
+/**
+ * Supported Views Formats
+ */
+/* --- Slideshow --- */
+.views_slideshow_cycle_teaser_section,
+.views_slideshow_cycle_teaser_section .views-slideshow-cycle-main-frame-row,
+.views_slideshow_cycle_slide {
+	width: 100% !important; 
+}
+
+#slideshow-wrapper .slideshow-container {
+	width: 100%;
+}
+
+#slideshow-wrapper .block-content {
+  padding: 0;
+}
+
+.region-slideshow {
+  position: relative;
+}
+
+/* Titles */
+#slideshow-wrapper .views-field-title {
+  background: url(../images/bg-title.png) repeat 0 0;
+  color: #fff;
+  font-family: "texgyreadventorregular";
+  font-size: 4em;
+  font-weight: bold;  
+  left: 50%;
+  line-height: 1.2em;
+  margin-left: -314px;
+  padding: 10px 0;  
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 45%;  
+  width: 628px;
+}
+
+#slideshow-wrapper .views-field-title .field-content {
+  
+}
+
+#slideshow-wrapper .views-field-title a {
+  color: #fff;
+}
+
+#slideshow-wrapper .views-field-title a:hover,
+#slideshow-wrapper .views-field-title a:active,
+#slideshow-wrapper .views-field-title a:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Images */
+#slideshow-wrapper .views-field-field-slideshow-image img {
+  max-width: none !important;
+}
+
+/* Slideshow Navigator */
+#slideshow-wrapper .views-slideshow-controls-bottom {
+  bottom: 20%;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 20; /* if you have more than 18 images in slideshow, increase this value */
+}
+
+#slideshow-wrapper .views_slideshow_controls_text {
+  background: #333;
+  color: #ccc;
+  float: left;
+}
+
+#slideshow-wrapper .views_slideshow_controls_text span {
+  cursor: pointer;
+  display: inline-block;
+  padding: .25em 1em;
+}
+
+#slideshow-wrapper .views_slideshow_controls_text span:hover {
+  background: #666;
+  color: #fff;
+}
+
+#slideshow-wrapper .views_slideshow_slide_counter {
+  background: #c00;
+  color: #fff;
+  float: left;
+  margin-left: 1px;
+  padding: .25em 1em;
+}
+
+#slideshow-wrapper .views_slideshow_pager_field_item {
+  display: inline-block;
+}
+
+#slideshow-wrapper .views-field-nid {
+  border: 1px solid #fff;
+  border-radius: 500px;
+  display: inline-block;
+  height: 14px; 
+  margin-left: 5px !important;
+  padding: 1px;
+  width: 14px;
+}
+
+#slideshow-wrapper .views-content-nid {
+  background: #fff;
+  border-radius: 500px;  
+  cursor: pointer;
+  display: block;
+  height: 14px;
+  text-indent: -999em;
+  width: 14px;
+}
+
+#slideshow-wrapper .active .views-content-nid,
+#slideshow-wrapper .views-content-nid:hover,
+#slideshow-wrapper .views-content-nid:focus {
+  background: #e47e6b;
+}
+
+/* Slideshow Full Pager */
+#slideshow-wrapper .view > .pager {
+  bottom: 0;
+  height: auto;
+  position: absolute;
+  right: 0;
+  width: auto;
+  z-index: 20; /* if you have more than 18 images in slideshow, increase this value */
+}
+
+/* Slideshow Mini Pager */
+#slideshow-wrapper .views-mini-pager {
+  bottom: 0;
+  height: auto;
+  position: absolute;
+  right: 0;
+  width: auto;
+  z-index: 20; /* if you have more than 18 images in slideshow, increase this value */
+}
+
+/* View Business */
+.view-business .grid-inner {
+  border-left: 1px solid #f0f0f0;
+  border-right: none !important;
+  border-bottom: none !important;
+  margin-bottom: 0 !important;
+}
+
+.view-business.col-first .grid-inner {
+  border-left: none;  
+}
+
+/* View Accordion */
+.ui-accordion {
+  border: 1px solid #ddd;
+}
+
+.ui-corner-top {
+  border: none;
+}
+
+.ui-accordion .ui-accordion-header {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.ui-accordion .ui-accordion-header a {
+  color: #333;
+  padding: 15px 15px 15px 20px;
+}
+
+.ui-accordion .ui-accordion-header a:hover, 
+.ui-accordion .ui-accordion-header a:focus,
+.ui-accordion .ui-state-active a {
+  color: #e47e6b;
+}
+
+.ui-widget {
+  color: #666;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 1em !important;
+}
+
+.ui-accordion .ui-accordion-content {
+  border: none;  
+  border-radius: 0;
+  color: #666;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0 20px;
+  top: 0;
+  
+}
+
+.ui-accordion .ui-accordion-content p {
+  line-height: 20px;
+}
+
+.ui-state-active,
+.ui-accordion-content-active {
+  background: #fafafa;
+}
+
+.ui-accordion .views-field-title {
+  font-size: 1em;
+  text-transform: none;
+}
+
+.ui-accordion .views-row {
+  border-bottom: 1px solid #ddd;
+}
+
+.ui-corner-all {
+  background: none;
+  border: none;
+}
+
+.ui-accordion .views-row-last {
+  border-bottom: none;
+}
+
+.ui-accordion .ui-accordion-header .ui-icon {
+  background: url(../images/ui-icons.png) 0 3px no-repeat;
+  left: auto;
+  right: 1.5em;
+}
+
+.ui-accordion .ui-accordion-header:hover .ui-icon {
+  background-position: 0 -20px;
+}
+
+.ui-accordion .ui-state-active .ui-icon,
+.ui-accordion .ui-state-active:hover .ui-icon {
+  background-position: 0 -45px;
+} {
+  background-position: 0 -45px;
+}
+
+/* View our staffs */
+.our-staffs .grid-inner {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 12px 25px;  
+}
+
+.our-staffs:hover .grid-inner {
+  background: #000;
+  border-color: #f0f0f0;
+}
+
+.our-staffs .views-field-field-staff-image img {
+  border-radius: 500px;
+  float: left;
+  margin-right: 30px;
+}
+
+.our-staffs .views-field-title {
+  font-size: 0.833em;
+  margin-bottom: .2em;
+  margin-top: 1.5em;
+}
+
+.our-staffs:hover .views-field-title {
+  color: #fff;
+}
+
+.our-staffs .views-field-field-job-title {
+  color: #999;
+  font-size: 0.917em;
+}
+
+/*
+ * jCarousel Our Clients View
+ */
+.jcarousel-container {
+  border: 1px solid #f0f0f0;
+  border-bottom: none;
+}
+
+ul.jcarousel li {
+  margin-left: 0 !important;
+  width: 945px !important;
+}
+
+ul.jcarousel li .view-item {
+  border-left: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  display: inline;
+  float: left;  
+  margin: 0; 
+  padding: 15px 0;
+  position: relative;
+  text-align: center;
+  width: 188px;
+}
+
+ul.jcarousel li .view-item:first-child,
+ul.jcarousel li .view-item:first-child + .view-item + .view-item + .view-item + .view-item + .view-item {
+  border-left: none;
+}
+
+ul.jcarousel .views-field-title {
+  margin-top: 20px;
+}
+
+ul.jcarousel .views-field-field-category {
+  margin-bottom: 10px;
+}
+
+ul.jcarousel .field-content {
+  position: relative;
+}
+
+ul.jcarousel .views-field-field-portfolio-image a:after {
+  background: #000;  
+  content: "";
+  height: 100%;
+  left: 0;
+  margin-left:0;
+  opacity: 0.3;
+  position: absolute;
+  transition: all 1s ease 0s;
+  width: 100%;
+  z-index: 1;
+}
+
+.jcarousel-container-horizontal {
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+
+.jcarousel-clip-horizontal {
+  width: 100%;
+  overflow: hidden;
+}
+
+.jcarousel-navigation {
+  background: #000;
+  display: inline;
+  margin: 0;
+  padding: 10px;
+}
+
+.jcarousel-navigation li {
+  border: 1px solid #333;
+  display: inline-block;
+  height: 11px;
+  margin-bottom: -10px !important;
+  margin-left: 5px !important;
+  width: 11px;
+}
+
+.jcarousel-navigation li:first-child {
+  margin-left: 0 !important;
+}
+
+.jcarousel-navigation li a {
+  -moz-box-sizing: border-box;
+  display: block; 
+  left: -4px;
+  float: left;
+  padding: 7px;
+  position: relative;
+  top: -4px;  
+}
+
+.jcarousel-navigation li a span {
+  display: block;
+  height: 5px;
+  text-indent: -999em;
+  width: 5px;
+}
+
+.jcarousel-navigation li.active a span,
+.jcarousel-navigation li:hover a span {
+   background: #F7682C;
+   border-radius: 500px;   
+}
+
+ul.jcarousel li .view-item img:after {
+  background: #000;  
+  content: "";
+  height: 100%;
+  left: 0;
+  margin-left:0;
+  opacity: 0.3;
+  position: absolute;
+  transition: all 1s ease 0s;
+  width: 100%;
+  z-index: 1;
+}
+
+ul.jcarousel li .view-item:hover img:after {
+  opacity: 0;
+}
+
+/* Sidebar Slideshow */
+.sidebar-slide .block-inner {
+  position: relative;
+}
+
+.sidebar-slide .views-field-title {
+  color: #333;
+  font-size: 1.167em;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.sidebar-slide .views-field-changed {
+  color: #999;
+  font-style: italic;
+}
+
+.sidebar-slide .views-slideshow-controls-bottom {  
+  position: absolute;
+  right: 0;
+  text-align: right;
+  bottom: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.sidebar-slide .views_slideshow_pager_field_item {
+  display: inline-block;
+}
+
+.sidebar-slide .views-content-nid {
+  background: #eaeaea;
+  border-radius: 500px;  
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2) inset;
+  cursor: pointer;
+  display: block;
+  height: 10px;
+  text-indent: 999em;
+  width: 10px;
+}
+
+.sidebar-slide .active .views-content-nid,
+.sidebar-slide .views-content-nid:hover,
+.sidebar-slide .views-content-nid:focus {
+  background: #e47e6b;
+}
+
+.sidebar-slide .view .view-content,
+.sidebar .view .view-content {
+  position: relative;
+}

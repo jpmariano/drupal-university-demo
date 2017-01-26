@@ -1,0 +1,235 @@
+.block .sf-menu.sf-style-simplex {
+  float: left;
+  margin: 3px 0 0;
+  padding: 0;
+}
+
+.block .sf-menu.sf-style-simplex ul {
+  padding-left: 0;
+}
+
+.block .sf-menu.sf-style-simplex li {
+  margin: 0;
+}
+
+.block .sf-menu.sf-style-simplex a {
+ 	font-weight: bold;
+	color: #333;
+	padding: 0 15px;
+	display: block;
+}
+
+/* "Have child" Item */
+.block .sf-menu.sf-style-simplex li.menuparent {
+}
+
+.block .sf-menu.sf-style-simplex a.menuparent {
+}
+
+/* Child Menu */
+.block .sf-menu.sf-style-simplex ul {
+  background: none;
+}
+
+.block .sf-menu.sf-style-simplex ul li:first-child:before,
+.block .sf-menu.sf-style-simplex ul li:first-child:after {
+	content: '.';
+	display: block;
+	position: absolute;
+	left: 25px;
+	width: 0;
+	height: 0;
+	border-right: 5px dotted transparent;
+	border-left: 5px dotted transparent;
+	text-indent: -9999px;
+}
+
+.block .sf-menu.sf-style-simplex ul li:first-child:before {
+	border-bottom: 5px solid #e5e5e5;
+	top: -6px;
+}
+
+.block .sf-menu.sf-style-simplex ul li:first-child:after {
+	top: -4px;
+	border-bottom: 5px solid #fff;
+}
+
+.block .sf-menu.sf-style-simplex ul li {
+  border-color: #e5e5e5;
+  border-style: solid;
+  border-width: 0 1px 1px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 20px;
+  padding: 0;
+}
+
+.block .sf-menu.sf-style-simplex ul li:first-child {
+	border-top: 1px solid #e5e5e5;
+}
+
+.block .sf-menu.sf-style-simplex ul li a {
+  background-color: #fff;
+  display: block;
+  color: #666;
+  font-size: 84%;
+  font-weight: normal;
+  padding: 10px 15px;	
+}
+
+/* Hover Links */
+.block .sf-menu.sf-style-simplex li:hover,
+.block .sf-menu.sf-style-simplex li.sfHover,
+.block .sf-menu.sf-style-simplex a:hover,
+.block .sf-menu.sf-style-simplex a:focus,
+.block .sf-menu.sf-style-simplex a:active {
+  color: #ef4135;
+}
+
+/* Child Menu Items Hover */
+.block .sf-menu.sf-style-simplex ul li:hover,
+.block .sf-menu.sf-style-simplex ul li.sfHover,
+.block .sf-menu.sf-style-simplex ul li a:focus,
+.block .sf-menu.sf-style-simplex ul li a:hover,
+.block .sf-menu.sf-style-simplex ul li a:active {  
+  color: #ef4135;
+}
+
+/* Active Links */
+.block .sf-menu.sf-style-simplex a.active { 
+  color: #ef4135;
+}
+
+.block .sf-menu.sf-style-simplex .active-trail .sf-depth-1 { 
+  color: #ef4135;
+}
+
+/* Child Menu Items Active */
+.block .sf-menu.sf-style-simplex ul li a.active {
+  color: #ef4135;
+}
+
+/* Navbar */
+.block .sf-menu.sf-style-simplex.sf-navbar ul {  
+  border: 1px solid #e5e5e5;
+  margin-top: -5px;
+}
+
+.block .sf-menu.sf-style-simplex.sf-navbar ul li {
+  border: none;
+}
+
+.block .sf-menu.sf-style-simplex.sf-navbar ul li a {
+  padding: 10px 15px;
+}
+
+.block .sf-menu.sf-style-simplex.sf-navbar li.sfHover > a.menuparent:before,
+.block .sf-menu.sf-style-simplex.sf-navbar li.sfHover > a.menuparent:after {
+	content: '.';
+	display: block;
+	position: absolute;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border-right: 5px dotted transparent;
+	border-left: 5px dotted transparent;
+	text-indent: -9999px;
+	z-index: 500;
+}
+
+.block .sf-menu.sf-style-simplex.sf-navbar li.sfHover > a.menuparent:before {
+	border-bottom: 5px solid #e5e5e5;
+	bottom: 0px;
+}
+
+.block .sf-menu.sf-style-simplex.sf-navbar li.sfHover > a.menuparent:after {
+	bottom: -1px;
+	border-bottom: 5px solid #fff;
+}
+
+.block .sf-menu.sf-style-simplex.sf-navbar ul li:first-child:before,
+.block .sf-menu.sf-style-simplex.sf-navbar ul li:first-child:after {
+  border: none;
+}
+
+.block .sf-menu.sf-style-simplex.sf-navbar li a {
+  display: inline-block;
+  padding: 0 15px 15px 15px;
+}
+ 
+/* MegaMenu */
+.block .sf-menu.sf-style-simplex span.sf-description {
+  color: #999;
+  display: block;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  margin: 5px 0 0 5px;
+  padding: 0;
+}
+
+.block .sf-menu.sf-style-simplex a.sf-with-ul {
+  padding-right: 2.25em;
+}
+
+.block .sf-menu.sf-style-simplex.rtl a.sf-with-ul { /* RTL */
+  padding-left: 2.25em;
+  padding-right: 1em;
+}
+
+.block .sf-menu.sf-style-simplex ul.sf-megamenu li.sf-megamenu-wrapper ol li.sf-megamenu-column {
+  display: inline;
+  float: left;
+  width: 12em;
+}
+
+.block .sf-menu.sf-style-simplex.rtl ul.sf-megamenu li.sf-megamenu-wrapper ol li.sf-megamenu-column {
+  float: right; /* RTL */
+}
+
+.block .sf-menu.sf-style-simplex ul.sf-megamenu li.sf-megamenu-wrapper ol,
+.block .sf-menu.sf-style-simplex ul.sf-megamenu li.sf-megamenu-wrapper ol li {
+  margin: 0;
+  padding: 0;
+}
+
+.block .sf-menu.sf-style-simplex li.sf-parent-children-1 ul.sf-megamenu {
+  width: 12em;
+}
+
+.block .sf-menu.sf-style-simplex li.sf-parent-children-10 ul.sf-megamenu {
+  width: 120em;
+}
+
+.block .sf-menu.sf-style-simplex li.sf-parent-children-2 ul.sf-megamenu {
+  width: 24em;
+}
+
+.block .sf-menu.sf-style-simplex li.sf-parent-children-3 ul.sf-megamenu {
+  width: 36em;
+}
+
+.block .sf-menu.sf-style-simplex li.sf-parent-children-4 ul.sf-megamenu {
+  width: 48em;
+}
+
+.block .sf-menu.sf-style-simplex li.sf-parent-children-5 ul.sf-megamenu {
+  width: 60em;
+}
+
+.block .sf-menu.sf-style-simplex li.sf-parent-children-6 ul.sf-megamenu {
+  width: 72em;
+}
+
+.block .sf-menu.sf-style-simplex li.sf-parent-children-7 ul.sf-megamenu {
+  width: 84em;
+}
+
+.block .sf-menu.sf-style-simplex li.sf-parent-children-8 ul.sf-megamenu {
+  width: 96em;
+}
+
+.block .sf-menu.sf-style-simplex li.sf-parent-children-9 ul.sf-megamenu {
+  width: 108em;
+}

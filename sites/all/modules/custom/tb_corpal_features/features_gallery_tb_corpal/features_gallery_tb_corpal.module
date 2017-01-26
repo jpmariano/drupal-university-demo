@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Features Gallery  TB Corpal feature.
+ */
+
+include_once 'features_gallery_tb_corpal.features.inc';

@@ -1,0 +1,80 @@
+<?php
+function entity_crud_custom_reference_entity_info() {
+  $return = array(
+    'employee' => array(
+      'label' => t('Employee'),
+      'plural label' => t('Employees'),
+      'description' => t('An entity which stores all the employee\'s information.'),
+      'controller class' => 'EntityAPIController',
+      'base table' => 'employee',
+      'fieldable' => TRUE,
+      'entity keys' => array(
+        'id' => 'employee_id',
+        'label' => 'name',
+      ),
+      'uri callback' => 'employee_uri',
+    ),
+    'company' => array(
+      'label' => t('Company'),
+      'plural label' => t('Companies'),
+      'description' => t('An entity which stores all the company\'s information.'),
+      'controller class' => 'EntityAPIController',
+      'base table' => 'company',
+      'fieldable' => TRUE,
+      'entity keys' => array(
+        'id' => 'company_id',
+        'label' => 'name',
+      ),
+      'uri callback' => 'company_uri',
+    ),
+  );
+  
+  return $return;
+}
+
+
+function employee_form($form, &$form_state, $employee = NULL) {
+  // Create a hidden form element when editing a employee if it is an employee edit form
+  if ($employee) {
+    $form['employee_id'] = array(
+      '#type' => 'hidden',
+      '#value' => $employee->employee_id,
+    );
+  }
+  
+  $form['name'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Employee Name'),
+    '#size' => 60,
+    '#required' => TRUE,
+    '#default_value' => ($employee) ? $employee->name : '',
+  );
+  
+  // Provide a delete link after the submit button in case of editing the employee details
+  $form['submit'] = array(
+    '#type' => 'submit',
+    '#value' => t('Submit'),
+    '#suffix' => ($employee) ? l('Delete', 'employee/' . arg(1) . '/delete') : '',
+  );
+  
+  field_attach_form('employee', $employee, $form, $form_state);
+  
+  return $form;
+}
+
+function employee_form_submit($form, &$form_state) {
+  // Create an entity object from the form submitted values and pass it to entity_save
+  $entity = new stdClass();
+  if (array_key_exists('employee_id', $form_state['values'])) {
+    $entity->employee_id = $form_state['values']['employee_id'];
+    $entity->is_new = FALSE;
+  }
+  $entity->name = $form_state['values']['name'];
+  entity_form_submit_build_entity('employee', $entity, $form, $form_state);
+  $result = entity_save('employee', $entity);
+  // Display add/update messages
+  if ($result == SAVED_NEW)
+    drupal_set_message(t('You have successfully added a employee.'));
+  if ($result == SAVED_UPDATED)
+    drupal_set_message(t('You have successfully updated the employee details.'));
+}

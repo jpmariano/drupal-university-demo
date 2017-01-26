@@ -1,0 +1,6 @@
+name = Organization Library
+description = Libary System
+core = 7.x
+dependencies[] = entityreference
+files[] = org_library.install
+files[] = org_library.module

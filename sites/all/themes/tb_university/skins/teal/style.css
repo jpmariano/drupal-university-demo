@@ -1,0 +1,561 @@
+/**
+  Teal Color
+*/
+
+a {
+  color: #4c4c4c;
+}
+
+a:hover,
+a:focus,
+a:active,
+li a.active {
+  color: #e66e6e;
+}
+
+.node-title a:hover, 
+.node-title a:active, 
+.node-title a:focus {
+  color: #e66e6e;
+}
+
+/* --- Header --- */
+#header-wrapper {
+  background: #48A3A7;
+  border-bottom: 1px solid #348C90;
+}
+
+#menu-bar-wrapper {
+  background: #48A3A7;
+  border-top: 1px solid #5FB7BB;
+}
+
+/* Superfish */
+.menu.sf-menu.sf-style-university li {
+  border-right-color: #58AEB1;
+}
+
+.menu.sf-menu.sf-style-university li a {
+  color: #BFE7E8 ;
+}
+
+.menu.sf-menu.sf-style-university li.active-trail a, 
+.menu.sf-menu.sf-style-university li a.active, 
+.menu.sf-menu.sf-style-university li a.active:active, 
+.menu.sf-menu.sf-style-university li a.active:focus,
+.menu.sf-menu.sf-style-university li a.active:hover {   
+  background-color: #47ADB1;
+  border-top-color: #E66E6E;
+}
+
+.menu.sf-menu.sf-style-university ul {
+  background-color: #47ADB1;
+}
+
+.menu.sf-menu.sf-style-university li.sfHover a, 
+.menu.sf-menu.sf-style-university li a:active, 
+.menu.sf-menu.sf-style-university li a:focus, 
+.menu.sf-menu.sf-style-university li a:hover {
+  background-color: #47ADB1;
+  color: #fff;
+}
+
+.sf-menu.sf-style-university a {
+  border-right-color: #4c4c4c;
+}
+
+.menu.sf-menu.sf-style-university ul li a.menuparent {
+  color: #BFE7E8 !important;
+}
+
+.menu.sf-menu.sf-style-university li.active-trail ul li a, 
+.menu.sf-menu.sf-style-university ul li a, 
+.menu.sf-menu.sf-style-university ul li.sfHover li a {
+  color: #BFE7E8 !important;
+  border-top-color: #E66E6E !important;
+}
+
+.menu.sf-menu.sf-style-university ul.sf-megamenu li.sf-megamenu-wrapper ol li a {
+  border-top-color: #58B6BA !important;
+}
+
+.menu.sf-menu.sf-style-university.sf-navbar ul li a {
+  border-right-color: #58B6BA;
+}
+
+.menu.sf-menu.sf-style-university.sf-navbar ul li ul li a {
+  color: #a7c3db !important;
+}
+
+/* --- Sidebar --- */
+.sidebar .block div.list-courses ul li:hover a,
+.sidebar .block div.list-courses ul li a:hover,
+.sidebar .block div.list-courses ul li a:focus,
+.sidebar .block div.list-courses ul li a:active {
+  color: #e66e6e;
+}
+
+.sidebar .search-form span.button input.form-submit {
+  background-color: #2e9498;
+  border-color: #2e9498;
+  color: #fff;
+}
+
+.sidebar .search-form span.button input.form-submit:hover,
+.sidebar .search-form span.button input.form-submit:focus {
+  background-color: #E66E6E;
+  border-color: #E66E6E;
+}
+
+.sidebar .block ul.menu li a:hover, 
+.sidebar .block ul.menu li a:focus, 
+.sidebar .block ul.menu li a:active {
+  background-image: url("images/bullet-hover.gif") !important;
+  color: #e66e6e;
+}
+
+/* Forum */
+#forum td .submitted a:hover, 
+#forum td .submitted a:focus {
+  color: #e66e6e;
+}
+
+#forum thead tr {
+  border-left-color: #E66E6E;
+}
+
+/* Navigation */
+.block ul.menu li.expanded li.expanded > a,
+.block ul.menu li li a:hover, 
+.block ul.menu li li a:focus, 
+.block ul.menu li li a:active {
+  color: #e66e6e;
+}
+
+.block ul.menu li.expanded li.expanded > a,
+.block ul.menu li li a:hover, 
+.block ul.menu li li a:focus, 
+.block ul.menu li li a:active,
+.block ul.menu li li a.active,
+.block ul.menu li.active-trail > a, 
+.block ul.menu li > a.active { 
+  color: #e66e6e;
+}
+
+.item-list .pager li.pager-current,
+.item-list .pager li a:hover, 
+.item-list .pager li a:active, 
+.item-list .pager li a:focus {
+  background-color: #e66e6e;
+}
+
+ul.primary li.active a,
+ul.primary li a:hover {
+  background-color: #e66e6e;
+  border-color: #e66e6e;
+  color: #fff;
+}
+
+/* Breadcrumb */
+#breadcrumb-wrapper ol li a {
+  color: #CAE7E9;
+}
+
+a.btn-btt:hover, 
+a.btn-btt:active, 
+a.btn-btt:focus {
+  color: #e66e6e;
+}
+
+/* Block */
+.block ul.menu li a:hover, 
+.block ul.menu li a:focus, 
+.block ul.menu li a:active {
+  color: #e66e6e;
+}
+
+.item-list ul li a:hover, 
+.item-list ul li a:active, 
+.item-list ul li a:focus,
+.page-poll #main-content ul li a:hover,
+.page-poll #main-content ul li a:active,
+.page-poll #main-content ul li a:focus {
+  background-image: url("images/bullet-hover.gif");
+}
+
+.block ul.menu li a:hover, 
+.block ul.menu li a:focus, 
+.block ul.menu li a:active {
+  background-image: url("images/arrow-2.png");
+}
+
+.block ul.menu li.active-trail > a, 
+.block ul.menu li > a.active {
+  background-image: url("images/arrow-3.png");
+}
+
+.block .socials li a {
+  background-image: url("images/ico-socials.png");
+}
+
+.block .more-link a:hover, 
+.block .more-link a:focus {
+  background: url("images/readon-hover-bg.png") no-repeat left 2px;
+}
+
+/* Custom Block */
+.block-project .node-button {
+  background-color: #e66e6e;
+}
+
+.block-intro .intro-text {
+  background-color: #e66e6e;
+}
+
+.block-intro .intro-text blockquote {
+  border-color: #73d9ff;
+}
+
+.tb-copyright a,
+.contact-us a {
+  color: #e66e6e;
+}
+
+div.contact-miscinfo .info-block.icon1 {
+  background-image: url("images/ct-icon1.png");
+}
+
+div.contact-miscinfo .info-block.icon2 {
+  background-image: url("images/ct-icon2.png");
+}
+
+div.contact-miscinfo .info-block.icon3 {
+  background-image: url("images/ct-icon3.png");
+}
+
+.block .block-links li a:hover, 
+.block .block-links li a:active, 
+.block .block-links li a:focus {
+  color: #e66e6e;
+}
+
+.tagclouds-term a:hover {
+  color: #e66e6e;
+}
+
+#slideshow-wrapper .block-title {
+  background-color: #e66e6e;
+}
+
+#slideshow-wrapper .active .views-content-nid, 
+#slideshow-wrapper .views-content-nid:hover, 
+#slideshow-wrapper .views-content-nid:focus {
+  background-color: #e66e6e;
+}
+
+.sidebar-slide .block-title {
+  background-color: #e66e6e;
+}
+
+.sidebar-slide .active .views-content-nid,
+.sidebar-slide .views-content-nid:hover,
+.sidebar-slide .views-content-nid:focus {
+  background: #e66e6e;
+}
+
+ul.contact-list li a {
+  border-bottom-color: #BCE0E2;
+  color: #BCE0E2;
+}
+
+ul.contact-list li.phone {
+  background-image: url(images/icon-phone.png);
+}
+
+ul.contact-list li.email {
+  background-image: url(images/icon-email.png);
+}
+
+#calendar_row1 .hok.today, 
+#calendar_row2 .hok.today,
+#calendar_row3 .hok.today, 
+#calendar_row4 .hok.today,
+#calendar_row5 .hok.today, 
+#calendar_row6 .hok.today {
+  background-color: #e66e6e;
+}
+
+/* Articles */
+.node ul.links li a:hover, 
+.node ul.links li a:active, 
+.node ul.links li a:focus,
+.node-article > .submitted a:hover,
+.node-article > .submitted a:active,
+.node-article > .submitted a:focus,
+.block ul.links li a:hover, 
+.block ul.links li a:active, 
+.block ul.links li a:focus {
+  color: #e66e6e;
+}
+
+.node .menu ul.links li a:hover, 
+.node .menu ul.links li a:focus {
+  color: #e66e6e;
+}
+
+.node .menu ul.links li.comment_forbidden a:hover {
+  color: #e66e6e;
+}
+
+.field-type-taxonomy-term-reference ul li a:hover, 
+.field-type-taxonomy-term-reference ul li a:active, 
+.field-type-taxonomy-term-reference ul li a:focus {
+  color: #e66e6e;
+}
+
+/* Quicktab */
+.quicktabs-style-university ul.quicktabs-tabs li.active {
+  border-top-color: #e66e6e;
+}
+
+.quicktabs-style-university ul.quicktabs-tabs li.active a:hover,
+.quicktabs-style-university ul.quicktabs-tabs li.active a:focus {
+  color: #fff;
+}
+
+.quicktabs-style-university ul.quicktabs-tabs li a:hover,
+.quicktabs-style-university ul.quicktabs-tabs li a:active,
+.quicktabs-style-university ul.quicktabs-tabs li a:focus {
+  color: #e66e6e;
+}
+
+.quicktabs-style-university .quicktabs_main .block div.view-tags .item-list ul li a:hover,
+.quick-accordion-university .ui-state-active {
+  background-color: #e66e6e;
+  border-color: #e66e6e;
+}
+
+
+/* Form */
+span.button input.form-submit,
+span.button input.form-submit,
+#edit-cancel,
+#edit-cancel { 
+  background-color: #2E9498;
+  border-color: #2E9498;
+}
+
+span.button input.form-submit:hover,
+span.button input.form-submit:focus,
+#edit-cancel:hover,
+#edit-cancel:focus { 
+  background-color: #E66E6E;
+  border-color: #E66E6E;
+}
+
+#user-login-form .form-item-name input:focus,
+#user-login .form-type-textfield input.form-text:focus, 
+#user-login-form .form-item-pass input:focus,
+#user-login .form-type-password input.form-text:focus, 
+#user-login-form .form-item-openid-identifier input:focus {
+  border-color: #e66e6e;
+}
+
+div.ctools-modal-content .modal-content .item-list li a { 
+  color: #e66e6e;
+}
+
+.page-forum ul.action-links li a, 
+.page-blog ul.action-links li a, 
+#user-login-form input.form-submit {  
+  background-color: #2E9498;
+}
+
+.page-forum ul.action-links li a:hover, 
+.page-forum ul.action-links li a:active, 
+.page-forum ul.action-links li a:focus,
+.page-blog ul.action-links li a:hover, 
+.page-blog ul.action-links li a:active, 
+.page-blog ul.action-links li a:focus,
+#user-login-form input.form-submit:hover,
+#user-login-form input.form-submit:focus {  
+  background-color: #E66E6E;
+}
+
+.form-text:focus,  
+textarea:focus {
+  border-color: #e66e6e;
+}
+
+#user-login-form .item-list li a:hover,
+#user-login-form .item-list li a:focus {
+  color: #e66e6e;
+}
+
+#header #search-block-form .form-text {
+  background-color: #47ADB1;
+  color: #A8DDDF
+}
+
+#header #search-block-form .form-submit {
+  background-color: #2E9498;
+  border-color: #2E9498;
+}
+
+#header #search-block-form .form-submit:hover,
+#header #search-block-form .form-submit:focus {
+  background-color: #E66E6E;
+  border-color: #E66E6E;
+}
+
+
+/* Newsletter */
+.block-newsletter .form-item-email input {
+  background-color: #53B3B7;
+  color: #BCE0E2;
+}
+
+.block-newsletter span.button input.form-submit {
+  background-color: #E66E6E;
+  border-color: #E66E6E;
+}
+
+.block-newsletter span.button input.form-submit:hover, 
+.block-newsletter span.button input.form-submit:focus {
+  background-color: #BCE0E2;
+  border-color: #BCE0E2;
+  color: #fff;
+}
+
+/* --- Views --- */
+
+/* View Sl
+ideshow */
+.region-slideshow .slideshow-group-fields-wrapper {
+  background-image: url(images/sl-desc-bg.png);
+}
+
+/* View Professor */
+.view-our-experts  .item-list ul li:hover a,
+.view-professor .item-list ul li:hover a {
+  color: #e66e6e;
+}
+
+/* View Professor */
+.view-student-profile .views-field-title a:active, 
+.view-student-profile .views-field-title a:focus, 
+.view-student-profile .views-field-title a:hover {
+  color: #e66e6e;
+}
+
+/* Jcarousel */
+.jcarousel-skin-default .jcarousel-next, 
+.jcarousel-skin-default .jcarousel-prev, 
+.view .jcarousel-prev, .view .jcarousel-next {
+	background-image: url("images/btn-control.png");
+}
+
+/* Poll */
+.page-poll .region-content .block-content ul li a {
+  background: url("images/ui-icons.png") no-repeat left center;  
+}
+
+/* Panel */
+#panel-second-wrapper .views-field-view-node a:active, 
+#panel-second-wrapper .views-field-view-node a:focus, 
+#panel-second-wrapper .views-field-view-node a:hover,
+.view-student-profile li:hover .views-field-title a,
+.view-student-profile li:hover .views-field-title a,
+.view-student-profile li:hover .views-field-title a {
+  color: #e66e6e;
+}
+
+#panel-second-wrapper .views-field-view-node a:active, 
+#panel-second-wrapper .views-field-view-node a:focus,
+#panel-second-wrapper .views-field-view-node a:hover {
+  background-image: url(images/readon-hover-bg.png);
+  background-position: 0 2px;
+}
+
+#panel-fourth-wrapper,
+#panel-fifth-wrapper,
+#breadcrumb-wrapper,
+#footer-wrapper {
+  background: url("images/pattern-bg.png") repeat top left #459CA0; 
+  color: #BCE0E2;
+}
+
+#panel-fourth-wrapper .container {
+  border-color: #55A7AB;
+}
+
+#panel-fourth-wrapper .block-title, 
+#panel-fifth-wrapper .block-title {
+  color: #BCE0E2;
+}
+
+#footer-wrapper {
+  background-color: #43999D;
+  border-top-color: #55A7AB;
+  color: #A4D4D7;
+}
+
+#panel-fifth-wrapper {
+  border-bottom-color: #3B878B;
+}
+
+
+#panel-fifth-wrapper ul.menu li a {
+  background-image: url("images/bullet-dark.gif");
+  color: #BCE0E2;
+}
+
+#breadcrumb-wrapper {
+  border-bottom-color: #3B878B;
+  border-top-color: #55A7AB;
+}
+
+#breadcrumb-wrapper h2 {
+  color: #BCE0E2;
+}
+
+ul.social-list li a {
+  background-image: url("images/icon-socials.png");
+}
+
+/* Pages */
+.page-404 #errorboxbody a:hover, 
+.page-404 #errorboxbody a:focus, 
+.page-404 #errorboxbody a:active {
+  border-color: #e66e6e;
+  color: #e66e6e;
+}
+
+.view-all-courses .item-list li a:hover,
+.view-all-courses .item-list li a:focus {
+  color: #e66e6e;
+}
+
+.view-videos .views-field-title a;hover,
+.view-videos .views-field-title a:focus {
+ color: #e66e6e;
+}
+
+/* Comments */
+.comment ul.links li a:hover, 
+.comment ul.links li a:active, 
+.comment ul.links li a:focus, 
+.article ul.links li a:hover, 
+.article ul.links li a:active, 
+.article ul.links li a:focus {
+  background-image: url(images/readon-hover-bg.png);
+}
+
+.comment .new {
+  color: #e66e6e;
+}
+
+/* Events page */
+.field-name-field-speaker h3.field-label {
+  color: #e66e6e;
+}

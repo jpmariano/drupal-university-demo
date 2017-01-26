@@ -1,0 +1,72 @@
+/**
+  * Responsive Elements
+  */
+/* Panel */
+.cols-4 .views-col, 
+.panel-cols-4 .panel-column {
+  width: 100% !important;
+}
+
+#panel-sixth-wrapper .panel-column {
+  width: 100% !important;
+}
+
+#panel-multiple-wrapper .panel-column {
+  width: 100% !important;
+}
+
+#panel-multiple-wrapper .panel-column {
+  width: 100% !important;
+}
+
+#panel-sixth-wrapper a,
+#panel-seventh-wrapper a {
+  word-wrap: break-word;
+}
+
+.quick-flickr .views-row {
+   width: 100%;
+}
+
+#main-content .block-quicktabs .grid-inner {
+  margin-bottom: 15px;
+  padding: 0 !important;
+}
+
+.main-jcarousel .jcarousel-skin-default ul {
+  width: 100% !important;
+}
+
+.main-jcarousel .jcarousel-skin-default .jcarousel-item {
+  width: 100%;
+  height: auto;
+  	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom: 15px;
+}
+
+.block-quicktabs .views-field-view-node a, 
+.list-categories .views-field-view-node a, 
+.list-categories .views-field-view-node-1 a, 
+.main-jcarousel .views-field-view-node a, 
+.isotope .views-field-view-node a {
+  right: 4px;
+}
+
+h1.txt-intro, 
+.slideshow-wrapper .view-header p {
+  font-size: 170%;
+}
+
+.isotope-element {
+  margin-bottom: 15px;
+  height: auto !important;
+  width: 100% !important;
+}
+
+/* Form */
+#newsletter-subscribe-form .form-text {
+  width: 75%;
+}

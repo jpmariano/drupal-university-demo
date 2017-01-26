@@ -1,0 +1,115 @@
+/**
+ *
+ * TODO: check all D7 field class names, these are mostly from D6 CCK...
+ */
+
+/* Wrapper for all fields. */
+.field {
+}
+
+/* Field labels */
+.field-label {
+  margin: 0;
+}
+
+.field-lable-inline .field-label {
+  display: inline;
+}
+
+/* Imagefields */
+body.tb-page-popup-iframe .field-type-image img { 
+  height: auto;
+  margin: 0 0 10px;
+}
+
+body.tb-page-popup-iframe .article > .submitted {
+  margin-bottom: 20px;
+}
+
+/* Use "datetime" when creating new CCK date fields. */
+.field-type-datetime {
+}
+
+/* Filefield field. */
+.field-type-filefield {
+}
+
+/* Node reference field. */
+.field-type-nodereference {
+}
+
+/* User reference field. */
+.field-type-userreference {
+}
+
+/* Number fields. */
+.field-type-number-decimal {
+}
+
+.field-type-number-float {
+}
+
+.field-type-number-integer {
+}
+
+/* Text fields. */
+.field-type-text {
+}
+
+.field-type-text-long {
+}
+
+/* Term reference fields. */
+.field-type-taxonomy-term-reference {
+  margin-bottom: 0;
+}
+.node-teaser .field-type-taxonomy-term-reference {
+  display: none;
+}
+.field-type-taxonomy-term-reference .field-label {
+  float: left;
+  font-size: 1em;
+  margin-bottom: .5em;
+  margin-right: 0;
+}
+
+.field-type-taxonomy-term-reference ul {
+  margin: 0;
+  padding: 0;
+}
+
+.field-type-taxonomy-term-reference ul li {
+  display: inline-block;  
+  list-style: none;
+  margin: 0 5px 0 0 !important;
+  padding: 0;
+}
+
+.field-type-taxonomy-term-reference ul li a { 
+  display: inline-block;
+  padding: 1px 10px;
+}
+
+.field-type-taxonomy-term-reference ul li a:hover,
+.field-type-taxonomy-term-reference ul li a:active,
+.field-type-taxonomy-term-reference ul li a:focus { 
+  text-decoration: none;
+}
+
+/* Imagefield skinr settings */
+.ai-l .field-type-image {
+  margin: 4px 20px 10px 0;
+}
+
+.ai-r .field-type-image {
+  margin: 4px 0 10px 20px;
+}
+
+.ai-b,
+.ai-b .block-inner,
+.ai-b .block-content {
+}
+
+.ai-b .block-content p,
+.ai-b .block-content div.field-type-image {
+}

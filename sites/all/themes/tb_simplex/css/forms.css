@@ -1,0 +1,412 @@
+form {
+  margin: 0 0 1em;
+  padding: 0;
+}
+
+input,
+textarea,
+select {
+  border: 1px solid #ccc;
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif; /* Need to define font-family */
+  margin: 0;
+}
+
+fieldset {
+  background: transparent;
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+fieldset fieldset:last-child {
+  margin-bottom: 0;
+}
+
+legend {
+  font-weight: bold;
+}
+
+/**
+ * Drupal Form
+ */
+.form-wrapper {
+}
+
+.form-item,
+.form-action {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.form-item label {
+}
+
+.form-item label.option {
+}
+
+.description,
+.form-item .description {
+}
+
+.form-item .description,
+fieldset .description,
+.fieldset-layout-settings dd {
+  color: #7b7b7b;
+  font-size: 0.92em;
+  margin-bottom: 10px;
+}
+
+span.form-required,
+span.marker {
+}
+
+ul.tips {
+}
+
+.search-form .form-item {
+  margin-top: 0;
+}
+
+/* --- Text Inputs --- */
+.form-text,
+textarea {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  color: #888;
+  font-size: 11px;
+  height: auto;
+  padding: 6px 9px;
+}
+
+.form-text:focus,
+textarea:focus {
+  border-color: #222;
+  color: #333;
+}
+
+.form-item textarea.error {
+  padding: 2px;
+}
+
+.container-inline .form-item input {
+  vertical-align: middle;
+}
+
+/* --- Buttons --- */
+input.form-submit,
+a.button {
+  padding: 2px 10px;
+}
+
+input.form-submit:hover,
+input.form-submit:focus,
+a.button:hover,
+a.button:focus {
+  background: #ccc;
+  border: 1px solid #ccc;
+}
+
+span.button {
+}
+
+span.button input.form-submit,
+.view-grid-products .views-field-view-node a,
+.theme-pricing-table .views-field-field-button a {
+	padding: 5px 14px;
+	font-size: 12px;
+	font-weight: bold;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 0;
+	box-shadow: none;
+	display: inline-block;
+	color: #333;
+	text-align: center;
+	text-shadow: none;
+	cursor: pointer;
+	border: 1px solid #0d0d0d;
+	text-transform: uppercase;	
+	color: #fff;
+	background: #2f2f2f;
+	background: -moz-linear-gradient(top,  #2f2f2f 0%, #141414 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2f2f2f), color-stop(100%,#141414));
+	background: -webkit-linear-gradient(top,  #2f2f2f 0%,#141414 100%);
+	background: -o-linear-gradient(top,  #2f2f2f 0%,#141414 100%);
+	background: -ms-linear-gradient(top,  #2f2f2f 0%,#141414 100%);
+	background: linear-gradient(to bottom,  #2f2f2f 0%,#141414 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f2f2f', endColorstr='#141414',GradientType=0 );
+}
+
+span.button input.form-submit:hover,
+span.button input.form-submit:focus,
+.view-grid-products .views-field-view-node a:hover,
+.view-grid-products .views-field-view-node a:focus,
+.theme-pricing-table .views-field-field-button a:focus,
+.theme-pricing-table .views-field-field-button a:focus {	
+  background: #141414;
+  background: -moz-linear-gradient(top,  #141414 0%, #2f2f2f 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#141414), color-stop(100%,#2f2f2f));
+  background: -webkit-linear-gradient(top,  #141414 0%,#2f2f2f 100%);
+  background: -o-linear-gradient(top,  #141414 0%,#2f2f2f 100%);
+  background: -ms-linear-gradient(top,  #141414 0%,#2f2f2f 100%);
+  background: linear-gradient(to bottom,  #141414 0%,#2f2f2f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#141414', endColorstr='#2f2f2f',GradientType=0 );  
+  box-shadow: 0 -10px 15px rgba(255,255,255,.1) inset;
+}
+
+/* --- Checkbox --- */
+.form-type-checkbox label {
+}
+
+input.form-checkbox {
+  border: 0;
+}
+
+.form-type-checkbox .description {
+  margin-left: 0;
+}
+
+/* --- Radio --- */
+.form-type-radio label {
+}
+
+input.form-radio {
+  border: 0;
+}
+
+.form-type-radio .description {
+  margin-left: 0;
+}
+
+/* --- Selects --- */
+select,
+.form-select {
+}
+
+/* --- Fieldsets --- */
+fieldset {
+  background: transparent;
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+fieldset fieldset:last-child {
+  margin-bottom: 0;
+}
+
+*:first-child+html fieldset {
+  background-color: transparent;
+  background-position: 0 10px;
+  padding: 0 10px 10px;
+}
+
+*:first-child+html fieldset > .description,
+*:first-child+html fieldset .fieldset-wrapper .description {
+  padding-top: 10px;
+}
+
+legend.fieldset-legend {
+}
+
+fieldset legend {
+  display: block;
+  font-weight: 400;
+  padding: 0 10px 0 0;
+}
+
+*:first-child+html fieldset legend,
+*:first-child+html fieldset.collapsed legend {
+  display: inline;
+}
+
+html.js fieldset.collapsed {
+  background: transparent;
+  padding-top: 5px;
+}
+
+/* --- Misc. --- */
+.hide-label label {
+  background: none;
+  display: none;
+}
+
+.exposed-filters .form-item {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+#article-admin-filter ul {
+  padding: .5em 0;
+}
+
+#edit-operation-wrapper select {
+  margin: .5em;
+}
+
+div.resizable-textarea textarea {
+  margin-top: 0;
+}
+
+/**
+ * Specific Forms
+ */
+
+/* --- Search --- */
+#search-block-form {
+}
+
+#search-block-form > div {
+}
+
+#search-block-form .container-inline {
+}
+
+#edit-search-block-form-1-wrapper {
+}
+
+#search-block-form label {
+}
+
+#search-block-form input {
+}
+
+#search-block-form .form-submit {
+}
+
+#search-block-form .form-text {
+}
+
+/* --- Custom Search --- */
+.search-form input {
+  background: url(../images/search-icon.png) no-repeat 10px center #fff;
+  color: #bbb;
+  padding-left: 25px;
+}
+
+.search-form input:focus {	  
+  background-image: url(../images/search-icon-1.png);
+  color: #333;
+}
+
+
+/* Advanced search form */
+fieldset#edit-advanced fieldset {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+fieldset#edit-advanced fieldset .fieldset-legend {
+  background: none;
+  padding-left: 1em;
+}
+
+.advanced-search-submit {
+  clear: both;
+}
+
+.search-advanced .criterion {
+  float: none;
+  margin: 0 5px;
+}
+
+#edit-keywords-fieldset .form-item:first-child {
+  margin-top: 5px;
+}
+
+#search-form {
+  margin: 10px 0;
+}
+
+#search-form > div {
+}
+
+#search-form .container-inline {
+}
+
+#search-form label {
+}
+
+#search-form input {
+}
+
+#search-form .form-item {
+}
+
+#search-form .form-submit {
+  vertical-align: middle;
+}
+
+#search-form input.form-checkbox {
+  float: left;
+  height: 13px;
+  margin: 2px 5px 0 0;
+  width: 13px;  
+}
+
+/* --- User login --- */
+#user-login-form .form-item-name {
+}
+
+#user-login-form .form-item-pass {
+}
+
+#user-login-form .form-action {
+}
+
+#user-login-form ul {
+  margin: 0;
+  padding: 0;
+}
+
+#user-login ul {
+  margin: 0 0 5px;
+}
+
+#user-login ul li {
+  margin: 0;
+}
+
+#user-login-form .item-list li {
+  list-style: none;
+  margin: 0;
+}
+
+#user-login-form li.openid-link,
+#user-login li.openid-link {
+  background: none;
+  padding-left: 0;
+}
+
+#user-admin-filter ul li,
+#article-admin-filter ul li {
+  list-style: none;
+}
+
+/* --- Tips overrides --- */
+.field-type-text-long fieldset {
+  padding: 10px 0;
+}
+
+.field-type-text-long fieldset .form-item {
+  margin: 0;
+  padding: 0 0 0 15px;
+}
+
+fieldset .filter-help {
+  padding: 0 15px 5px;
+}
+
+.filter-guidelines {
+  font-size: .923em;
+  margin: 0;
+  padding: 5px 18px 10px;
+}
+
+/* --- Special case modules --- */
+#devel-switch-user-form {
+  margin-bottom: 0;
+}

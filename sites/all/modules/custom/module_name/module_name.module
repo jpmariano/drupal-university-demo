@@ -1,0 +1,164 @@
+<?php
+/**
+* @file
+* This module provides a node type called job post
+*/
+/**
+* Implements hook_node_info() to provide our module_name type.
+*/
+function module_name_node_info() {
+	return array(
+		'module_name_tablename' => array(
+			'name' => t('Job Post'),
+			'base' => 'module_name_tablename',
+			'description' => t('Use this content type to post a job.'),
+			'has_title' => TRUE,
+			'title_label' => t('Job Title'),
+			'help' => t('Enter the job title,
+			job description, and the name of the company that posted the job'),
+		),
+	);
+}
+
+
+/**
+* Implements hook_permission().
+*/
+function module_name_permission() {
+	return array(
+		'create module_name tablename' => array(
+			'title' => t('Create a job post'),
+			'description' => t('Create a module_name tablename'),
+		),
+		'edit own module_name tablename' => array(
+			'title' => t('Edit own job post'),
+			'description' => t('Edit your own module_name tablename'),
+		),
+		'edit any module_name tablename' => array(
+			'title' => t('Edit any job post'),
+			'description' => t('Edit any module_name tablename'),
+		),
+		'delete own module_name tablename' => array(
+			'title' => t('Delete own job post'),
+			'description' => t('Delete own module_name tablename'),
+		),
+		'delete any module_name tablename' => array(
+			'title' => t('Delete any module_name tablename'),
+			'description' => t('Delete any module_name tablename'),
+		),
+	);
+}
+
+/**
+* Implements hook_node_access().
+*/
+function module_name_node_access($op, $node, $account) {
+	$is_author = $account->uid == $node->uid;
+	switch ($op) {
+		case 'create':
+			// Allow if user's role has 'create joke' permission.
+			if (user_access('create module_name tablename', $account)) {
+				return NODE_ACCESS_ALLOW;
+			}
+		case 'update':
+			// Allow if user's role has 'edit own joke' permission and user is
+			// the author; or if the user's role has 'edit any joke' permission.
+			if (user_access('edit own module_name tablename', $account) && $is_author ||
+				user_access('edit any module_name tablename', $account)) {
+				return NODE_ACCESS_ALLOW;
+			}
+		case 'delete':
+			// Allow if user's role has 'delete own joke' permission and user is
+			// the author; or if the user's role has 'delete any joke' permission.
+			if (user_access('delete own module_name tablename', $account) && $is_author ||
+				user_access('delete any module_name tablename', $account)) {
+				return NODE_ACCESS_ALLOW;
+			}
+	}
+}
+
+
+/**
+* Implement hook_form() with the standard default form.
+*/
+function module_name_form($node, $form_state) {
+	return node_content_form($node, $form_state);
+}
+
+
+/**
+* Implements hook_validate().
+*/
+function module_name_validate($node) {
+	// Enforce a minimum character count of 2 on company names.
+	if (isset($node->module_name_field) &&
+	strlen($node->module_name_field['und'][0]['value']) < 2) {
+		form_set_error('module_name_field',
+		t('The company name is too short. It must be atleast 2
+		characters.'),
+		$limit_validation_errors = NULL);
+	}
+}
+
+
+/**
+* Implements hook_insert().
+*/
+function module_name_insert($node) {
+	// log details of the job posting to watchdog
+	watchdog('job post', 'A new job post titled: '.$node->title.' for company: '.
+	$node->module_name_field['und'][0]['value'].
+	' was added by UID: '.$node->uid, $variables = array(),
+	WATCHDOG_NOTICE, $link = 'node/'.$node->nid);
+}
+
+/**
+* Implements hook_update().
+*/
+function module_name_update($node) {
+	// log details of the job posting to watchdog
+	watchdog('job post', 'A job post titled: '.$node->title.' for company: '.
+	$node->module_name_field['und'][0]['value'].
+	' was updated by UID: '.$node->uid, $variables = array(),
+	WATCHDOG_NOTICE, $link = 'node/'.$node->nid);
+}
+
+
+/**
+* Implements hook_delete().
+*/
+function module_name_delete($node) {
+	// log details of the job posting to watchdog
+	watchdog('job post', 'A job post titled: '.$node->title.' for company: '.
+	$node->module_name_field['und'][0]['value'].
+	' was deleted by UID: '.$node->uid, $variables = array(),
+	WATCHDOG_NOTICE, $link = 'node/'.$node->nid);
+}
+
+
+
+/**
+ * Implements hook_update_N().
+ *
+ * Disables comments in existing module_name_tablename nodes.
+ */
+function module_name_update_1000() {
+  $content_type = 'module_name_tablename';
+
+  // Update node table.
+  db_update('node')
+    ->fields(array('comment' => 1))
+    ->condition('type', $content_type)
+   ->execute();
+
+  // Update node_revision table.
+  $nids = db_select('node', 'n')
+    ->fields('n', array('nid'))
+    ->condition('type', $content_type)
+    ->execute()
+    ->fetchCol();
+  db_update('node_revision')
+    ->fields(array('comment' => 1))
+    ->condition('nid', $nids)
+    ->execute();
+}

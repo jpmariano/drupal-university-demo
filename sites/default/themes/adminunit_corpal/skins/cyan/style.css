@@ -1,0 +1,357 @@
+/**
+  Cyan Color
+*/
+
+body {
+  background: url(images/bg-body.png) repeat 0 0;
+}
+
+a {
+  color: #333;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #00aff0;
+}
+
+#page-title {
+  background-color: #00aff0;
+}
+
+#header-wrapper .grid-inner,
+#panel-fourth-wrapper,
+#panel-fifth-wrapper, 
+#panel-fifth-wrapper .grid-inner,
+#breadcrumb-wrapper {
+  background: url(images/bg-black.png) repeat 0 0;
+}
+
+#panel-fourth-wrapper .container,
+#panel-fifth-wrapper .grid-inner,
+#panel-fourth-wrapper .grid-inner,
+#breadcrumb-wrapper .container {
+  border-color: #333;
+}
+
+.node-title a:hover, 
+.node-title a:active, 
+.node-title a:focus {
+  color: #00aff0;
+}
+
+/* Superfish */
+.block .sf-menu.sf-style-corpal ul li.sfHover a,
+.block .sf-menu.sf-style-corpal li li:hover, 
+.block .sf-menu.sf-style-corpal li li.sfHover, 
+.block .sf-menu.sf-style-corpal li li > a:focus, 
+.block .sf-menu.sf-style-corpal li li > a:hover, 
+.block .sf-menu.sf-style-corpal li li > a:active, 
+.block .sf-menu.sf-style-corpal li li > a.active:hover, 
+.block .sf-menu.sf-style-corpal ul li > a.active,
+.block .sf-menu.sf-style-corpal a.active {  
+  color: #00aff0 !important;
+}
+
+.block .sf-menu.sf-style-corpal ul {
+  border-left-color: #00aff0;
+}
+
+.block .sf-menu.sf-style-corpal .active-trail .sf-depth-1,
+.block .sf-menu.sf-style-corpal.sf-navbar .sfHover .sf-depth-1,
+.block .sf-menu.sf-style-corpal .active-trail .sf-depth-1,
+.block .sf-menu.sf-style-corpal li.active-trail a:hover, 
+.block .sf-menu.sf-style-corpal li.active-trail a:focus {
+  color: #00aff0;
+}
+
+.block .sf-menu.sf-style-corpal a {
+  border-right-color: #333;
+}
+
+/* Forum */
+#forum td .submitted a:hover, 
+#forum td .submitted a:focus {
+  color: #00aff0;
+}
+
+/* Navigation */
+.block ul.menu li.expanded li.expanded > a,
+.block ul.menu li li a:hover, 
+.block ul.menu li li a:focus, 
+.block ul.menu li li a:active {
+  color: #00aff0;
+}
+
+.block ul.menu li.expanded li.expanded > a,
+.block ul.menu li li a:hover, 
+.block ul.menu li li a:focus, 
+.block ul.menu li li a:active,
+.block ul.menu li li a.active,
+.block ul.menu li.active-trail > a, 
+.block ul.menu li > a.active { 
+  color: #00aff0;
+}
+
+.item-list .pager li.pager-current,
+.item-list .pager li a:hover, 
+.item-list .pager li a:active, 
+.item-list .pager li a:focus {
+  color: #00aff0;
+}
+
+ul.primary li.active a,
+ul.primary li a:hover {
+  background-color: #00aff0;
+  border-color: #00aff0;
+}
+
+/* Breadcrumb */
+#breadcrumb-wrapper ol li a {
+  color: #00aff0;
+}
+
+a.btn-btt:hover, 
+a.btn-btt:active, 
+a.btn-btt:focus {
+  color: #00aff0;
+}
+
+/* Block */
+.block ul.menu li a:hover, 
+.block ul.menu li a:focus, 
+.block ul.menu li a:active {
+  color: #00aff0;
+}
+
+.block .block-links li a,
+.item-list ul li a {
+  background-image: url("images/ui-icons.png");
+}
+
+.block ul.menu li a:hover, 
+.block ul.menu li a:focus, 
+.block ul.menu li a:active {
+  background-image: url("images/arrow-2.png");
+}
+
+.block ul.menu li.active-trail > a, 
+.block ul.menu li > a.active {
+  background-image: url("images/arrow-3.png");
+}
+
+.block .socials li a {
+  background-image: url("images/ico-socials.png");
+}
+
+
+/* Custom Block */
+.block-project .node-button {
+  background-color: #00aff0;
+}
+
+.block-intro .intro-text {
+  background-color: #00aff0;
+}
+
+.block-intro .intro-text blockquote {
+  border-color: #73d9ff;
+}
+
+.tb-copyright a,
+.contact-us a {
+  color: #00aff0;
+}
+
+.block .block-links li a:hover, 
+.block .block-links li a:active, 
+.block .block-links li a:focus {
+  color: #00aff0;
+}
+
+#slideshow-wrapper .block-title {
+  background-color: #00aff0;
+}
+
+#slideshow-wrapper .active .views-content-nid, 
+#slideshow-wrapper .views-content-nid:hover, 
+#slideshow-wrapper .views-content-nid:focus {
+  background-color: #00aff0;
+}
+
+.sidebar-slide .block-title {
+  background-color: #00aff0;
+}
+
+.sidebar-slide .active .views-content-nid,
+.sidebar-slide .views-content-nid:hover,
+.sidebar-slide .views-content-nid:focus {
+  background: #00aff0;
+}
+
+.contact-info a {
+  color: #00aff0;
+}
+
+.block .socials {
+  background: url(logo.png) 0 0 no-repeat; 
+}
+
+/* Articles */
+.node ul.links li a:hover, 
+.node ul.links li a:active, 
+.node ul.links li a:focus,
+.node-article > .submitted a:hover,
+.node-article > .submitted a:active,
+.node-article > .submitted a:focus,
+.block ul.links li a:hover, 
+.block ul.links li a:active, 
+.block ul.links li a:focus {
+  color: #00aff0;
+}
+
+.node .menu ul.links li a:hover, 
+.node .menu ul.links li a:focus {
+  color: #00aff0;
+}
+
+.node .menu ul.links li.comment_forbidden a:hover {
+  color: #00aff0;
+}
+
+.field-type-taxonomy-term-reference ul li a:hover, 
+.field-type-taxonomy-term-reference ul li a:active, 
+.field-type-taxonomy-term-reference ul li a:focus {
+  color: #00aff0;
+}
+
+/* Quicktab */
+.quicktabs-style-corpal ul.quicktabs-tabs li.active {
+  border-top-color: #00aff0;
+}
+
+.quicktabs-style-corpal ul.quicktabs-tabs li a:hover, 
+.quicktabs-style-corpal ul.quicktabs-tabs li a:focus,
+.quicktabs-style-corpal .quicktabs_main .block .item-list ul li a:hover, 
+.quicktabs-style-corpal .quicktabs_main .block .item-list ul li a:focus, 
+.quicktabs-style-corpal .quicktabs_main .block .item-list ul li a:active,
+.quick-accordion-corpal .ui-state-hover a {
+  color: #00aff0;
+}
+
+.quicktabs-style-corpal .quicktabs_main .block div.view-tags .item-list ul li a:hover {
+  background-color: #00aff0;
+}
+
+.quicktabs-style-corpal ul.quicktabs-tabs li.active a,
+.quicktabs-style-corpal .views-field-title a:hover, 
+.quicktabs-style-corpal .views-field-title a:focus, 
+.quicktabs-style-corpal .views-field-title a:active {
+  color: #00aff0;
+}
+
+.quicktabs-ui-corpal .ui-tabs-nav li.ui-tabs-selected,
+.quicktabs-ui-corpal .ui-tabs-nav li.ui-state-hover {
+  background-color: #00aff0;
+  border-color: #00aff0;
+}
+
+
+/* Form */
+span.button input.form-submit:hover,
+span.button input.form-submit:focus,
+#edit-cancel:hover,
+#edit-cancel:focus,
+.article .menu ul.links li a:hover, 
+.article .menu ul.links li a:focus,
+#user-login-form .item-list li a, 
+#user-login-form .description a { 
+  color: #00aff0;
+}
+
+#user-login-form .form-item-name input,
+#user-login .form-type-textfield input.form-text:focus, 
+#user-login-form .form-item-pass input,
+#user-login .form-type-password input.form-text:focus, 
+#user-login-form .form-item-openid-identifier input:focus {
+  border-color: #00aff0;
+}
+
+div.ctools-modal-content .modal-content .item-list li a { 
+  color: #00aff0;
+}
+
+.page-forum ul.action-links a:hover, 
+.page-forum ul.action-links a:active, 
+.page-forum ul.action-links a:focus,
+.page-blog ul.action-links a:hover, 
+.page-blog ul.action-links a:active, 
+.page-blog ul.action-links a:focus,
+#user-login-form input.form-submit:hover,
+#user-login-form input.form-submit:focus {  
+  color: #00aff0;
+}
+
+.form-text:focus,  
+textarea:focus {
+  border-color: #00aff0;
+}
+
+#user-login-form .item-list li a:hover,
+#user-login-form .item-list li a:focus {
+  color: #00aff0;
+}
+
+#header #search-block-form .form-submit {
+  background-color: #00aff0;
+}
+
+#user-login-form .form-item-name input,
+#user-login .form-type-textfield input.form-text {
+  background-image: url("images/ico_user.png");
+}
+
+#user-login-form .form-item-pass input,
+#user-login .form-type-password input.form-text {
+  background-image: url("images/ico_pass.png");
+}
+
+/* --- Views --- */
+/* View Slideshow */
+.view-slideshow .active .views-content-nid, 
+.view-slideshow .views-content-nid:hover, 
+.view-slideshow .views-content-nid:focus {
+  background-color: #00aff0;
+}
+
+.ui-accordion .ui-accordion-header a:hover, 
+.ui-accordion .ui-accordion-header a:focus, 
+.ui-accordion .ui-state-active a {
+  color: #00aff0;
+}
+
+.views-field-view-node a,
+.node ul.links li a,
+.ui-accordion .ui-accordion-header .ui-icon {
+  background-image: url("images/ui-icons.png");
+}
+
+.views-field-view-node a:hover, 
+.views-field-view-node a:active, 
+.views-field-view-node li a:focus {
+  color: #00aff0;
+}
+
+/* Jcarousel */
+.jcarousel-skin-default .jcarousel-next, 
+.jcarousel-skin-default .jcarousel-prev, 
+.view .jcarousel-prev, .view .jcarousel-next {
+	background-image: url("images/btn-control.png");
+}
+
+/* Poll */
+.page-poll .region-content .block-content ul li a {
+  background: url("images/ui-icons.png") no-repeat left center;  
+}
+

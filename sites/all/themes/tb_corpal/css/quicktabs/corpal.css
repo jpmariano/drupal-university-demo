@@ -1,0 +1,302 @@
+/**
+ * corpal Style for Quiktabs
+ */
+
+/* --- Quicktabs ---*/
+.quicktabs-ui-wrapper .block {
+  margin-bottom: 0 !important;
+  padding-bottom: 0;
+}
+
+.quicktabs-wrapper {
+  background: #fff;  
+}
+
+.quicktabs-style-corpal ul.quicktabs-tabs {
+  margin: 0 0 5px;
+  overflow: hidden;
+  padding: 0;
+}
+
+.quicktabs-style-corpal ul.quicktabs-tabs li {
+  background: none;
+  border-bottom: none;
+  display: block;
+  float: left;
+  list-style: none;
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.quicktabs-style-corpal ul.quicktabs-tabs li.last,
+.quicktabs-style-corpal ul.quicktabs-tabs li.active {
+  border-right: none;
+}
+
+.quicktabs-style-corpal ul.quicktabs-tabs li a {
+  background: none;
+  color: #999;
+  display: block;
+  float: left;
+  font-family: 'texgyreadventorregular',sans-serif;
+  font-size: 1.167em;  
+  font-weight: bold;
+  margin-right: 20px;
+  padding: 0;  
+  text-transform: uppercase;
+}
+
+.quicktabs-style-corpal ul.quicktabs-tabs li a:hover,
+.quicktabs-style-corpal ul.quicktabs-tabs li a:active,
+.quicktabs-style-corpal ul.quicktabs-tabs li a:focus {
+  color: #e47e6b;
+  text-decoration: none;
+}
+
+.quicktabs-style-corpal ul.quicktabs-tabs li.active a {  
+  border-bottom: 5px solid #f0f0f0;
+  color: #e47e6b;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+
+.quicktabs-style-corpal ul.quicktabs-tabs li.last.active {
+ 
+}
+
+.quicktabs-style-corpal .views-field-title,
+.quicktabs-ui-corpal .views-field-title {
+  font-size: 1em;
+  font-weight: normal;
+  margin-bottom: 10px;
+  text-transform: none;
+}
+
+.quicktabs-style-corpal .views-field-changed,
+.quicktabs-ui-corpal .views-field-changed {
+  color: #999;
+  font-size: 1em;
+}
+
+/* --- Arcodion --- */
+.quick-accordion-corpal {
+  font-family: Arial, Helvetica, sans-serif; /* Override the font */
+  font-size: 1em; /* Ensure font size is approriate with the container */
+}
+
+/* Accordion Header */
+.quick-accordion-corpal .ui-accordion-header {
+  background: #fff;  
+  border-top: 1px solid #f0f0f0;
+  color: #333;
+  font-weight: bold;
+}
+
+.quick-accordion-corpal .ui-accordion-header:first-child {
+  border-top: none;
+}
+
+.quick-accordion-corpal .ui-accordion-header a {
+  color: #333;
+  font-family: 'texgyreadventorregular',sans-serif;
+  font-size: 1em;
+  padding: 15px 15px 15px 20px;
+  text-transform: capitalize;
+}
+
+.quick-accordion-corpal .ui-state-default .ui-icon {
+   background: url(../../images/ui-icons.png) no-repeat 0 3px;
+}
+
+/* Hover Accordion Header */
+.quick-accordion-corpal .ui-state-hover {
+  color: #e47e6b;
+}
+
+.quick-accordion-corpal .ui-state-hover a {
+  color: #e47e6b;
+}
+
+.quick-accordion-corpal .ui-state-hover .ui-icon {
+
+}
+
+/* Active Accordion Header */
+.quick-accordion-corpal .ui-state-active {
+  background: #fafafa;  
+  color: #e47e6b;
+}
+
+.quick-accordion-corpal .ui-state-active a {
+  color: #e47e6b;
+}
+
+.quick-accordion-corpal .ui-state-active .ui-icon {
+ 
+}
+
+/* Accordion Content */
+.quick-accordion-corpal .ui-accordion-content {
+  padding: 5px 15px;
+}
+
+.quick-accordion-corpal .ui-accordion-content li.views-row {
+  padding: 7px 0 7px 15px;
+}
+
+.quick-accordion-corpal .ui-accordion-content .views-row {
+  overflow: hidden;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 10px 0;
+}
+
+.quick-accordion-corpal .ui-accordion-content .views-row-last {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.quick-accordion-corpal .ui-accordion-content .views-field-field-image {
+  float: left;
+  margin-right: 10px;
+}
+
+.quick-accordion-corpal .ui-accordion-content .views-field-field-image img { 
+}
+
+.ui-widget-content a {  
+}
+
+.ui-widget-content a:hover { 
+
+}
+
+.quick-accordion-corpal .block .more-link {
+  margin-top: 10px;
+}
+
+.quick-accordion-corpal .block .more-link a {
+  background-position: 100% 3px; 
+}
+
+/* --- UI Tabs --- */
+.quicktabs-ui-corpal {
+  border: 1px solid #f0f0f0;
+  font-family: Arial, Helvetica, sans-serif; /* Override the font */
+  font-size: 1em; /* Ensure font size is approriate with the container */
+  padding: 0;
+}
+
+/* Tabs */
+.quicktabs-ui-corpal .ui-tabs-nav {
+  background: #fff;
+  border: 0;
+  border-bottom: 1px solid #f0f0f0;
+  border-radius: 0;
+  margin: 0;
+  padding: 10px 10px 0;
+}
+
+.quicktabs-ui-corpal .ui-tabs-nav li {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  border-bottom: 0;
+  margin-right: 5px;
+}
+
+.quicktabs-ui-corpal .ui-tabs-nav li a {
+  color: #333;
+  font-family: 'texgyreadventorregular',sans-serif;
+  padding: .375em .75em;
+  text-transform: capitalize;
+}
+
+.ui-widget-content {
+  border: 1px solid #f0f0f0;
+  border-radius: 0;
+}
+
+.quicktabs-ui-corpal div.views-row {
+  overflow: hidden;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 10px 0;
+}
+
+.quicktabs-ui-corpal div.views-row-last {
+  border-bottom: none;
+}
+
+.quicktabs-ui-corpal .views-field-field-image {
+  float: left;
+  margin-right: 10px;
+}
+
+.quicktabs-ui-corpal  .views-field-field-image img {
+  
+}
+
+
+/* Hover Tabs */
+.quicktabs-ui-corpal .ui-tabs-nav li.ui-state-hover {
+  background: #e47e6b;
+  border: 1px solid #f0f0f0;
+  border-bottom: 0;
+}
+
+.quicktabs-ui-corpal .ui-tabs-nav li.ui-state-hover a {
+  color: #fff;
+}
+
+/* Selected Tabs */
+.quicktabs-ui-corpal .ui-tabs-nav li.ui-tabs-selected {
+  background: #e47e6b;
+  border: 1px solid #e47e6b;
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.quicktabs-ui-corpal .ui-tabs-nav li.ui-tabs-selected a {
+  color: #fff;
+}
+
+/* Tabs Content */
+.quicktabs-ui-corpal .ui-tabs-panel {
+  padding: 5px 10px;
+}
+
+/*****/
+.quicktabs_main .block {
+  background: none !important;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.quicktabs_main div.views-row {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 10px 0;
+  overflow: hidden;
+}
+
+.quicktabs_main div.views-row-last {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+ 
+.quicktabs_main .views-field-field-image {
+  float: left;
+  margin-bottom: 0;
+  margin-right: 15px;
+}
+
+.quicktabs_main .views-field-title a {
+  color: #333;
+}
+
+.quicktabs_main .views-field-title a:hover,
+.quicktabs_main .views-field-title a:focus,
+.quicktabs_main .views-field-title a:active {
+  color: #e47e6b;
+  text-decoration: none;
+}
+

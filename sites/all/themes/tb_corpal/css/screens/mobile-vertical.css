@@ -1,0 +1,152 @@
+/**
+  * Responsive Elements
+  */
+
+/* Custom Block */
+.block-intro img {
+  right: 10px;
+}
+
+.block-project .node-button:before {
+  right: -30px;
+}
+
+.block-project .node-button {
+  padding: 0 10px;
+}
+
+#header {
+  height: 50px;
+}
+
+#logo {
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+#search-form input.form-text {
+  margin-bottom: 5px;
+  width: 96%;
+}
+
+#breadcrumb-wrapper ol {
+  width: 50%;
+}
+
+/**
+ * Panels & Views
+ */
+.cols-1 .views-col,
+.panel-cols-1 .panel-column,
+.cols-2 .views-col,
+.cols-3 .views-col,
+.cols-4 .views-col,
+.panel-cols-2 .panel-column,
+.panel-cols-3 .panel-column,
+.panel-cols-4 .panel-column {
+  width: 100% !important;
+}
+
+#panel-fourth-wrapper .container {
+  border-bottom: none;  
+}
+
+#panel-fourth-wrapper .container {
+  padding: 10px 0;
+}
+
+#panel-fourth-wrapper .block {
+  padding: 0;
+}
+
+#panel-fifth-wrapper .panel-column-first .grid-inner {
+  padding-left: 10px;
+}
+
+#panel-fourth-wrapper .grid-inner,
+#panel-fifth-wrapper .grid-inner {
+  border-bottom: 1px solid #111;
+  border-left: none !important;
+  margin: 10px 0 0;
+  padding: 10px;
+}
+
+/* Responsive menu*/
+.responsive-menu-button,
+#header #search-block-form .form-submit,
+#secondary-menu ul li a,
+#secondary-menu,
+#secondary-menu ul li a.init-modal-forms-login-processed {
+  height: 50px;
+  width: 50px;
+}
+
+#menu-bar-wrapper {
+  top: 50px;
+}
+
+#header #search-block-form:hover .form-type-textfield {
+  top: 40px;
+}
+
+#slideshow-wrapper .views-field-title {   
+  top: 15%;
+}
+
+.node ul.links li span a {
+  margin-left: 0;
+}
+
+#header #search-block-form:hover .form-type-textfield {
+  right: -50px;
+}
+
+.webform-client-form  .webform-component-textfield,
+.webform-client-form  .webform-component-email,
+.webform-client-form  .webform-component-textarea {
+  width: 100%;
+}
+
+.webform-client-form .webform-component-textarea {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.webform-client-form input.form-text {
+  width: 94%;
+}
+
+.block .socials li a {
+  margin-right: 12px;
+}
+
+#menu-bar-wrapper {
+  width: 100%;
+}
+
+/* Forum */
+#forum td.forum div.indent .name {
+  padding-left: 20px;
+}
+
+#forum td, 
+#forum th {  
+  padding: .75em .5em;
+}
+
+#forum td {
+  font-size: 82%;
+}
+
+
+#user-login input.form-text, 
+#edit-account input.form-text, 
+#user-pass input.form-text {
+  width: 98%;
+}
+
+a.btn-btt {
+  right: 0;
+  bottom: 5px;
+  top: auto;
+}

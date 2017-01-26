@@ -1,0 +1,9 @@
+name = JP Tools
+description = Essential Drupal Theming Tools For Drupal 7
+package = Development
+core = 7.x
+dependencies[] = devel
+dependencies[] = simplehtmldom (1.x)
+files[] = jptools.module
+
+

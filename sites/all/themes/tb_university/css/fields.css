@@ -1,0 +1,131 @@
+/**
+ *
+ * TODO: check all D7 field class names, these are mostly from D6 CCK...
+ */
+
+/* Wrapper for all fields. */
+.field {
+  margin-bottom: 10px;
+}
+
+/* Field labels */
+.field-label {
+  margin: 0;
+}
+
+.field-lable-above .field-label {
+}
+
+.field-label-inline .field-label,
+.field-label-inline .field-items {
+  display: inline-block;
+  float: none;
+}
+
+/* Imagefields */
+.field-type-image {
+}
+
+.field-type-image img {
+}
+
+/* Use "datetime" when creating new CCK date fields. */
+.field-type-datetime {
+}
+
+/* Filefield field. */
+.field-type-filefield {
+}
+
+/* Node reference field. */
+.field-type-nodereference {
+}
+
+/* User reference field. */
+.field-type-userreference {
+}
+
+/* Number fields. */
+.field-type-number-decimal {
+}
+
+.field-type-number-float {
+}
+
+.field-type-number-integer {
+}
+
+/* Text fields. */
+.field-type-text {
+}
+
+.field-type-text-long {
+}
+
+/* Term reference fields. */
+.field-type-taxonomy-term-reference .field-label {
+  display: inline-block;
+  font-size: 1em;
+  margin-bottom: .5em;
+  vertical-align: middle;
+}
+
+.field-type-taxonomy-term-reference ul {
+  margin: 0;
+  padding: 0;
+}
+
+.field-type-taxonomy-term-reference ul li {
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  border-right-color: #ddd;
+  border-bottom-color: #ddd;
+  border-radius: 8px;
+  display: inline-block;
+  list-style: none;
+  margin: 0 2px 3px 0;
+  padding: 3px 8px 4px;
+  line-height: 1;
+  text-align: center;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+.field-name-field-gender ul li {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.field-type-taxonomy-term-reference ul li a {
+  font-size: 0.917em;
+}
+
+.field-type-taxonomy-term-reference ul li a:hover,
+.field-type-taxonomy-term-reference ul li a:active,
+.field-type-taxonomy-term-reference ul li a:focus {
+  
+}
+
+/* Imagefield skinr settings */
+.ai-l .field-type-image {
+  margin: 4px 20px 10px 0;
+}
+
+.ai-r .field-type-image {
+  margin: 4px 0 10px 20px;
+}
+
+.ai-b,
+.ai-b .block-inner,
+.ai-b .block-content {
+}
+
+.ai-b .block-content p,
+.ai-b .block-content div.field-type-image {
+}
+
+/* Node Type Course */
+.node-type-course .field .field-label {
+  color: #d52b1e;
+  margin-bottom: 10px;  
+}

@@ -1,0 +1,10 @@
+name = Features User Menu TB Corpal
+description = User Menu  From TB Corpal - This will show an icon next to search
+core = 7.x
+package = TB Corpal Features
+version = 7.x-1.0
+project = features_user_menu_tb_corpal
+dependencies[] = features
+dependencies[] = menu
+features[features_api][] = api:2
+features[menu_custom][] = user-menu

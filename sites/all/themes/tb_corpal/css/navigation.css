@@ -1,0 +1,674 @@
+/* --- Common Links --- */
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:visited {
+}
+
+a:hover {
+  color: #e47e6b;
+  text-decoration: none;
+}
+
+a:active,
+a:focus {
+  color: #e47e6b;
+  text-decoration: none;
+}
+
+/* Any menu block in the menu-bar region */
+.nav {
+  clear: both;
+  margin: 0;
+}
+
+.nav li,
+.nav .menu li {
+  display: inline;
+  float: left;
+  list-style: none;
+}
+
+.nav li a,
+.nav .menu li a {
+  display: block;
+  padding: 0 10px;
+  white-space: nowrap;
+}
+
+.nav ul,
+.nav ul.menu,
+.nav ul.menu li {
+  margin: 0;
+  padding: 0;
+}
+
+.nav .block {
+  margin: 0;
+  padding: 0;
+}
+
+/* --- Default Drupal Menu --- */
+.block ul.menu {
+  background: #222;
+  border: 1px solid #111;
+  font-weight: bold;
+  padding: 0 20px;
+}
+
+.block ul.menu ul {
+  border: none;
+  font-weight: normal;
+  padding: 0;
+}
+
+.block ul.menu li {
+  border-bottom: 1px solid #333;
+  list-style-image: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.menu li.expanded,
+ul.menu li.collapsed,
+ul.menu li.leaf {
+}
+
+.block ul.menu li a {
+  background: url(../images/arrow.png) 100% 50% no-repeat;
+  color: #999;
+  display: block;
+  font-family: 'texgyreadventorregular',sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 15px 0;
+}
+
+.block ul.menu li li {
+  background: url(../images/bg-li-menu.png) 0 0 no-repeat;
+  border-bottom: none;
+}
+
+.block ul.menu li li a {
+  background: none;
+  font-size: 0.917em;
+  font-weight: normal;
+  padding: 4px 0 10px 30px;
+}
+
+.block ul.menu li a:visited {
+}
+
+.block ul.menu li a:hover,
+.block ul.menu li a:focus,
+.block ul.menu li a:active {
+  background: url(../images/arrow-2.png) 100% 50% no-repeat; 
+  color: #e47e6b;
+  text-decoration: none;
+}
+
+.block ul.menu li li a:hover,
+.block ul.menu li li a:focus,
+.block ul.menu li li a:active {
+  background: none;
+}
+
+/* Expanded Items */
+.block ul.menu li.expanded {
+}
+
+.block ul.menu li.expanded li.expanded {
+}
+
+.block ul.menu li.expanded li.expanded a {
+}
+
+.block ul.menu li.expanded ul {
+  margin: 0 0 20px;
+}
+
+.block ul.menu li.expanded ul ul {
+}
+
+/* Collapsed Item */
+.block ul.menu li.collapsed {
+}
+
+.block ul.menu li li.collapsed a,
+.block ul.menu li.expanded li.collapsed a {
+}
+
+/* Leaf Items */
+.block ul.menu li.leaf a {
+  background: none;
+}
+
+.block ul.menu li.expanded li.leaf a.active,
+.block ul.menu li.leaf a:hover,
+.block ul.menu li.leaf a:focus {
+  background: none;
+}
+
+/* Active Items */
+.block ul.menu li.active-trail > a,
+.block ul.menu li > a.active {   
+  background: url(../images/arrow-3.png) 100% 50% no-repeat;  
+  color: #e47e6b;
+}
+
+.block ul.menu li.leaf a.active {
+  background: url(../images/arrow-2.png) 100% 50% no-repeat; 
+}
+
+.block ul.menu li li a.active {
+
+}
+
+.block ul.menu li li li a.active {
+}
+
+/* Misc. Items */
+.block ul.menu li.first {
+}
+
+.block ul.menu li.last {
+  border-bottom: 0;
+}
+
+.block ul.menu li.content {
+  padding: 0;
+}
+
+/* --- Breadcrumb --- */
+#breadcrumb-wrapper {
+  background: #000;
+  font-size: 0.833em;  
+}
+
+#breadcrumb-wrapper .container {
+  border-bottom: 1px solid #111;  
+  padding: 25px 0;
+  position: relative;
+}
+
+#breadcrumb-wrapper h2 {
+  clip: auto;
+  color: #7b7b7b;
+  display: block;
+  float: left;  
+  font-size: 1em;
+  font-weight: normal;
+  height: auto;
+  margin: 0 .5em 0 0;
+  padding: .25em .5em;
+  position: relative !important;
+  text-transform: uppercase;
+}
+
+#breadcrumb-wrapper h2:after {
+   content: ":";
+}
+
+#breadcrumb-wrapper ol {
+  display: block;
+  float: left;
+  margin: 0;
+  padding: .1em 0;
+}
+
+#breadcrumb-wrapper ol li {
+  display: block;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#breadcrumb-wrapper ol li span {
+  display: block;
+  float: left;
+  line-height: 16px;
+  text-align: center;
+  width: 20px;
+}
+
+#breadcrumb-wrapper ol li a {
+  color: #e47e6b;
+  display: block;
+  float: left;  
+  text-transform: uppercase;
+}
+
+#breadcrumb-wrapper ol li a:hover,
+#breadcrumb-wrapper ol li a:focus {
+  text-decoration: underline;
+}
+
+.front #breadcrumb-wrapper {
+  display: none;
+}
+
+/* --- Seconday Menu (User Menu) --- */
+#secondary-menu {  
+  height: 70px;
+  float: right;
+  width: 70px;
+}
+
+#secondary-menu ul {
+  margin: .5em 0 0 0;
+}
+
+#secondary-menu ul li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+#secondary-menu ul li a{
+  background: url("../images/ico-user-logout.png") no-repeat center center #241f20;
+  display: inline-block;
+  height: 70px;
+  text-indent: -999em;
+  width: 70px;
+}
+#secondary-menu ul li a.init-modal-forms-login-processed {
+  background: url("../images/ico-user.png") no-repeat center center #241f20;
+  display: inline-block;
+  height: 70px;
+  text-indent: -999em;
+  width: 70px;
+}
+
+#secondary-menu ul li a:hover,
+#secondary-menu ul li a:active,
+#secondary-menu ul li a:focus {
+}
+
+/* --- Footer Menu --- */
+#footer ul.menu {
+  float: left;
+  margin: -3px 0 0;
+  padding: 0;
+}
+
+#footer ul.menu li {
+  border-right: 1px dotted #ccc;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+#footer ul.menu li a {
+  display: block;
+  float: left;
+  padding: 3px 10px;
+}
+
+#footer ul.menu li a:hover,
+#footer ul.menu li a:active,
+#footer ul.menu li a:focus {
+  color: #333;
+  text-decoration: none;
+}
+
+#footer ul.menu li a.active {
+  background: #c00;
+  color: #fff;
+}
+
+/* --- Pager --- */
+.item-list .pager {
+  clear: both;
+  margin: 0;
+  text-align: left;
+}
+
+.item-list .pager li {
+  background-image: none;
+  display: inline;
+  line-height: normal;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item-list .pager li a,
+.item-list .pager li span {
+  background: url("../images/bg-btn.gif") repeat-x scroll left top #f5f5f5;
+  border: 1px solid #ddd;
+  display: inline-block;
+  height: 33px;
+  line-height: 33px;
+  margin-bottom: 5px;
+  padding: 0;
+  text-align: center;
+  width: 44px;
+}
+
+.item-list .pager li a {
+  color: #7b7b7b;
+}
+
+.item-list .pager li a:visited {
+}
+
+.item-list .pager li a:hover,
+.item-list .pager li a:active,
+.item-list .pager li a:focus {   
+  background: url("../images/bg-btn.gif") repeat-x scroll left top #f5f5f5; 
+  color: #e47e6b;
+  text-decoration: none;
+}
+
+.item-list .pager li a.active {
+}
+
+.item-list .pager li.pager-item {
+}
+
+.item-list .pager li.first {
+}
+
+.item-list .pager li.last {
+}
+
+.item-list .pager li.pager-current { 
+  background: url("../images/bg-btn.gif") repeat-x scroll left top #f5f5f5;
+  border: 1px solid #ddd;
+  color: #e47e6b;
+  display: inline-block;
+  height: 33px;
+  line-height: 33px;
+  text-align: center;
+  width: 44px;
+
+}
+
+.item-list .pager li.pager-first {
+}
+
+.item-list .pager li.pager-previous {
+}
+
+.item-list .pager li.pager-next {
+}
+
+.item-list .pager li.pager-last {
+}
+
+/* Pager List */
+ul.pager-list {
+}
+
+/* Pager Links */
+ul.pager-links {
+  margin-top: 5px;
+}
+
+/* --- Items List --- */
+.item-list ul {
+  margin: 0;
+  padding: 0;
+}
+
+.item-list ul li {  
+  list-style: none;
+  margin: 0;
+  padding: 3px 0;
+
+}
+
+.item-list ul li a {	
+  background: url(../images/ui-icons.png) no-repeat 0 1px; 
+  padding: 0 0 5px 25px;
+}
+
+.item-list ul li a:hover,
+.item-list ul li a:active,
+.item-list ul li a:focus {
+  background-position: 0 -22px;
+}
+
+/* --- Links --- */
+.links a {
+}
+
+ul.links {
+}
+
+ul.links li {
+}
+
+ul.links li a {
+}
+
+/* --- Action Links --- */
+ul.action-links {
+  list-style: none;
+  margin: 5px;
+  padding: 0.5em 1em;
+}
+
+ul.action-links li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+ul.action-links li a {
+  background: url(../images/plus.png) no-repeat left center;
+  margin: 0 10px 0 0;
+  padding-left: 15px;
+}
+
+/* --- More Links --- */
+.more-link {
+}
+
+.more-link a {
+}
+
+/* SUPERFISH
+----------------------------------------------------*/
+.sf-menu {
+}
+
+.sf-menu a {
+  padding: .5em 1em;
+  text-decoration: none;
+}
+
+.sf-menu > li > a {
+}
+
+.sf-menu li {
+  background: transparent;
+}
+
+.sf-menu li li {
+}
+
+.sf-menu li li li {
+}
+
+.sf-menu li li li li {
+}
+
+.sf-menu li:hover,
+.sf-menu li.sfHover,
+.sf-menu a:focus,
+.sf-menu a:hover,
+.sf-menu a:active {
+  outline: 0;
+}
+
+/* --- Supperfish --- */
+.block-superfish .block-inner,
+.block-superfish .block-inner .block-content {
+  margin: 0;
+  padding: 0;
+}
+
+.block-superfish ul,
+.block-superfish ul ul,
+.block-superfish ul ul ul,
+.block-superfish ul ul ul ul,
+.block-superfish li {
+  margin: 0;
+  padding: 0;
+}
+
+.sf-vertical,
+.sf-vertical li {
+  width: 100%;
+}
+
+.sf-vertical li:hover ul,
+.sf-vertical li.sfHover ul {
+  left: 100%; /* match ul width */
+  margin: 0;
+  padding: 0;
+  top: 0;
+}
+
+ul.sf-navbar {
+  
+}
+
+/**
+ * Tabs
+*/
+
+/* --- System Tabs --- */
+ul.primary {
+  background: none;
+  border-bottom-color: #f0f0f0;
+  height: 29px;
+  line-height: normal;  
+  line-height: 29px;
+  margin: 0 5px 1em;
+  padding: 10px 0 0 10px;
+}
+
+ul.primary li {
+  border-bottom: 1px solid #f0f0f0;
+  float: left;
+  margin: 0 0 5px;
+}
+
+ul.primary li a {
+  background-color: #fff;
+  border: 1px solid #f0f0f0;
+  border-bottom: none;
+  float: left;	
+  line-height: 28px;
+  height: 28px;
+  margin-right: 5px;
+  padding: 0 10px;
+}
+
+ul.primary li a:hover {
+  background-color: #e47e6b;
+  border-color: #e47e6b;
+  color: #fff;
+}
+
+ul.primary li.active a {
+  background-color: #e47e6b;
+  border-color: #e47e6b;
+  border-bottom: none;
+  color: #fff;
+}
+
+.local-tasks ul.primary li.active a {
+  background-color: #fff;
+  border-bottom-color: #ccc;
+}
+
+ul.secondary {
+  border-bottom: 1px solid #ccc;
+  margin: 1em 0 0;
+  padding: 0 .3em 1em;
+}
+
+ul.secondary li {
+  border-right: 0;
+  list-style: none;
+  padding: 0 2em 0 0;
+}
+
+ul.secondary li a:hover,
+ul.secondary li a.active {
+  border-bottom: none;
+  text-decoration: underline;
+}
+
+/**
+ * Misc.
+*/
+
+#tasks {
+  margin-bottom: 1em;
+}
+
+/* Skip Navigation */
+#skip-link {
+}
+
+#skip-link a,
+#skip-link a:visited {
+}
+
+#skip-link a:hover,
+#skip-link a:active,
+#skip-link a:focus {
+}
+
+/* Back To Top */
+a.btn-btt {
+  color: #666; 
+  top: 26px;    
+  position: absolute;
+  right: 0;
+  text-transform: uppercase;
+}
+
+a.btn-btt:hover,
+a.btn-btt:active,
+a.btn-btt:focus {  
+  color: #e47e6b;
+}
+
+/* Contextual Links */
+.contextual-links-wrapper ul {
+}
+
+.contextual-links-wrapper ul li {
+  background-image: none;
+}
+
+/* Feed Icon */
+a.feed-icon {
+  display: none;
+  margin-top: 1.5em;
+}
+
+a.feed-icon img {
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsive menu*/
+.responsive-menu-button {
+  display: none;
+  background: url("../images/icon-navigation.gif") no-repeat center center;
+  float: right;
+  height: 70px;
+  margin: 0;
+  padding: 0;
+  width: 70px;
+}

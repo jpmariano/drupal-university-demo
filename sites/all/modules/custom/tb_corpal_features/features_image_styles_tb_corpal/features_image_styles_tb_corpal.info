@@ -1,0 +1,17 @@
+name = Features Image Styles TB Corpal
+description = Image Styles From TB Corpal
+core = 7.x
+package = TB Corpal Features
+version = 7.x-1.0
+project = features_image_styles_tb_corpal
+dependencies[] = image
+features[features_api][] = api:2
+features[image][] = blog
+features[image][] = gallery
+features[image][] = gallery_colorbox
+features[image][] = our_business
+features[image][] = our_clients
+features[image][] = our_staffs
+features[image][] = popular
+features[image][] = quicktabs
+features[image][] = slideshow

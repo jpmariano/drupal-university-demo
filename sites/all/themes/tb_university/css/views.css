@@ -1,0 +1,711 @@
+/**
+ * Common View Elements
+ */
+
+/* --- Views Field --- */
+.views-field {
+}
+
+.field-content {
+}
+
+/* Views Field Title */
+.views-field-title {
+}
+
+.views-field-title .field-content {
+}
+
+/* Views Field Image */
+.views-field-field-image {
+}
+
+.views-field-field-image .field-content {
+}
+
+/* Views Field Body */
+.views-field-body {
+}
+
+.views-field-body .field-content {
+}
+
+/* Views Field Changed */
+.views-field-changed {
+}
+
+.views-field-changed .field-content {
+}
+
+/* --- Views Inline Grid --- */
+.views-row {
+}
+
+.views-row-odd {
+}
+
+.views-row-even {
+}
+
+.views-col {
+}
+
+.cols-1 .views-col {
+  width: 100%;
+}
+
+.cols-2 .views-col {
+  width: 50%;
+}
+
+.cols-3 .views-col {
+  width: 33.33%;
+}
+
+.cols-4 .views-col {
+  width: 25%;
+}
+
+.cols-5 .views-col {
+  width: 20%;
+}
+
+.cols-6 .views-col {
+  width: 16.66%;
+}
+
+html.js input.form-autocomplete {
+	background-position: 98% 8px;
+	padding: 6px 3px;
+}
+
+html.js input.throbbing {
+    background-position: 98% -13px;
+	padding: 6px 3px;
+}
+
+/**
+ * Supported Views Formats
+ */
+/* --- Slideshow --- */
+.region-slideshow .container {
+}
+
+.region-slideshow .block-content {
+  padding: 0;
+}
+
+.region-slideshow .region-slideshow {
+  position: relative;
+}
+.region-slideshow .slideshow-group-fields-wrapper {
+  -moz-box-sizing: border-box;
+  background: url("../images/trans-d40.png") repeat scroll 0 0 transparent;
+  bottom: 120px;
+  color: #FFFFFF;
+  left: 0;
+  padding: 20px;
+  position: absolute;
+  width: 350px;
+  z-index: 110;
+  font-size: 14px;
+}
+
+.region-slideshow .slideshow-group-fields-wrapper p {
+  margin: 0;
+}
+
+.region-slideshow .views-field-field-slideshow:before {
+  background: url("../images/mask-left.png") no-repeat left top;
+  width: 112px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 400px;
+  content: "";
+  z-index: 101;
+}
+
+.region-slideshow .views-field-field-slideshow:after {
+  background: url("../images/mask-right.png") no-repeat left top;
+  width: 112px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 400px;
+  content: "";
+  z-index: 101;
+}
+
+.region-slideshow .views-field-field-slideshow {
+  position: relative;
+  z-index:	101;
+}
+
+.region-slideshow .slideshow-group-fields-wrapper .views-field-title a {
+  color: #FFFFFF;
+  font-size: 26px;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 0 10px;
+  overflow: visible;
+  padding: 0;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+}
+
+.region-slideshow .views-slideshow-controls-bottom {
+  bottom: 80px;
+  display: block;
+  left: 10;
+  position: absolute;
+  width: 82px;
+  z-index: 900;
+}
+
+.region-slideshow  .views-slideshow-controls-text-pause {
+	display: none !important;
+}
+
+.region-slideshow .views-slideshow-controls-bottom span {
+  background-image: url("../images/sl-btn-direction.png");
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: block;
+  float: left;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  text-indent: -999em;
+  width: 40px;
+}
+
+.region-slideshow .views-slideshow-controls-bottom span.views-slideshow-controls-text-next {
+  background-position: right top;
+  float: right;
+}
+
+.region-slideshow .views-slideshow-controls-bottom span.views-slideshow-controls-text-previous {
+  background-position: left top;
+}
+
+.region-slideshow .views-slideshow-controls-bottom span.views-slideshow-controls-text-next:hover {
+    background-position: right bottom;
+}
+
+.region-slideshow .views-slideshow-controls-bottom span.views-slideshow-controls-text-previous:hover {
+    background-position: left bottom;
+}
+
+/*students page*/
+.students-page  .grid-inner {
+  padding: 0 10px;
+}
+
+.students-page .views-row {
+  border-bottom: 0 !important;
+  padding: 10px 0 !important;
+}
+
+.students-page .views-row.row-first {
+  padding-top: 0 !important;
+}
+
+.students-page .views-row.row-last {
+  padding-bottom: 0 !important;
+}
+
+.students-page .views-col .grid-inner {
+  background: #f5f5f5;
+  border-bottom: 0 none;
+  margin: 0 10px;
+  min-height: 150px;
+  padding-left: 175px;
+  position: relative;
+}
+
+.students-page .views-col .grid-inner .views-field-field-student-image img,
+.students-page .views-col .grid-inner .views-field-field-staffs-image img {
+  background: #fff;
+  border: 1px solid #efece1;
+  float: left;
+  margin: 0 20px 0 0;
+  opacity: 0.8;
+  padding: 9px;
+}
+
+.students-page .views-col .grid-inner .views-field-title {
+  border: 0 none;
+  color: #333333;  
+  font-weight: normal;
+  margin: 0;
+  line-height: 120%;
+  padding: 0 0 5px;
+}
+
+.students-page .views-col .grid-inner .views-field-title a {
+  line-height: 100% !important;
+  text-shadow: 1px 1px 0 #FFFFFF;
+  font-size: 1.5em;
+}
+
+.students-page .views-col .grid-inner .views-field-field-dept {
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.students-page .views-col .grid-inner .views-field-field-dept .views-label {
+  font-weight: bold;
+}
+
+.students-page .views-col .grid-inner .views-field-field-age {
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.students-page .views-col .grid-inner .views-label:before {
+  content: '+';
+  margin-right: 5px;
+}
+
+.students-page .views-col .grid-inner .views-label {
+  float: left;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.students-page .views-col .grid-inner .views-field-field-dept .field-content {
+  overflow: hidden;
+  white-space: -moz-pre-wrap; /* Mozilla, supported since 1999 */
+  white-space: -pre-wrap; /* Opera */
+  white-space: -o-pre-wrap; /* Opera */
+  white-space: pre-line; /* CSS3 - Text module (Candidate Recommendation) http://www.w3.org/TR/css3-text/#white-space */
+  word-wrap: break-word; /* IE 5.5+ */
+}
+
+.students-page .views-col .grid-inner .views-field-field-age .field-content {
+  display: inline-block;
+}
+.students-page .views-col .grid-inner .views-field-field-sex {
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.students-page .views-col .grid-inner .views-field-field-sex .views-label {
+  font-weight: bold;
+}
+
+.students-page .views-col .grid-inner .views-field-field-sex .field-content{
+  display: inline-block;
+}
+
+.students-page .views-col .grid-inner .views-field-field-social{
+  margin: 10px 0 0 ;
+}
+
+.students-page .views-col .grid-inner:hover .views-field-field-student-image img {
+  opacity: 1;
+}
+
+.students-page .views-col .grid-inner ul {
+  margin: 0 0 10px;
+}
+
+.students-page .views-col .grid-inner ul li {
+  background: none;
+  margin: 0;
+  line-height: 160%;
+  list-style: none;
+  padding: 0;
+}
+
+ul.social-links {
+  display: block;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.field-name-field-social   ul.social-links {
+  margin: 0;
+}
+
+ul.social-links li {
+  background: none;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+ul.social-links li a {
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 1px solid #ddd;
+  border-right-color: #ccc;
+  border-bottom-color: #ccc;
+  border-radius: 2px;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  text-indent: -999em;
+}
+
+ul.social-links li a:hover,
+ul.social-links li a:focus,
+ul.social-links li a:active {
+  border-color: #999;
+}
+
+ul.social-links li.facebook a {
+  background-image: url("../images/icon-facebook.png");
+}
+
+ul.social-links li.twitter a {
+  background-image: url("../images/icon-twitter.png");
+}
+
+ul.social-links li.email a {
+  background-image: url("../images/icon-semail.png");
+}
+
+.students-page .item-list,
+.view-events .item-list {  
+  clear: both;
+  padding: 20px 0 0;
+}
+
+/*video page*/
+.view-videos .grid-inner{
+  border-bottom: 1px solid #EFECE1;
+  margin: 10px;
+  padding: 0 !important;
+}
+
+.view-videos .views-field-title {
+  border: 0 none;
+  font-size: 1.25em;
+  font-weight: bold;
+  margin: 10px 0;
+  padding-bottom: 0;
+}
+
+.view-videos .views-field-field-videos {
+  position: relative;
+}
+
+.view-videos .views-field-field-videos:before { 
+  background: url("../images/bg-play-video.png") no-repeat scroll left top transparent;
+  content: "";
+  float: left;
+  height: 67px;
+  left: 129px;
+  position: absolute;
+  top: 55px;
+  width: 67px;
+  z-index: 99;
+}
+
+.view-videos .views-field-field-videos img { 
+  z-index: 0;
+}
+
+.view-videos .views-field-title a{
+  color: #333;
+}
+
+.view-videos .views-field-title a:active,
+.view-videos .views-field-title a:focus,
+.view-videos .views-field-title a:hover{
+  color: #D42B1E;
+}
+
+.view-videos .views-field-view-node {
+  margin: 0 0 15px;
+}
+
+.view-videos .views-field-view-node a {
+  background: url("../images/readon-bg.png") no-repeat left 2px;
+  padding-left: 16px;
+}
+
+.view-videos .views-field-view-node a:active,
+.view-videos .views-field-view-node a:focus,
+.view-videos .views-field-view-node a:hover{
+  background-position: 0 -16px;
+}
+
+/*Events*/
+.views-field-field-speaker {
+  border-left: 1px dotted #ccc;
+  float: right;
+  margin-left: 20px;
+  padding-left: 20px;
+  position: relative;
+  text-align: center;
+  width: 210px;
+}
+
+/*event page*/
+.view-events .node-title {
+  margin: 0 0 10px 0;
+}
+
+.view-events .views-row {
+  border-bottom: 1px solid #DDDDDD;
+  float: left;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.view-events .views-row .article { 
+  margin: 0;
+  padding: 0;
+}
+
+.view-events .views-row-first {
+  padding: 0 0 20px 0;
+}
+
+.view-events .node-content{
+  position: relative;
+}
+
+.view-events .group-event-time {
+  float: left;
+  width: 19%;
+}
+
+.view-events .group-event-time .field-label-inline .field-label, 
+.view-events .group-event-time .field-label-inline .field-items {
+  display: inline-block;
+  float: none;
+}
+
+.view-events .group-event-time .field-type-text-long:first-of-type {
+  display: block;
+  font-size: 1.25em;
+  margin-bottom: 5px;
+  background: url("../images/icon-clock.png") no-repeat 0 3px;
+  padding-left: 22px;
+}
+
+.view-events .group-event-time .field-type-text-long:last-of-type {
+  font-size: 1.167em;
+}
+
+.view-events .group-event-time .field-type-text-long:last-of-type .field-label{
+  color: #666666;
+}
+
+.view-events .field-name-body {
+  float: left;
+  position: relative;
+  width: 52%;
+}
+
+.field-name-field-speaker {
+  border-left: 1px dotted #CCCCCC;
+  float: right;
+  text-align: center;
+  width: 23%;
+  padding: 0 0 0 20px;
+  margin: 0 0 0 20px;
+}
+
+.field-name-field-speaker .node-title {
+  color: #333333;
+  font-size: 1em;
+  font-weight: 500;
+  margin: 0 0 10px;
+}
+
+.field-name-field-speaker .field-type-image img {
+  margin: 10px auto 20px;
+}
+
+.view-events .pager {
+  margin: 20px 0 0;
+  width: 100%;
+  float: left;
+}
+
+/*details event*/
+.node-type-events .node-title {
+  margin: 0 0 10px 0;
+}
+
+.node-type-events .views-row {
+  border-bottom: 1px solid #DDDDDD;
+  float: left;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.node-type-events .views-row .article { 
+  margin: 0;
+  padding: 0;
+}
+
+.node-type-events .views-row-first {
+  padding: 0 0 20px 0;
+}
+
+.node-type-events .node-content{
+  position: relative;
+}
+
+.node-type-events .group-event-time {
+  float: left;
+  width: 19%;
+}
+
+.node-type-events .group-event-time .field-label-inline .field-label, 
+.node-type-events .group-event-time .field-label-inline .field-items {
+  display: inline-block;
+  float: none;
+}
+
+.node-type-events .group-event-time .field-type-text-long:first-of-type {
+  display: block;
+  font-size: 1.25em;
+  margin-bottom: 5px;
+  background: url("../images/icon-clock.png") no-repeat 0 3px;
+  padding-left: 22px;
+}
+
+.node-type-events .group-event-time .field-type-text-long:last-of-type {
+  font-size: 1.167em;
+}
+
+.node-type-events .group-event-time .field-type-text-long:last-of-type .field-label{
+  color: #666666;
+}
+
+.node-type-events .field-name-body {
+  float: left;
+  position: relative;
+  width: 52%;
+}
+
+.field-name-field-speaker {
+  border-left: 1px dotted #CCCCCC;
+  float: right;
+  text-align: center;
+  width: 23%;
+  padding: 0 0 0 20px;
+  margin: 0 0 0 20px;
+}
+
+.field-name-field-speaker .node-content {
+  color: #666666;
+  font-family: Georgia,serif;
+  font-style: italic;
+  margin: 10px 0 0;
+  padding: 0 !important;
+}
+
+.field-name-field-speaker h3.field-label {
+  color: #006699;
+  display: block;
+  font-size: 13px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.field-name-field-speaker .node-title {
+  color: #333333;
+  font-size: 1em;
+  font-weight: 700;
+  margin: 0 0 5px;
+}
+
+.field-name-field-speaker .node-title a{
+  color: #333;
+}
+
+.node .field-name-field-speaker .field-type-image {
+  float: none;
+}
+
+.field-name-field-speaker .field-type-image img {
+  margin: 5px auto 10px;
+  max-width: none !important;
+}
+
+.field-name-field-speaker .node-content .field-name-field-job-title {
+  display: none;
+}
+
+/* articles */
+.article .field-type-image {
+  float: right;
+  margin: 0 0 0 10px;
+}
+
+.node .field-type-image {
+  float: right;
+}
+
+
+/*student details*/
+.node-student-profile .field {
+  clear: none;
+  width: 78%;
+  float: left;
+}
+
+.node-student-profile .field-name-body {
+  float: none;
+  width: 100%;
+}
+
+.node-type-student-profile .node-full .field-type-image {
+  float: left;
+  margin-left: 0;
+  width: 22%;
+}
+
+.node-type-student-profile .node-full .field-label:before {
+  content: '+';
+  margin-right: 5px;
+}
+
+.node-type-student-profile .node-full .field-label {
+  font-size: 1em;
+  vertical-align: inherit;
+}
+
+.node-type-student-profile .node-full .field-type-image img {
+  margin: 5px 0;
+}
+
+/* professor */
+.node-professor.node-full .field-type-image {
+  float: left;
+  margin: 0 10px 0 0;
+  width: auto;
+}
+.node-professor.node-full .field-type-image img {
+  margin: 5px 0;
+}
+
+/* professor */
+.node-staffs.node-full .field-type-image {
+  float: left;
+  margin: 0 10px 0 0;
+  width: auto;
+}
+.node-staffs.node-full .field-type-image img {
+  margin: 5px 0;
+}
+
+.node-staffs.node-full .clearfix:after,
+.node-staffs.node-full .clearfix {
+	clear: none;
+}
+
+

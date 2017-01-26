@@ -1,0 +1,9 @@
+name = "Howard Google Custom Search"
+description = "Use Google Custom Search to search your site and/or any other sites."
+core = 7.x
+dependencies[] = search
+files[] = howard_gcs.module
+scripts[] = howard_gcs.js
+stylesheets[all][] = howard_gcs.css
+
+
